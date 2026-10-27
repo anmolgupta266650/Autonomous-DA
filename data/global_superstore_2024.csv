@@ -1,0 +1,1201 @@
+Order_ID,Order_Date,Region,Customer_Segment,Category,Sub_Category,Sales,Quantity,Discount,Profit,Shipping_Cost,Customer_Rating
+CA-2023-10000,2023-01-01,Europe,Corporate,Furniture,Office Desks,135.31,7,0.0,33.07,39.63,3.0
+CA-2023-10001,2023-01-01,Europe,Consumer,Office Supplies,Envelopes,189.18,9,0.15,1.96,51.48,5.0
+CA-2023-10002,2023-01-02,Asia Pacific,Consumer,Furniture,Bookcases,179.6,8,0.0,70.75,40.48,4.0
+CA-2023-10003,2023-01-02,Latin America,Small Business,Furniture,Ergonomic Chairs,2220.88,8,0.0,849.72,25.62,5.0
+CA-2023-10004,2023-01-03,Latin America,Small Business,Office Supplies,Paper Rolls,109.04,4,0.15,4.49,14.57,3.0
+CA-2023-10005,2023-01-04,Latin America,Corporate,Office Supplies,Envelopes,291.78,9,0.1,54.44,18.44,4.0
+CA-2023-10006,2023-01-04,North America,Consumer,Technology,Accessories,1136.96,11,0.05,155.45,22.11,4.0
+CA-2023-10007,2023-01-05,Europe,Consumer,Office Supplies,Fasteners,254.31,7,0.1,41.65,44.11,4.0
+CA-2023-10008,2023-01-05,Europe,Corporate,Office Supplies,Binders,150.52,4,0.1,48.45,57.18,4.0
+CA-2023-10009,2023-01-06,Europe,Small Business,Furniture,Ergonomic Chairs,2193.76,8,0.0,528.71,9.81,4.0
+CA-2023-10010,2023-01-07,North America,Corporate,Furniture,Lamps,34.0,2,0.15,6.27,54.0,2.0
+CA-2023-10011,2023-01-07,Asia Pacific,Small Business,Technology,Servers,1245.33,9,0.3,78.99,63.54,3.0
+CA-2023-10012,2023-01-08,Latin America,Consumer,Furniture,Ergonomic Chairs,2021.7,5,0.15,247.94,19.31,5.0
+CA-2023-10013,2023-01-08,Europe,Corporate,Office Supplies,Storage Boxes,21.7,1,0.1,2.09,50.27,3.0
+CA-2023-10014,2023-01-09,North America,Corporate,Technology,Smartphones,569.88,2,0.0,148.73,64.24,1.0
+CA-2023-10015,2023-01-10,Latin America,Small Business,Furniture,Ergonomic Chairs,26.65,1,0.2,5.78,45.02,3.0
+CA-2023-10016,2023-01-10,Latin America,Corporate,Office Supplies,Paper Rolls,610.61,7,0.05,178.36,40.78,4.0
+CA-2023-10017,2023-01-11,Europe,Corporate,Technology,Servers,3305.7,3,0.3,434.15,39.56,4.0
+CA-2023-10018,2023-01-11,North America,Corporate,Furniture,Lamps,649.56,6,0.1,127.72,23.81,5.0
+CA-2023-10019,2023-01-12,Latin America,Small Business,Furniture,Lamps,801.0,5,0.0,206.54,58.44,4.0
+CA-2023-10020,2023-01-13,Latin America,Corporate,Office Supplies,Envelopes,121.92,6,0.0,46.68,7.1,2.0
+CA-2023-10021,2023-01-13,North America,Consumer,Technology,Smartphones,1438.3,5,0.0,482.85,61.9,5.0
+CA-2023-10022,2023-01-14,Asia Pacific,Corporate,Furniture,Office Desks,742.74,6,0.1,59.47,55.31,4.0
+CA-2023-10023,2023-01-15,Europe,Consumer,Furniture,Lamps,117.93,1,0.0,26.34,32.74,2.0
+CA-2023-10024,2023-01-15,North America,Consumer,Furniture,Bookcases,1293.52,8,0.2,286.61,56.76,1.0
+CA-2023-10025,2023-01-16,Latin America,Corporate,Office Supplies,Fasteners,262.48,8,0.05,56.12,63.32,5.0
+CA-2023-10026,2023-01-16,Europe,Consumer,Technology,Monitors,5803.56,6,0.0,1410.11,51.41,4.0
+CA-2023-10027,2023-01-17,Asia Pacific,Small Business,Technology,Laptops,478.34,2,0.0,210.03,33.67,1.0
+CA-2023-10028,2023-01-18,Europe,Corporate,Furniture,Bookcases,120.22,1,0.0,42.86,56.21,4.0
+CA-2023-10029,2023-01-18,Latin America,Small Business,Furniture,Ergonomic Chairs,491.44,2,0.0,109.12,39.24,3.0
+CA-2023-10030,2023-01-19,Latin America,Small Business,Technology,Laptops,1048.2,4,0.1,116.45,8.76,5.0
+CA-2023-10031,2023-01-19,Latin America,Small Business,Technology,Servers,4795.2,8,0.0,1370.21,6.06,1.0
+CA-2023-10032,2023-01-20,Asia Pacific,Consumer,Technology,Smartphones,3071.58,6,0.05,929.07,64.86,5.0
+CA-2023-10033,2023-01-21,Latin America,Corporate,Furniture,Ergonomic Chairs,3614.7,10,0.05,823.12,12.16,4.0
+CA-2023-10034,2023-01-21,Asia Pacific,Corporate,Technology,Laptops,1674.84,6,0.1,442.59,17.45,5.0
+CA-2023-10035,2023-01-22,Europe,Small Business,Furniture,Office Desks,134.8,8,0.05,34.25,27.43,2.0
+CA-2023-10036,2023-01-22,Europe,Consumer,Office Supplies,Binders,319.9,7,0.15,8.03,16.71,2.0
+CA-2023-10037,2023-01-23,North America,Small Business,Office Supplies,Binders,47.61,1,0.05,8.85,22.22,4.0
+CA-2023-10038,2023-01-24,North America,Small Business,Furniture,Ergonomic Chairs,1396.53,9,0.0,407.91,46.01,4.0
+CA-2023-10039,2023-01-24,Asia Pacific,Corporate,Furniture,Office Desks,1913.6,4,0.1,546.71,10.7,4.0
+CA-2023-10040,2023-01-25,Asia Pacific,Consumer,Furniture,Ergonomic Chairs,355.2,5,0.2,85.2,59.53,3.0
+CA-2023-10041,2023-01-25,Asia Pacific,Small Business,Office Supplies,Paper Rolls,387.76,8,0.2,34.9,21.17,4.0
+CA-2023-10042,2023-01-26,Asia Pacific,Corporate,Furniture,Bookcases,137.55,7,0.2,30.27,58.76,1.0
+CA-2023-10043,2023-01-27,North America,Small Business,Furniture,Ergonomic Chairs,258.72,7,0.15,77.53,39.89,3.0
+CA-2023-10044,2023-01-27,Europe,Corporate,Office Supplies,Storage Boxes,345.66,7,0.05,97.09,17.69,2.0
+CA-2023-10045,2023-01-28,Europe,Small Business,Office Supplies,Envelopes,438.9,7,0.15,67.95,51.12,
+CA-2023-10046,2023-01-29,North America,Corporate,Furniture,Lamps,921.2,10,0.0,166.8,7.54,3.0
+CA-2023-10047,2023-01-29,North America,Corporate,Furniture,Ergonomic Chairs,348.88,7,0.0,103.4,62.18,1.0
+CA-2023-10048,2023-01-30,Asia Pacific,Corporate,Technology,Accessories,740.55,3,0.05,182.48,36.73,5.0
+CA-2023-10049,2023-01-30,Latin America,Corporate,Office Supplies,Envelopes,16.86,1,0.1,4.16,38.0,3.0
+CA-2023-10050,2023-01-31,Asia Pacific,Corporate,Technology,Monitors,4202.56,2,0.0,1805.73,8.87,4.0
+CA-2023-10051,2023-02-01,North America,Consumer,Office Supplies,Envelopes,86.22,3,,6.64,39.9,1.0
+CA-2023-10052,2023-02-01,North America,Small Business,Office Supplies,Paper Rolls,234.96,8,0.3,14.51,43.38,5.0
+CA-2023-10053,2023-02-02,Europe,Corporate,Office Supplies,Binders,452.97,9,0.0,161.27,26.03,5.0
+CA-2023-10054,2023-02-02,Europe,Corporate,Office Supplies,Binders,190.19,11,0.0,66.21,44.71,4.0
+CA-2023-10055,2023-02-03,Asia Pacific,Consumer,Technology,Laptops,5944.29,11,0.0,1204.79,9.98,4.0
+CA-2023-10056,2023-02-04,North America,Corporate,Technology,Servers,7528.6,10,0.3,-278.23,63.62,4.0
+CA-2023-10057,2023-02-04,Europe,Consumer,Office Supplies,Binders,2001.6,10,0.0,823.53,7.11,4.0
+CA-2023-10058,2023-02-05,North America,Small Business,Technology,Monitors,6060.66,6,0.15,1217.49,25.03,3.0
+CA-2023-10059,2023-02-05,Europe,Corporate,Technology,Monitors,7534.03,7,0.0,1197.28,48.43,5.0
+CA-2023-10060,2023-02-06,Asia Pacific,Corporate,Technology,Laptops,31.91,1,0.0,4.87,21.44,2.0
+CA-2023-10061,2023-02-07,Latin America,Small Business,Office Supplies,Fasteners,341.67,7,0.1,94.26,56.15,3.0
+CA-2023-10062,2023-02-07,Latin America,Consumer,Technology,Servers,44.58,2,0.0,10.66,7.12,4.0
+CA-2023-10063,2023-02-08,Latin America,Corporate,Technology,Accessories,615.76,4,0.1,156.04,41.99,4.0
+CA-2023-10064,2023-02-08,Asia Pacific,Small Business,Furniture,Bookcases,1924.9,10,0.15,400.64,24.26,5.0
+CA-2023-10065,2023-02-09,North America,Corporate,Technology,Servers,436.92,4,0.0,157.39,50.58,
+CA-2023-10066,2023-02-10,Asia Pacific,Corporate,Technology,Accessories,1469.5,2,,278.35,22.84,4.0
+CA-2023-10067,2023-02-10,North America,Small Business,Office Supplies,Paper Rolls,171.5,5,0.05,44.57,55.96,5.0
+CA-2023-10068,2023-02-11,Asia Pacific,Small Business,Office Supplies,Storage Boxes,295.54,7,0.05,93.35,30.53,4.0
+CA-2023-10069,2023-02-12,Asia Pacific,Consumer,Furniture,Office Desks,668.47,11,0.3,91.95,19.06,5.0
+CA-2023-10070,2023-02-12,North America,Corporate,Technology,Laptops,960.03,1,0.05,244.27,52.93,4.0
+CA-2023-10071,2023-02-13,Asia Pacific,Small Business,Office Supplies,Fasteners,185.2,2,0.05,69.8,32.18,4.0
+CA-2023-10072,2023-02-13,Asia Pacific,Small Business,Furniture,Lamps,483.66,6,0.15,34.17,13.82,2.0
+CA-2023-10073,2023-02-14,Asia Pacific,Consumer,Technology,Accessories,9262.77,11,0.0,3204.1,11.31,5.0
+CA-2023-10074,2023-02-15,North America,Corporate,Office Supplies,Envelopes,84.24,3,0.0,29.39,25.51,5.0
+CA-2023-10075,2023-02-15,Asia Pacific,Consumer,Office Supplies,Envelopes,477.4,10,0.15,71.72,19.27,5.0
+CA-2023-10076,2023-02-16,Asia Pacific,Corporate,Technology,Monitors,43.62,2,0.1,7.53,44.07,3.0
+CA-2023-10077,2023-02-16,North America,Small Business,Furniture,Lamps,1272.33,9,0.0,540.58,39.14,5.0
+CA-2023-10078,2023-02-17,Asia Pacific,Consumer,Office Supplies,Storage Boxes,66.17,1,0.05,23.45,14.56,4.0
+CA-2023-10079,2023-02-18,Latin America,Consumer,Technology,Monitors,3183.48,2,0.0,627.94,20.33,4.0
+CA-2023-10080,2023-02-18,North America,Corporate,Technology,Accessories,466.82,1,0.05,64.13,51.34,5.0
+CA-2023-10081,2023-02-19,North America,Consumer,Technology,Laptops,2199.36,4,0.1,144.05,7.5,4.0
+CA-2023-10082,2023-02-19,Latin America,Consumer,Office Supplies,Envelopes,176.05,7,0.0,75.19,31.86,4.0
+CA-2023-10083,2023-02-20,Europe,Consumer,Furniture,Office Desks,902.64,6,0.1,119.15,57.46,5.0
+CA-2023-10084,2023-02-21,Europe,Corporate,Office Supplies,Binders,870.76,11,0.0,305.44,26.49,5.0
+CA-2023-10085,2023-02-21,North America,Consumer,Furniture,Office Desks,128.34,6,0.0,48.92,13.91,3.0
+CA-2023-10086,2023-02-22,Asia Pacific,Small Business,Technology,Servers,2258.35,5,0.05,811.01,34.51,5.0
+CA-2023-10087,2023-02-22,Asia Pacific,Corporate,Office Supplies,Paper Rolls,260.22,6,0.05,33.59,49.35,4.0
+CA-2023-10088,2023-02-23,Latin America,Corporate,Furniture,Bookcases,400.6,10,0.0,73.43,28.71,4.0
+CA-2023-10089,2023-02-24,Asia Pacific,Corporate,Technology,Laptops,16761.92,8,0.0,4872.51,54.54,2.0
+CA-2023-10090,2023-02-24,Asia Pacific,Consumer,Technology,Monitors,4889.6,10,0.1,571.92,17.45,3.0
+CA-2023-10091,2023-02-25,North America,Consumer,Office Supplies,Fasteners,471.69,9,0.2,98.33,23.48,5.0
+CA-2023-10092,2023-02-26,Asia Pacific,Corporate,Technology,Laptops,6336.75,7,0.2,588.8,20.82,4.0
+CA-2023-10093,2023-02-26,Europe,Small Business,Office Supplies,Binders,696.24,9,0.0,299.25,18.09,3.0
+CA-2023-10094,2023-02-27,North America,Corporate,Office Supplies,Binders,752.2,10,0.0,247.09,36.81,4.0
+CA-2023-10095,2023-02-27,Asia Pacific,Small Business,Furniture,Office Desks,2878.29,9,0.1,308.42,57.51,5.0
+CA-2023-10096,2023-02-28,Europe,Corporate,Office Supplies,Binders,18.31,1,0.15,4.4,40.4,5.0
+CA-2023-10097,2023-03-01,Europe,Corporate,Technology,Monitors,57.94,1,0.0,15.4,31.6,2.0
+CA-2023-10098,2023-03-01,Europe,Small Business,Office Supplies,Storage Boxes,84.28,4,0.0,31.46,31.17,5.0
+CA-2023-10099,2023-03-02,Latin America,Small Business,Furniture,Lamps,910.47,11,0.0,392.79,6.15,4.0
+CA-2023-10100,2023-03-02,Asia Pacific,Small Business,Furniture,Ergonomic Chairs,1353.0,10,0.0,602.2,22.67,4.0
+CA-2023-10101,2023-03-03,Europe,Small Business,Office Supplies,Envelopes,504.0,10,0.0,115.43,33.63,4.0
+CA-2023-10102,2023-03-04,Latin America,Small Business,Office Supplies,Envelopes,183.28,8,0.0,65.37,49.87,1.0
+CA-2023-10103,2023-03-04,Europe,Small Business,Technology,Smartphones,785.49,1,0.3,108.79,40.96,4.0
+CA-2023-10104,2023-03-05,Asia Pacific,Corporate,Technology,Smartphones,752.76,3,0.0,130.43,55.7,2.0
+CA-2023-10105,2023-03-05,North America,Consumer,Office Supplies,Fasteners,157.64,4,0.05,62.76,45.21,1.0
+CA-2023-10106,2023-03-06,Asia Pacific,Consumer,Furniture,Ergonomic Chairs,828.36,6,0.0,178.82,30.26,
+CA-2023-10107,2023-03-07,North America,Corporate,Technology,Monitors,1743.48,4,0.0,344.84,33.66,3.0
+CA-2023-10108,2023-03-07,Europe,Small Business,Technology,Servers,2789.94,6,0.0,773.27,39.24,5.0
+CA-2023-10109,2023-03-08,Latin America,Corporate,Technology,Smartphones,635.18,1,0.3,-75.47,49.64,5.0
+CA-2023-10110,2023-03-08,Latin America,Corporate,Office Supplies,Paper Rolls,94.89,3,0.05,25.47,35.29,5.0
+CA-2023-10111,2023-03-09,North America,Consumer,Technology,Laptops,5045.72,4,0.05,1582.81,43.78,3.0
+CA-2023-10112,2023-03-10,Latin America,Consumer,Furniture,Lamps,753.72,11,0.3,28.75,54.79,3.0
+CA-2023-10113,2023-03-10,Europe,Corporate,Furniture,Office Desks,654.96,2,0.0,195.48,53.65,2.0
+CA-2023-10114,2023-03-11,North America,Small Business,Technology,Monitors,8293.01,11,0.0,2616.26,43.45,3.0
+CA-2023-10115,2023-03-12,Europe,Small Business,Technology,Monitors,312.21,1,0.1,93.37,58.31,5.0
+CA-2023-10116,2023-03-12,Europe,Small Business,Office Supplies,Paper Rolls,260.82,9,0.0,70.75,58.29,3.0
+CA-2023-10117,2023-03-13,North America,Consumer,Office Supplies,Paper Rolls,438.41,7,0.05,163.3,52.41,3.0
+CA-2023-10118,2023-03-13,North America,Consumer,Furniture,Bookcases,461.07,9,0.05,71.48,38.28,4.0
+CA-2023-10119,2023-03-14,North America,Corporate,Furniture,Office Desks,245.25,9,0.3,5.25,63.65,2.0
+CA-2023-10120,2023-03-15,North America,Consumer,Office Supplies,Fasteners,506.31,7,0.3,66.46,53.29,5.0
+CA-2023-10121,2023-03-15,Asia Pacific,Consumer,Office Supplies,Storage Boxes,115.2,6,0.05,30.87,38.77,5.0
+CA-2023-10122,2023-03-16,Asia Pacific,Consumer,Furniture,Ergonomic Chairs,2006.64,6,0.3,-113.85,39.3,4.0
+CA-2023-10123,2023-03-16,Asia Pacific,Small Business,Technology,Smartphones,1604.84,4,0.0,342.69,54.37,3.0
+CA-2023-10124,2023-03-17,Asia Pacific,Small Business,Technology,Smartphones,2376.84,3,0.0,492.97,27.56,3.0
+CA-2023-10125,2023-03-18,Europe,Consumer,Technology,Accessories,1141.12,4,0.0,242.11,45.17,2.0
+CA-2023-10126,2023-03-18,Europe,Corporate,Technology,Monitors,5147.59,7,0.0,2213.01,61.96,4.0
+CA-2023-10127,2023-03-19,Asia Pacific,Corporate,Technology,Smartphones,678.7,11,0.1,169.64,22.31,5.0
+CA-2023-10128,2023-03-19,North America,Corporate,Furniture,Office Desks,290.22,3,0.0,54.66,33.3,2.0
+CA-2023-10129,2023-03-20,Asia Pacific,Consumer,Technology,Monitors,1384.68,11,0.0,376.77,10.63,4.0
+CA-2023-10130,2023-03-21,North America,Corporate,Technology,Monitors,394.45,7,0.0,96.83,52.42,3.0
+CA-2023-10131,2023-03-21,Latin America,Corporate,Furniture,Office Desks,850.26,6,0.15,109.73,41.39,5.0
+CA-2023-10132,2023-03-22,Latin America,Consumer,Technology,Accessories,9171.44,8,0.1,2010.76,15.04,4.0
+CA-2023-10133,2023-03-22,Europe,Corporate,Office Supplies,Storage Boxes,494.7,10,0.2,94.27,52.99,5.0
+CA-2023-10134,2023-03-23,North America,Small Business,Furniture,Office Desks,1157.38,7,0.05,256.2,25.32,5.0
+CA-2023-10135,2023-03-24,Latin America,Small Business,Office Supplies,Storage Boxes,139.5,9,0.05,22.27,10.26,1.0
+CA-2023-10136,2023-03-24,Europe,Consumer,Furniture,Ergonomic Chairs,100.96,2,0.05,31.2,36.99,4.0
+CA-2023-10137,2023-03-25,Europe,Corporate,Furniture,Lamps,2278.8,9,0.2,542.51,52.77,5.0
+CA-2023-10138,2023-03-26,North America,Corporate,Office Supplies,Fasteners,83.44,4,0.0,15.15,34.33,3.0
+CA-2023-10139,2023-03-26,North America,Small Business,Furniture,Ergonomic Chairs,1827.72,9,0.1,352.0,30.72,5.0
+CA-2023-10140,2023-03-27,Europe,Corporate,Technology,Monitors,13071.52,8,0.2,1500.54,21.12,4.0
+CA-2023-10141,2023-03-27,North America,Consumer,Furniture,Ergonomic Chairs,123.95,5,0.2,26.37,54.04,4.0
+CA-2023-10142,2023-03-28,Asia Pacific,Small Business,Furniture,Office Desks,340.0,10,0.2,20.18,31.93,5.0
+CA-2023-10143,2023-03-29,Latin America,Consumer,Office Supplies,Storage Boxes,325.68,8,0.0,60.62,23.36,3.0
+CA-2023-10144,2023-03-29,Asia Pacific,Corporate,Furniture,Office Desks,582.0,8,0.15,27.69,19.96,5.0
+CA-2023-10145,2023-03-30,Latin America,Corporate,Technology,Smartphones,3080.0,10,0.2,580.95,31.61,4.0
+CA-2023-10146,2023-03-30,North America,Corporate,Furniture,Ergonomic Chairs,18.36,1,0.05,7.13,14.86,1.0
+CA-2023-10147,2023-03-31,North America,Small Business,Technology,Smartphones,1437.8,4,0.15,330.53,32.15,5.0
+CA-2023-10148,2023-04-01,Asia Pacific,Consumer,Office Supplies,Storage Boxes,539.64,9,,160.08,51.41,4.0
+CA-2023-10149,2023-04-01,Latin America,Corporate,Furniture,Lamps,778.77,9,0.0,181.07,19.83,3.0
+CA-2023-10150,2023-04-02,Asia Pacific,Small Business,Furniture,Lamps,1322.42,11,0.0,273.69,33.7,4.0
+CA-2023-10151,2023-04-02,Asia Pacific,Corporate,Office Supplies,Paper Rolls,790.13,11,0.1,77.13,13.79,4.0
+CA-2023-10152,2023-04-03,North America,Corporate,Office Supplies,Storage Boxes,315.8,10,0.0,132.4,43.34,3.0
+CA-2023-10153,2023-04-04,North America,Consumer,Office Supplies,Envelopes,464.7,6,0.05,65.62,56.6,4.0
+CA-2023-10154,2023-04-04,Latin America,Corporate,Technology,Monitors,1152.0,9,0.0,380.3,17.27,5.0
+CA-2023-10155,2023-04-05,North America,Consumer,Furniture,Bookcases,338.13,3,0.05,47.59,27.58,4.0
+CA-2023-10156,2023-04-05,Latin America,Consumer,Furniture,Ergonomic Chairs,2289.42,9,0.0,685.02,31.78,2.0
+CA-2023-10157,2023-04-06,Europe,Corporate,Office Supplies,Fasteners,136.56,8,0.0,46.92,60.84,5.0
+CA-2023-10158,2023-04-07,Latin America,Consumer,Office Supplies,Binders,88.4,2,0.2,3.84,53.09,3.0
+CA-2023-10159,2023-04-07,Latin America,Consumer,Office Supplies,Storage Boxes,84.36,4,0.1,9.45,24.45,4.0
+CA-2023-10160,2023-04-08,Latin America,Small Business,Technology,Servers,5440.32,8,0.15,255.62,11.72,5.0
+CA-2023-10161,2023-04-09,North America,Corporate,Furniture,Ergonomic Chairs,203.85,3,0.05,74.29,12.17,4.0
+CA-2023-10162,2023-04-09,Latin America,Small Business,Office Supplies,Paper Rolls,281.64,6,0.0,70.4,10.0,4.0
+CA-2023-10163,2023-04-10,North America,Consumer,Furniture,Lamps,106.75,7,0.05,41.15,47.17,3.0
+CA-2023-10164,2023-04-10,Latin America,Corporate,Furniture,Office Desks,915.06,6,0.0,320.88,49.34,5.0
+CA-2023-10165,2023-04-11,Europe,Consumer,Office Supplies,Binders,180.4,10,0.0,28.58,57.25,4.0
+CA-2023-10166,2023-04-12,Asia Pacific,Corporate,Office Supplies,Paper Rolls,187.6,8,0.05,71.05,48.44,5.0
+CA-2023-10167,2023-04-12,North America,Consumer,Furniture,Office Desks,818.84,11,0.0,166.87,44.73,1.0
+CA-2023-10168,2023-04-13,North America,Consumer,Technology,Servers,4603.1,10,0.0,1135.16,31.78,4.0
+CA-2023-10169,2023-04-13,Asia Pacific,Corporate,Technology,Smartphones,1753.35,3,0.3,242.46,42.45,4.0
+CA-2023-10170,2023-04-14,Latin America,Corporate,Furniture,Lamps,357.52,8,0.05,64.84,47.48,3.0
+CA-2023-10171,2023-04-15,Latin America,Corporate,Technology,Accessories,231.0,4,0.0,59.73,62.66,3.0
+CA-2023-10172,2023-04-15,North America,Corporate,Furniture,Office Desks,4018.72,8,0.0,1016.89,21.63,3.0
+CA-2023-10173,2023-04-16,Latin America,Consumer,Furniture,Lamps,1080.9,3,0.3,-80.14,10.73,5.0
+CA-2023-10174,2023-04-16,Latin America,Consumer,Technology,Laptops,3066.6,10,0.1,1045.42,46.3,5.0
+CA-2023-10175,2023-04-17,Asia Pacific,Consumer,Office Supplies,Binders,91.96,2,0.0,14.5,33.28,4.0
+CA-2023-10176,2023-04-18,Europe,Small Business,Furniture,Bookcases,266.0,7,0.05,53.55,44.17,3.0
+CA-2023-10177,2023-04-18,Europe,Small Business,Furniture,Office Desks,413.6,10,0.05,157.27,12.02,3.0
+CA-2023-10178,2023-04-19,North America,Consumer,Technology,Smartphones,6197.49,9,0.0,1107.73,31.33,4.0
+CA-2023-10179,2023-04-19,Asia Pacific,Consumer,Furniture,Ergonomic Chairs,346.1,2,0.0,134.56,52.33,4.0
+CA-2023-10180,2023-04-20,Latin America,Consumer,Technology,Smartphones,2104.2,9,0.15,554.68,18.88,2.0
+CA-2023-10181,2023-04-21,North America,Small Business,Technology,Smartphones,2117.88,9,0.1,718.31,27.41,4.0
+CA-2023-10182,2023-04-21,North America,Consumer,Furniture,Office Desks,965.64,4,0.0,351.76,12.05,1.0
+CA-2023-10183,2023-04-22,North America,Small Business,Furniture,Lamps,94.64,4,0.1,32.7,8.29,3.0
+CA-2023-10184,2023-04-23,Asia Pacific,Corporate,Furniture,Bookcases,294.7,2,,50.06,23.44,4.0
+CA-2023-10185,2023-04-23,Europe,Consumer,Office Supplies,Envelopes,23.93,1,0.0,7.37,34.37,2.0
+CA-2023-10186,2023-04-24,North America,Corporate,Furniture,Lamps,580.25,1,0.0,194.95,52.34,4.0
+CA-2023-10187,2023-04-24,Asia Pacific,Small Business,Technology,Laptops,243.76,11,0.0,106.34,49.6,4.0
+CA-2023-10188,2023-04-25,Europe,Consumer,Furniture,Ergonomic Chairs,1468.98,6,0.3,-190.67,52.5,2.0
+CA-2023-10189,2023-04-26,Europe,Corporate,Technology,Smartphones,4958.1,9,0.05,1436.08,18.89,4.0
+CA-2023-10190,2023-04-26,Europe,Corporate,Office Supplies,Binders,85.35,5,0.2,17.57,24.06,2.0
+CA-2023-10191,2023-04-27,Asia Pacific,Consumer,Office Supplies,Envelopes,42.64,2,0.2,1.52,25.47,5.0
+CA-2023-10192,2023-04-27,Asia Pacific,Small Business,Office Supplies,Binders,132.12,4,0.05,34.72,30.18,1.0
+CA-2023-10193,2023-04-28,North America,Corporate,Technology,Monitors,1802.24,11,0.15,264.56,10.63,3.0
+CA-2023-10194,2023-04-29,North America,Small Business,Furniture,Bookcases,510.78,6,0.0,224.16,53.24,4.0
+CA-2023-10195,2023-04-29,Asia Pacific,Consumer,Technology,Laptops,7942.2,6,0.05,883.81,56.77,5.0
+CA-2023-10196,2023-04-30,Asia Pacific,Consumer,Office Supplies,Fasteners,99.44,4,0.1,10.3,7.99,4.0
+CA-2023-10197,2023-04-30,Latin America,Corporate,Furniture,Office Desks,140.67,9,0.0,33.98,13.83,4.0
+CA-2023-10198,2023-05-01,Asia Pacific,Consumer,Office Supplies,Paper Rolls,95.43,3,0.15,16.7,18.28,3.0
+CA-2023-10199,2023-05-02,Europe,Consumer,Technology,Accessories,3109.6,10,0.0,1231.97,26.79,3.0
+CA-2023-10200,2023-05-02,North America,Consumer,Technology,Laptops,3563.91,9,0.0,842.36,55.49,4.0
+CA-2023-10201,2023-05-03,Europe,Corporate,Technology,Smartphones,721.13,1,0.0,115.98,39.72,4.0
+CA-2023-10202,2023-05-03,North America,Corporate,Office Supplies,Fasteners,33.34,1,0.1,1.75,62.61,3.0
+CA-2023-10203,2023-05-04,Asia Pacific,Small Business,Office Supplies,Binders,367.84,11,0.2,5.3,12.95,5.0
+CA-2023-10204,2023-05-05,Asia Pacific,Corporate,Technology,Accessories,1662.68,4,0.1,123.36,57.64,4.0
+CA-2023-10205,2023-05-05,North America,Consumer,Technology,Servers,5219.32,4,0.0,1648.09,39.72,4.0
+CA-2023-10206,2023-05-06,Asia Pacific,Consumer,Technology,Accessories,3495.09,3,0.2,234.98,56.26,5.0
+CA-2023-10207,2023-05-07,Europe,Small Business,Technology,Servers,5399.65,5,0.3,166.65,18.67,3.0
+CA-2023-10208,2023-05-07,Europe,Corporate,Technology,Smartphones,477.0,2,0.3,-70.76,18.88,5.0
+CA-2023-10209,2023-05-08,Europe,Consumer,Office Supplies,Paper Rolls,413.25,5,0.3,-11.62,56.44,4.0
+CA-2023-10210,2023-05-08,North America,Corporate,Furniture,Office Desks,510.8,10,0.3,-50.0,26.66,4.0
+CA-2023-10211,2023-05-09,Latin America,Corporate,Office Supplies,Storage Boxes,166.1,10,0.0,41.81,7.7,5.0
+CA-2023-10212,2023-05-10,Asia Pacific,Consumer,Furniture,Bookcases,942.06,6,0.0,290.32,49.36,3.0
+CA-2023-10213,2023-05-10,Latin America,Consumer,Furniture,Bookcases,409.74,6,0.0,91.86,10.05,5.0
+CA-2023-10214,2023-05-11,Europe,Consumer,Technology,Smartphones,3532.68,9,0.3,-52.58,18.36,4.0
+CA-2023-10215,2023-05-11,Europe,Corporate,Technology,Monitors,1240.08,4,0.2,43.06,41.3,2.0
+CA-2023-10216,2023-05-12,Latin America,Consumer,Furniture,Ergonomic Chairs,1395.3,10,0.0,577.15,58.07,5.0
+CA-2023-10217,2023-05-13,Europe,Corporate,Office Supplies,Binders,158.7,3,0.0,44.45,23.79,4.0
+CA-2023-10218,2023-05-13,Europe,Corporate,Furniture,Lamps,2672.46,9,0.0,928.65,10.47,4.0
+CA-2023-10219,2023-05-14,Asia Pacific,Corporate,Furniture,Lamps,382.6,10,0.0,152.94,21.16,1.0
+CA-2023-10220,2023-05-14,Asia Pacific,Consumer,Office Supplies,Storage Boxes,101.91,3,0.3,14.07,41.65,5.0
+CA-2023-10221,2023-05-15,North America,Corporate,Office Supplies,Binders,113.0,1,0.1,22.28,36.59,4.0
+CA-2023-10222,2023-05-16,Latin America,Consumer,Technology,Monitors,1739.98,11,0.0,612.04,51.38,5.0
+CA-2023-10223,2023-05-16,North America,Small Business,Technology,Accessories,133.49,7,0.1,26.41,17.89,4.0
+CA-2023-10224,2023-05-17,Europe,Consumer,Technology,Smartphones,289.92,1,0.0,69.97,45.25,4.0
+CA-2023-10225,2023-05-17,Latin America,Corporate,Furniture,Bookcases,5595.12,9,0.0,2215.48,61.68,4.0
+CA-2023-10226,2023-05-18,Asia Pacific,Consumer,Office Supplies,Storage Boxes,448.4,10,0.15,8.01,64.21,4.0
+CA-2023-10227,2023-05-19,Asia Pacific,Small Business,Furniture,Lamps,2375.04,8,0.15,218.39,49.56,3.0
+CA-2023-10228,2023-05-19,Europe,Consumer,Office Supplies,Fasteners,21.73,1,0.05,2.46,63.07,4.0
+CA-2023-10229,2023-05-20,Latin America,Corporate,Office Supplies,Paper Rolls,154.77,3,0.05,19.93,61.29,5.0
+CA-2023-10230,2023-05-21,Europe,Consumer,Office Supplies,Paper Rolls,238.41,9,0.1,26.33,35.26,4.0
+CA-2023-10231,2023-05-21,North America,Consumer,Technology,Servers,403.97,7,0.05,60.6,13.1,2.0
+CA-2023-10232,2023-05-22,Europe,Corporate,Furniture,Ergonomic Chairs,510.36,3,0.1,111.18,7.27,4.0
+CA-2023-10233,2023-05-22,Asia Pacific,Small Business,Technology,Smartphones,1820.47,1,0.05,663.28,45.32,5.0
+CA-2023-10234,2023-05-23,North America,Consumer,Technology,Monitors,3447.12,8,0.2,11.48,31.12,5.0
+CA-2023-10235,2023-05-24,Asia Pacific,Corporate,Technology,Monitors,459.96,6,0.05,168.82,46.89,4.0
+CA-2023-10236,2023-05-24,Asia Pacific,Corporate,Office Supplies,Paper Rolls,26.05,1,0.2,4.09,32.04,4.0
+CA-2023-10237,2023-05-25,North America,Corporate,Office Supplies,Envelopes,272.9,10,0.0,67.12,50.39,5.0
+CA-2023-10238,2023-05-25,Europe,Corporate,Technology,Accessories,1049.58,6,0.15,278.8,49.48,4.0
+CA-2023-10239,2023-05-26,Latin America,Consumer,Furniture,Ergonomic Chairs,688.36,2,0.0,196.33,39.39,3.0
+CA-2023-10240,2023-05-27,Latin America,Corporate,Office Supplies,Fasteners,263.45,11,0.15,69.09,59.27,5.0
+CA-2023-10241,2023-05-27,Europe,Small Business,Office Supplies,Fasteners,189.0,10,0.05,50.22,60.65,4.0
+CA-2023-10242,2023-05-28,Latin America,Consumer,Furniture,Lamps,2668.38,11,0.0,755.42,57.77,5.0
+CA-2023-10243,2023-05-28,Latin America,Corporate,Furniture,Ergonomic Chairs,438.84,6,0.1,131.48,12.7,3.0
+CA-2023-10244,2023-05-29,Asia Pacific,Consumer,Office Supplies,Envelopes,119.49,3,0.1,17.17,63.48,4.0
+CA-2023-10245,2023-05-30,Europe,Small Business,Furniture,Office Desks,713.6,8,0.05,87.73,48.93,5.0
+CA-2023-10246,2023-05-30,North America,Corporate,Office Supplies,Fasteners,49.33,1,0.0,19.44,43.05,5.0
+CA-2023-10247,2023-05-31,North America,Consumer,Office Supplies,Storage Boxes,472.04,4,0.0,206.38,31.09,5.0
+CA-2023-10248,2023-05-31,Asia Pacific,Corporate,Technology,Smartphones,904.05,5,0.05,122.7,9.77,4.0
+CA-2023-10249,2023-06-01,Latin America,Corporate,Furniture,Lamps,2118.06,9,0.1,192.45,13.22,4.0
+CA-2023-10250,2023-06-02,North America,Consumer,Furniture,Bookcases,987.91,11,0.0,209.93,16.17,5.0
+CA-2023-10251,2023-06-02,Latin America,Consumer,Technology,Monitors,968.28,2,0.0,216.4,52.99,2.0
+CA-2023-10252,2023-06-03,North America,Small Business,Technology,Laptops,752.15,7,0.1,104.36,25.01,3.0
+CA-2023-10253,2023-06-04,Asia Pacific,Consumer,Office Supplies,Fasteners,186.0,8,0.0,63.25,5.72,1.0
+CA-2023-10254,2023-06-04,North America,Consumer,Office Supplies,Storage Boxes,427.86,9,0.3,-13.09,35.43,4.0
+CA-2023-10255,2023-06-05,Asia Pacific,Consumer,Technology,Smartphones,2288.88,11,0.1,461.94,36.82,4.0
+CA-2023-10256,2023-06-05,Asia Pacific,Corporate,Furniture,Bookcases,397.04,8,0.0,132.61,33.16,2.0
+CA-2023-10257,2023-06-06,Latin America,Small Business,Office Supplies,Envelopes,36.62,2,0.05,8.77,46.75,4.0
+CA-2023-10258,2023-06-07,Latin America,Consumer,Technology,Laptops,459.28,8,0.2,20.08,20.67,4.0
+CA-2023-10259,2023-06-07,Europe,Corporate,Furniture,Ergonomic Chairs,70.14,1,0.0,21.2,10.19,5.0
+CA-2023-10260,2023-06-08,Asia Pacific,Consumer,Furniture,Office Desks,1679.76,9,0.0,417.36,38.54,4.0
+CA-2023-10261,2023-06-08,Europe,Corporate,Office Supplies,Envelopes,376.9,10,0.05,143.42,19.21,5.0
+CA-2023-10262,2023-06-09,North America,Consumer,Technology,Monitors,380.5,10,0.0,95.55,15.62,3.0
+CA-2023-10263,2023-06-10,Asia Pacific,Small Business,Furniture,Bookcases,902.4,10,0.05,263.78,32.39,3.0
+CA-2023-10264,2023-06-10,Europe,Corporate,Office Supplies,Fasteners,511.08,6,0.0,216.28,17.83,4.0
+CA-2023-10265,2023-06-11,Asia Pacific,Corporate,Furniture,Bookcases,211.44,6,0.0,72.14,23.24,5.0
+CA-2023-10266,2023-06-11,Europe,Small Business,Furniture,Lamps,285.05,1,0.0,106.06,32.24,4.0
+CA-2023-10267,2023-06-12,North America,Corporate,Furniture,Lamps,1059.48,9,0.05,168.83,41.31,5.0
+CA-2023-10268,2023-06-13,Europe,Small Business,Office Supplies,Binders,387.64,11,0.15,79.28,59.07,4.0
+CA-2023-10269,2023-06-13,Asia Pacific,Corporate,Technology,Accessories,1456.96,8,0.0,312.49,33.4,3.0
+CA-2023-10270,2023-06-14,North America,Consumer,Furniture,Ergonomic Chairs,492.12,4,0.0,86.14,49.49,3.0
+CA-2023-10271,2023-06-14,Asia Pacific,Consumer,Office Supplies,Envelopes,462.68,4,0.05,87.16,61.8,1.0
+CA-2023-10272,2023-06-15,Asia Pacific,Small Business,Furniture,Bookcases,643.11,3,0.1,58.2,36.29,4.0
+CA-2023-10273,2023-06-16,Asia Pacific,Corporate,Furniture,Ergonomic Chairs,307.45,11,0.0,83.7,27.98,4.0
+CA-2023-10274,2023-06-16,Europe,Small Business,Office Supplies,Storage Boxes,66.0,4,0.05,18.31,26.57,3.0
+CA-2023-10275,2023-06-17,North America,Corporate,Office Supplies,Paper Rolls,53.18,2,0.15,10.4,61.54,2.0
+CA-2023-10276,2023-06-18,North America,Small Business,Office Supplies,Fasteners,534.42,9,0.0,85.93,64.44,4.0
+CA-2023-10277,2023-06-18,Latin America,Corporate,Technology,Smartphones,4042.7,5,0.0,707.92,32.56,3.0
+CA-2023-10278,2023-06-19,North America,Consumer,Furniture,Ergonomic Chairs,771.61,7,0.2,144.13,36.33,4.0
+CA-2023-10279,2023-06-19,North America,Consumer,Office Supplies,Paper Rolls,214.8,6,0.05,48.43,54.73,2.0
+CA-2023-10280,2023-06-20,North America,Consumer,Technology,Smartphones,885.8,2,0.15,264.18,39.87,3.0
+CA-2023-10281,2023-06-21,Asia Pacific,Small Business,Office Supplies,Storage Boxes,423.96,4,0.0,189.12,55.64,3.0
+CA-2023-10282,2023-06-21,Europe,Consumer,Furniture,Ergonomic Chairs,3243.3,10,0.0,850.98,18.99,4.0
+CA-2023-10283,2023-06-22,Latin America,Corporate,Technology,Smartphones,3394.17,9,0.15,384.85,61.52,4.0
+CA-2023-10284,2023-06-22,North America,Small Business,Office Supplies,Storage Boxes,67.58,2,0.05,7.91,17.46,4.0
+CA-2023-10285,2023-06-23,Asia Pacific,Consumer,Technology,Laptops,793.03,7,0.0,201.48,60.6,4.0
+CA-2023-10286,2023-06-24,North America,Consumer,Office Supplies,Binders,401.94,11,0.2,33.09,31.6,2.0
+CA-2023-10287,2023-06-24,Asia Pacific,Corporate,Technology,Laptops,496.86,1,0.0,194.85,12.52,5.0
+CA-2023-10288,2023-06-25,Europe,Consumer,Office Supplies,Storage Boxes,69.48,3,0.3,-5.26,58.3,3.0
+CA-2023-10289,2023-06-25,Asia Pacific,Corporate,Furniture,Bookcases,91.3,1,0.05,34.7,60.99,2.0
+CA-2023-10290,2023-06-26,Europe,Corporate,Office Supplies,Binders,258.48,8,0.15,71.97,52.6,1.0
+CA-2023-10291,2023-06-27,Asia Pacific,Corporate,Furniture,Bookcases,140.65,1,0.05,54.34,44.54,5.0
+CA-2023-10292,2023-06-27,Europe,Consumer,Furniture,Office Desks,203.7,7,0.05,41.83,33.75,3.0
+CA-2023-10293,2023-06-28,Asia Pacific,Corporate,Technology,Laptops,2677.0,4,0.0,665.52,45.19,5.0
+CA-2023-10294,2023-06-28,Europe,Corporate,Office Supplies,Binders,246.1,10,0.0,60.91,45.23,5.0
+CA-2023-10295,2023-06-29,Latin America,Consumer,Office Supplies,Storage Boxes,53.74,1,0.0,17.32,13.78,5.0
+CA-2023-10296,2023-06-30,Europe,Small Business,Furniture,Ergonomic Chairs,3640.78,11,,1311.02,49.98,4.0
+CA-2023-10297,2023-06-30,Asia Pacific,Corporate,Furniture,Ergonomic Chairs,9158.27,11,0.05,1248.56,27.03,5.0
+CA-2023-10298,2023-07-01,Europe,Corporate,Furniture,Ergonomic Chairs,1187.64,3,0.0,268.05,50.03,4.0
+CA-2023-10299,2023-07-02,Europe,Small Business,Technology,Smartphones,312.69,3,0.0,56.85,11.63,5.0
+CA-2023-10300,2023-07-02,Europe,Corporate,Technology,Laptops,1151.18,1,0.0,283.91,24.62,3.0
+CA-2023-10301,2023-07-03,Latin America,Corporate,Office Supplies,Paper Rolls,311.5,10,0.3,-46.0,57.35,2.0
+CA-2023-10302,2023-07-03,Latin America,Corporate,Technology,Laptops,522.02,1,0.05,67.02,50.58,4.0
+CA-2023-10303,2023-07-04,North America,Corporate,Office Supplies,Paper Rolls,51.78,3,0.05,9.45,43.32,3.0
+CA-2023-10304,2023-07-05,Europe,Consumer,Office Supplies,Storage Boxes,115.3,5,0.0,28.57,8.02,4.0
+CA-2023-10305,2023-07-05,Europe,Corporate,Technology,Smartphones,2948.12,4,0.0,706.1,24.03,4.0
+CA-2023-10306,2023-07-06,Asia Pacific,Corporate,Office Supplies,Envelopes,1830.51,11,0.3,-81.71,23.06,1.0
+CA-2023-10307,2023-07-06,Latin America,Corporate,Office Supplies,Envelopes,558.72,8,0.1,123.18,38.12,4.0
+CA-2023-10308,2023-07-07,Europe,Corporate,Office Supplies,Fasteners,154.53,9,0.05,24.32,47.99,5.0
+CA-2023-10309,2023-07-08,North America,Small Business,Office Supplies,Paper Rolls,109.35,5,0.05,12.78,34.11,4.0
+CA-2023-10310,2023-07-08,Latin America,Corporate,Office Supplies,Fasteners,212.8,10,0.05,44.29,8.38,3.0
+CA-2023-10311,2023-07-09,Europe,Consumer,Technology,Laptops,2818.64,4,0.2,629.76,36.43,5.0
+CA-2023-10312,2023-07-09,Europe,Corporate,Technology,Accessories,7297.92,9,0.15,882.78,17.84,3.0
+CA-2023-10313,2023-07-10,Latin America,Corporate,Office Supplies,Paper Rolls,285.11,7,0.3,-11.04,48.57,4.0
+CA-2023-10314,2023-07-11,North America,Consumer,Technology,Accessories,2413.11,3,0.0,818.63,21.36,4.0
+CA-2023-10315,2023-07-11,North America,Corporate,Technology,Accessories,1996.2,6,0.1,244.23,61.24,2.0
+CA-2023-10316,2023-07-12,Latin America,Small Business,Furniture,Ergonomic Chairs,881.8,10,0.0,133.07,35.64,5.0
+CA-2023-10317,2023-07-13,Latin America,Corporate,Technology,Laptops,3577.6,8,0.15,832.58,30.11,4.0
+CA-2023-10318,2023-07-13,North America,Corporate,Technology,Laptops,1534.5,5,0.2,39.74,56.04,4.0
+CA-2023-10319,2023-07-14,Asia Pacific,Corporate,Technology,Laptops,136.24,2,0.05,14.3,45.35,4.0
+CA-2023-10320,2023-07-14,North America,Consumer,Furniture,Bookcases,3152.3,5,0.0,1013.84,20.28,5.0
+CA-2023-10321,2023-07-15,Latin America,Corporate,Furniture,Bookcases,219.65,5,0.15,11.0,21.0,3.0
+CA-2023-10322,2023-07-16,Latin America,Corporate,Furniture,Lamps,2281.36,8,0.1,148.11,48.08,4.0
+CA-2023-10323,2023-07-16,Europe,Consumer,Furniture,Lamps,452.21,1,0.0,172.41,22.56,2.0
+CA-2023-10324,2023-07-17,Asia Pacific,Corporate,Office Supplies,Paper Rolls,200.42,11,0.1,30.21,19.46,4.0
+CA-2023-10325,2023-07-17,Latin America,Corporate,Office Supplies,Paper Rolls,309.87,11,0.0,93.65,14.38,3.0
+CA-2023-10326,2023-07-18,Europe,Corporate,Office Supplies,Fasteners,206.4,8,0.05,50.15,32.31,4.0
+CA-2023-10327,2023-07-19,Latin America,Consumer,Office Supplies,Fasteners,175.85,5,0.1,41.07,40.5,3.0
+CA-2023-10328,2023-07-19,North America,Corporate,Furniture,Bookcases,4057.6,8,0.0,1249.15,39.52,4.0
+CA-2023-10329,2023-07-20,North America,Consumer,Office Supplies,Fasteners,22.21,1,0.0,8.92,40.13,5.0
+CA-2023-10330,2023-07-20,Asia Pacific,Consumer,Furniture,Bookcases,2255.11,11,0.05,723.12,46.61,4.0
+CA-2023-10331,2023-07-21,Europe,Consumer,Furniture,Bookcases,931.8,6,0.05,371.46,21.54,4.0
+CA-2023-10332,2023-07-22,North America,Corporate,Technology,Laptops,1853.6,8,0.0,588.53,32.72,4.0
+CA-2023-10333,2023-07-22,North America,Small Business,Office Supplies,Fasteners,333.6,8,0.0,100.23,63.82,2.0
+CA-2023-10334,2023-07-23,Europe,Small Business,Office Supplies,Fasteners,350.0,8,0.05,105.42,5.37,2.0
+CA-2023-10335,2023-07-23,Asia Pacific,Small Business,Office Supplies,Paper Rolls,51.5,2,0.0,8.88,52.45,3.0
+CA-2023-10336,2023-07-24,Asia Pacific,Corporate,Furniture,Bookcases,369.39,7,0.05,95.12,30.44,1.0
+CA-2023-10337,2023-07-25,Latin America,Corporate,Furniture,Bookcases,511.16,4,0.0,138.18,8.7,5.0
+CA-2023-10338,2023-07-25,Asia Pacific,Corporate,Office Supplies,Envelopes,156.14,2,0.0,57.06,50.92,5.0
+CA-2023-10339,2023-07-26,North America,Consumer,Office Supplies,Envelopes,69.24,4,0.0,28.91,10.1,3.0
+CA-2023-10340,2023-07-27,Latin America,Small Business,Technology,Smartphones,1122.4,8,0.2,46.19,29.57,1.0
+CA-2023-10341,2023-07-27,Asia Pacific,Small Business,Furniture,Bookcases,682.16,4,0.0,169.25,8.41,5.0
+CA-2023-10342,2023-07-28,Europe,Consumer,Furniture,Bookcases,1221.78,6,0.05,234.45,9.63,3.0
+CA-2023-10343,2023-07-28,Latin America,Corporate,Furniture,Office Desks,2313.63,11,0.15,41.3,60.95,5.0
+CA-2023-10344,2023-07-29,Latin America,Consumer,Office Supplies,Paper Rolls,96.6,3,0.0,33.47,51.62,5.0
+CA-2023-10345,2023-07-30,North America,Corporate,Technology,Laptops,9526.23,9,0.05,2490.73,8.69,4.0
+CA-2023-10346,2023-07-30,Latin America,Consumer,Furniture,Ergonomic Chairs,1553.67,9,0.15,184.28,51.87,2.0
+CA-2023-10347,2023-07-31,Latin America,Corporate,Furniture,Office Desks,1471.89,7,0.0,609.82,39.29,4.0
+CA-2023-10348,2023-07-31,Asia Pacific,Consumer,Office Supplies,Binders,288.09,3,0.0,85.71,43.63,3.0
+CA-2023-10349,2023-08-01,Latin America,Corporate,Office Supplies,Paper Rolls,632.04,6,0.15,118.78,8.64,5.0
+CA-2023-10350,2023-08-02,Europe,Small Business,Office Supplies,Binders,73.96,4,0.0,12.39,26.6,3.0
+CA-2023-10351,2023-08-02,North America,Consumer,Office Supplies,Envelopes,220.22,7,0.2,46.36,41.04,5.0
+CA-2023-10352,2023-08-03,North America,Corporate,Furniture,Ergonomic Chairs,794.16,8,0.05,95.59,28.17,5.0
+CA-2023-10353,2023-08-03,North America,Corporate,Furniture,Ergonomic Chairs,841.77,9,0.0,130.5,31.32,3.0
+CA-2023-10354,2023-08-04,Asia Pacific,Small Business,Technology,Monitors,1168.65,5,0.05,139.39,48.48,4.0
+CA-2023-10355,2023-08-05,Latin America,Consumer,Furniture,Office Desks,271.59,3,0.0,90.2,57.52,5.0
+CA-2023-10356,2023-08-05,Europe,Consumer,Office Supplies,Storage Boxes,194.52,6,0.0,52.58,42.74,4.0
+CA-2023-10357,2023-08-06,North America,Consumer,Furniture,Bookcases,1521.09,9,0.0,274.3,46.31,5.0
+CA-2023-10358,2023-08-06,Europe,Consumer,Furniture,Office Desks,66.09,3,0.05,20.69,63.87,5.0
+CA-2023-10359,2023-08-07,Asia Pacific,Consumer,Office Supplies,Binders,358.82,11,0.0,102.4,50.63,3.0
+CA-2023-10360,2023-08-08,Asia Pacific,Corporate,Technology,Laptops,63.0,4,0.15,15.03,22.93,5.0
+CA-2023-10361,2023-08-08,Asia Pacific,Consumer,Technology,Laptops,1887.76,4,0.3,-248.04,21.12,4.0
+CA-2023-10362,2023-08-09,Asia Pacific,Consumer,Technology,Smartphones,390.96,6,0.0,155.8,50.54,5.0
+CA-2023-10363,2023-08-10,North America,Corporate,Office Supplies,Paper Rolls,321.03,9,0.05,112.22,20.12,5.0
+CA-2023-10364,2023-08-10,Latin America,Corporate,Furniture,Ergonomic Chairs,216.9,9,0.05,72.56,16.19,5.0
+CA-2023-10365,2023-08-11,Latin America,Small Business,Office Supplies,Binders,195.58,2,0.15,33.16,19.7,4.0
+CA-2023-10366,2023-08-11,Europe,Consumer,Furniture,Office Desks,2638.46,11,0.0,1026.17,64.15,5.0
+CA-2023-10367,2023-08-12,Europe,Corporate,Furniture,Ergonomic Chairs,1718.99,7,0.0,532.44,62.35,4.0
+CA-2023-10368,2023-08-13,Asia Pacific,Small Business,Technology,Monitors,1200.7,10,0.05,406.41,7.65,5.0
+CA-2023-10369,2023-08-13,Europe,Corporate,Furniture,Bookcases,183.54,3,0.0,30.62,10.85,3.0
+CA-2023-10370,2023-08-14,Latin America,Small Business,Technology,Accessories,1941.6,5,0.0,438.37,31.98,4.0
+CA-2023-10371,2023-08-14,Asia Pacific,Corporate,Furniture,Ergonomic Chairs,919.93,11,0.0,203.19,37.42,2.0
+CA-2023-10372,2023-08-15,Latin America,Consumer,Office Supplies,Envelopes,284.94,9,0.0,88.6,30.09,5.0
+CA-2023-10373,2023-08-16,Europe,Corporate,Technology,Servers,4230.66,7,0.05,1644.64,58.99,5.0
+CA-2023-10374,2023-08-16,Europe,Small Business,Office Supplies,Envelopes,218.07,9,0.2,15.65,34.91,1.0
+CA-2023-10375,2023-08-17,North America,Consumer,Technology,Accessories,252.0,9,0.05,91.77,6.85,5.0
+CA-2023-10376,2023-08-17,Latin America,Consumer,Technology,Accessories,161.68,4,0.0,63.2,20.53,5.0
+CA-2023-10377,2023-08-18,Latin America,Consumer,Office Supplies,Fasteners,662.8,8,,222.34,31.07,4.0
+CA-2023-10378,2023-08-19,North America,Corporate,Office Supplies,Fasteners,55.44,2,0.0,23.03,11.86,4.0
+CA-2023-10379,2023-08-19,Latin America,Consumer,Technology,Laptops,403.99,1,0.0,102.16,59.8,3.0
+CA-2023-10380,2023-08-20,North America,Consumer,Furniture,Lamps,1643.3,10,0.15,91.9,9.47,4.0
+CA-2023-10381,2023-08-20,North America,Consumer,Office Supplies,Binders,507.78,9,0.1,80.52,17.14,3.0
+CA-2023-10382,2023-08-21,Asia Pacific,Corporate,Office Supplies,Paper Rolls,279.6,6,0.15,2.41,51.96,4.0
+CA-2023-10383,2023-08-22,Latin America,Small Business,Furniture,Bookcases,296.56,2,0.15,48.32,37.4,4.0
+CA-2023-10384,2023-08-22,Asia Pacific,Small Business,Furniture,Lamps,313.4,1,0.3,1.92,21.57,4.0
+CA-2023-10385,2023-08-23,North America,Consumer,Office Supplies,Paper Rolls,354.87,9,0.0,127.33,29.57,5.0
+CA-2023-10386,2023-08-24,Europe,Corporate,Office Supplies,Fasteners,149.3,5,0.3,17.69,45.65,3.0
+CA-2023-10387,2023-08-24,North America,Corporate,Office Supplies,Paper Rolls,162.6,10,0.1,23.13,46.11,4.0
+CA-2023-10388,2023-08-25,Latin America,Consumer,Technology,Laptops,153.09,9,0.0,40.67,10.07,
+CA-2023-10389,2023-08-25,North America,Consumer,Furniture,Bookcases,458.55,3,0.15,107.92,25.02,5.0
+CA-2023-10390,2023-08-26,Asia Pacific,Consumer,Technology,Monitors,9273.66,11,,2667.45,15.69,4.0
+CA-2023-10391,2023-08-27,Asia Pacific,Corporate,Office Supplies,Envelopes,45.36,3,0.1,10.09,51.82,4.0
+CA-2023-10392,2023-08-27,Asia Pacific,Corporate,Technology,Accessories,467.28,11,0.0,98.18,7.88,3.0
+CA-2023-10393,2023-08-28,Asia Pacific,Consumer,Office Supplies,Storage Boxes,290.2,10,0.2,6.0,53.85,4.0
+CA-2023-10394,2023-08-28,Europe,Small Business,Technology,Smartphones,1292.49,9,0.1,339.77,25.17,5.0
+CA-2023-10395,2023-08-29,Europe,Corporate,Office Supplies,Envelopes,535.48,11,0.05,96.5,28.58,4.0
+CA-2023-10396,2023-08-30,Asia Pacific,Consumer,Technology,Laptops,297.96,6,0.0,124.85,14.71,5.0
+CA-2023-10397,2023-08-30,Latin America,Small Business,Office Supplies,Storage Boxes,164.5,7,0.1,54.24,10.14,3.0
+CA-2023-10398,2023-08-31,Asia Pacific,Corporate,Office Supplies,Fasteners,109.44,3,0.0,42.13,57.82,4.0
+CA-2023-10399,2023-08-31,Asia Pacific,Corporate,Furniture,Bookcases,481.67,7,0.0,112.67,12.64,5.0
+CA-2023-10400,2023-09-01,North America,Corporate,Technology,Smartphones,1343.46,6,0.2,-63.92,6.61,5.0
+CA-2023-10401,2023-09-02,Asia Pacific,Corporate,Furniture,Lamps,425.16,6,0.15,121.03,12.68,4.0
+CA-2023-10402,2023-09-02,North America,Corporate,Office Supplies,Storage Boxes,113.55,1,0.1,27.46,5.02,5.0
+CA-2023-10403,2023-09-03,Latin America,Corporate,Furniture,Ergonomic Chairs,2871.44,8,0.0,1149.25,5.02,3.0
+CA-2023-10404,2023-09-03,Latin America,Corporate,Office Supplies,Storage Boxes,362.65,5,0.3,3.66,31.65,2.0
+CA-2023-10405,2023-09-04,Latin America,Small Business,Office Supplies,Paper Rolls,104.04,6,0.15,16.01,55.02,4.0
+CA-2023-10406,2023-09-05,Latin America,Consumer,Office Supplies,Paper Rolls,102.24,3,0.0,17.61,42.32,4.0
+CA-2023-10407,2023-09-05,North America,Consumer,Furniture,Bookcases,284.36,4,0.1,89.33,46.46,5.0
+CA-2023-10408,2023-09-06,Europe,Consumer,Office Supplies,Binders,113.75,5,0.15,7.41,64.64,2.0
+CA-2023-10409,2023-09-07,North America,Corporate,Furniture,Office Desks,1300.59,9,0.05,165.14,61.92,1.0
+CA-2023-10410,2023-09-07,Asia Pacific,Small Business,Technology,Smartphones,1784.86,11,0.05,661.2,51.51,5.0
+CA-2023-10411,2023-09-08,North America,Corporate,Office Supplies,Binders,230.67,11,0.15,43.75,35.6,4.0
+CA-2023-10412,2023-09-08,Europe,Small Business,Office Supplies,Envelopes,175.77,7,0.3,-22.83,35.73,3.0
+CA-2023-10413,2023-09-09,Asia Pacific,Small Business,Technology,Monitors,363.02,7,0.0,137.74,23.95,4.0
+CA-2023-10414,2023-09-10,North America,Corporate,Furniture,Bookcases,446.0,10,0.0,165.95,23.83,2.0
+CA-2023-10415,2023-09-10,Asia Pacific,Consumer,Office Supplies,Envelopes,103.74,6,0.15,7.74,50.77,5.0
+CA-2023-10416,2023-09-11,Latin America,Corporate,Office Supplies,Binders,29.61,1,0.0,6.5,45.29,3.0
+CA-2023-10417,2023-09-11,Asia Pacific,Consumer,Furniture,Lamps,991.76,11,0.2,31.98,20.44,3.0
+CA-2023-10418,2023-09-12,North America,Consumer,Technology,Smartphones,2653.62,3,0.1,842.65,42.2,5.0
+CA-2023-10419,2023-09-13,North America,Consumer,Office Supplies,Envelopes,161.85,3,0.0,71.83,54.23,2.0
+CA-2023-10420,2023-09-13,Latin America,Corporate,Furniture,Office Desks,1134.6,10,0.0,244.44,7.85,4.0
+CA-2023-10421,2023-09-14,Europe,Small Business,Office Supplies,Paper Rolls,134.18,2,0.1,15.7,15.89,5.0
+CA-2023-10422,2023-09-14,Europe,Corporate,Furniture,Ergonomic Chairs,114.92,4,0.0,38.71,56.47,4.0
+CA-2023-10423,2023-09-15,Latin America,Consumer,Technology,Servers,1268.52,4,0.1,390.23,59.24,3.0
+CA-2023-10424,2023-09-16,Asia Pacific,Corporate,Office Supplies,Fasteners,200.6,10,0.2,26.75,48.98,5.0
+CA-2023-10425,2023-09-16,North America,Small Business,Office Supplies,Paper Rolls,100.26,3,0.05,12.34,11.29,4.0
+CA-2023-10426,2023-09-17,Asia Pacific,Consumer,Furniture,Bookcases,862.74,9,0.0,232.65,58.87,2.0
+CA-2023-10427,2023-09-17,North America,Small Business,Technology,Laptops,6038.1,10,0.0,1807.08,26.9,2.0
+CA-2023-10428,2023-09-18,North America,Consumer,Technology,Monitors,1985.96,4,0.0,448.06,10.14,5.0
+CA-2023-10429,2023-09-19,Asia Pacific,Small Business,Furniture,Office Desks,347.49,11,0.1,52.16,44.37,4.0
+CA-2023-10430,2023-09-19,North America,Corporate,Furniture,Ergonomic Chairs,442.47,7,0.05,110.1,53.43,4.0
+CA-2023-10431,2023-09-20,North America,Small Business,Office Supplies,Paper Rolls,110.05,5,0.1,16.06,53.44,3.0
+CA-2023-10432,2023-09-21,Asia Pacific,Consumer,Furniture,Office Desks,584.72,2,0.05,136.81,62.62,4.0
+CA-2023-10433,2023-09-21,Asia Pacific,Small Business,Office Supplies,Storage Boxes,420.2,11,0.05,99.19,25.75,3.0
+CA-2023-10434,2023-09-22,Asia Pacific,Small Business,Office Supplies,Fasteners,231.42,2,0.0,44.4,16.2,4.0
+CA-2023-10435,2023-09-22,Europe,Corporate,Furniture,Ergonomic Chairs,180.46,7,0.0,41.71,48.67,1.0
+CA-2023-10436,2023-09-23,Europe,Small Business,Furniture,Bookcases,1095.69,3,0.15,281.26,41.52,3.0
+CA-2023-10437,2023-09-24,Asia Pacific,Small Business,Technology,Accessories,8633.44,8,0.3,1111.75,15.63,4.0
+CA-2023-10438,2023-09-24,North America,Corporate,Technology,Monitors,4506.76,4,0.0,893.53,47.33,5.0
+CA-2023-10439,2023-09-25,North America,Consumer,Office Supplies,Storage Boxes,346.78,7,0.1,29.32,11.24,4.0
+CA-2023-10440,2023-09-25,Asia Pacific,Corporate,Office Supplies,Fasteners,119.52,6,0.1,32.29,11.35,1.0
+CA-2023-10441,2023-09-26,Latin America,Corporate,Office Supplies,Fasteners,63.72,4,0.0,25.02,27.57,5.0
+CA-2023-10442,2023-09-27,Asia Pacific,Corporate,Furniture,Office Desks,1499.72,4,0.15,167.77,60.46,3.0
+CA-2023-10443,2023-09-27,Asia Pacific,Corporate,Technology,Accessories,3073.95,9,0.15,91.54,17.5,5.0
+CA-2023-10444,2023-09-28,Latin America,Small Business,Furniture,Lamps,648.4,10,0.05,197.47,27.34,5.0
+CA-2023-10445,2023-09-28,Latin America,Corporate,Technology,Laptops,7360.55,5,0.0,1462.39,37.85,5.0
+CA-2023-10446,2023-09-29,North America,Corporate,Furniture,Lamps,1944.0,9,0.0,717.99,53.29,3.0
+CA-2023-10447,2023-09-30,Asia Pacific,Corporate,Furniture,Lamps,226.38,11,0.0,65.69,48.25,3.0
+CA-2023-10448,2023-09-30,Latin America,Corporate,Office Supplies,Storage Boxes,602.4,10,0.0,233.36,16.31,3.0
+CA-2023-10449,2023-10-01,Asia Pacific,Consumer,Office Supplies,Storage Boxes,367.51,11,0.1,72.49,31.01,4.0
+CA-2023-10450,2023-10-01,Latin America,Consumer,Office Supplies,Binders,211.0,10,0.2,44.69,27.39,3.0
+CA-2023-10451,2023-10-02,Europe,Small Business,Office Supplies,Paper Rolls,130.48,7,0.05,21.17,28.36,4.0
+CA-2023-10452,2023-10-03,North America,Corporate,Technology,Servers,1179.42,11,0.0,212.93,13.6,4.0
+CA-2023-10453,2023-10-03,Latin America,Small Business,Technology,Laptops,1354.2,2,0.15,212.66,24.96,3.0
+CA-2023-10454,2023-10-04,Europe,Consumer,Furniture,Lamps,1245.5,5,0.0,502.71,16.49,4.0
+CA-2023-10455,2023-10-05,Latin America,Corporate,Office Supplies,Envelopes,188.05,5,0.1,57.53,14.18,3.0
+CA-2023-10456,2023-10-05,Asia Pacific,Consumer,Technology,Laptops,1438.43,7,0.05,305.73,26.04,5.0
+CA-2023-10457,2023-10-06,North America,Corporate,Furniture,Office Desks,1122.6,6,0.0,417.11,53.12,2.0
+CA-2023-10458,2023-10-06,Europe,Corporate,Office Supplies,Storage Boxes,1105.76,8,0.0,336.64,14.85,3.0
+CA-2023-10459,2023-10-07,North America,Consumer,Technology,Laptops,960.96,7,0.0,157.06,39.44,5.0
+CA-2023-10460,2023-10-08,North America,Corporate,Furniture,Lamps,41.68,1,0.3,3.91,33.24,4.0
+CA-2023-10461,2023-10-08,Europe,Corporate,Office Supplies,Paper Rolls,343.2,11,0.05,36.47,63.4,2.0
+CA-2023-10462,2023-10-09,Asia Pacific,Corporate,Technology,Smartphones,2723.2,10,0.1,238.46,15.97,4.0
+CA-2023-10463,2023-10-09,Asia Pacific,Corporate,Furniture,Lamps,1541.28,8,0.0,565.21,7.74,5.0
+CA-2023-10464,2023-10-10,Asia Pacific,Consumer,Office Supplies,Fasteners,127.05,7,0.1,19.39,30.07,3.0
+CA-2023-10465,2023-10-11,Asia Pacific,Small Business,Office Supplies,Fasteners,116.54,2,0.0,41.09,57.77,5.0
+CA-2023-10466,2023-10-11,North America,Consumer,Furniture,Bookcases,275.96,4,0.05,50.56,49.35,2.0
+CA-2023-10467,2023-10-12,Latin America,Small Business,Furniture,Bookcases,2525.52,6,0.2,293.47,22.53,5.0
+CA-2023-10468,2023-10-12,Asia Pacific,Small Business,Technology,Servers,418.91,1,0.05,116.98,55.46,4.0
+CA-2023-10469,2023-10-13,Europe,Corporate,Furniture,Lamps,1090.15,5,0.1,369.37,48.05,4.0
+CA-2023-10470,2023-10-14,North America,Corporate,Technology,Monitors,5158.23,3,0.15,245.04,56.22,4.0
+CA-2023-10471,2023-10-14,Latin America,Corporate,Technology,Laptops,8721.9,9,0.2,1361.73,55.92,3.0
+CA-2023-10472,2023-10-15,Europe,Consumer,Technology,Monitors,169.83,3,0.1,39.31,48.93,4.0
+CA-2023-10473,2023-10-15,Latin America,Small Business,Technology,Laptops,4645.53,3,0.2,1037.33,57.26,5.0
+CA-2023-10474,2023-10-16,North America,Consumer,Office Supplies,Fasteners,223.32,6,0.05,56.91,10.04,5.0
+CA-2023-10475,2023-10-17,Latin America,Corporate,Furniture,Lamps,5371.56,9,0.0,2051.21,46.08,4.0
+CA-2023-10476,2023-10-17,Europe,Corporate,Technology,Monitors,143.1,3,0.1,38.22,23.65,5.0
+CA-2023-10477,2023-10-18,North America,Corporate,Technology,Servers,370.7,2,0.2,70.13,13.49,2.0
+CA-2023-10478,2023-10-19,Asia Pacific,Corporate,Technology,Accessories,2031.0,3,0.0,904.0,54.56,2.0
+CA-2023-10479,2023-10-19,Latin America,Corporate,Technology,Monitors,3955.68,8,0.0,1042.49,11.58,4.0
+CA-2023-10480,2023-10-20,North America,Consumer,Furniture,Bookcases,6492.2,11,0.0,2496.11,33.77,3.0
+CA-2023-10481,2023-10-20,Europe,Corporate,Furniture,Ergonomic Chairs,346.35,3,0.1,100.22,8.36,4.0
+CA-2023-10482,2023-10-21,Europe,Corporate,Technology,Accessories,940.44,2,0.05,175.1,27.37,5.0
+CA-2023-10483,2023-10-22,North America,Consumer,Furniture,Lamps,1966.76,4,0.1,349.13,12.81,3.0
+CA-2023-10484,2023-10-22,Asia Pacific,Corporate,Furniture,Ergonomic Chairs,681.93,9,0.0,222.26,20.06,4.0
+CA-2023-10485,2023-10-23,Europe,Consumer,Furniture,Lamps,400.53,1,0.05,139.63,33.84,3.0
+CA-2023-10486,2023-10-23,Europe,Small Business,Technology,Monitors,219.05,5,0.05,66.01,41.48,2.0
+CA-2023-10487,2023-10-24,North America,Corporate,Office Supplies,Paper Rolls,408.54,11,0.1,61.1,16.77,5.0
+CA-2023-10488,2023-10-25,Europe,Small Business,Office Supplies,Envelopes,182.5,5,0.05,27.87,57.02,4.0
+CA-2023-10489,2023-10-25,Latin America,Corporate,Furniture,Lamps,2248.95,11,0.0,872.13,37.86,1.0
+CA-2023-10490,2023-10-26,North America,Small Business,Office Supplies,Fasteners,167.49,9,0.3,-19.19,43.18,3.0
+CA-2023-10491,2023-10-26,Latin America,Corporate,Technology,Accessories,461.42,2,0.05,114.45,30.88,4.0
+CA-2023-10492,2023-10-27,Asia Pacific,Consumer,Furniture,Ergonomic Chairs,82.88,4,0.0,15.06,54.3,5.0
+CA-2023-10493,2023-10-28,North America,Consumer,Office Supplies,Binders,400.12,7,0.15,30.25,56.21,5.0
+CA-2023-10494,2023-10-28,Asia Pacific,Corporate,Furniture,Lamps,279.52,8,0.1,60.49,14.27,3.0
+CA-2023-10495,2023-10-29,Latin America,Consumer,Technology,Servers,677.3,2,0.0,160.0,47.76,5.0
+CA-2023-10496,2023-10-29,Asia Pacific,Consumer,Office Supplies,Storage Boxes,1107.96,6,0.0,370.69,47.67,4.0
+CA-2023-10497,2023-10-30,North America,Consumer,Office Supplies,Storage Boxes,501.05,11,0.1,107.62,10.06,5.0
+CA-2023-10498,2023-10-31,Europe,Corporate,Technology,Servers,555.99,1,0.2,104.34,57.56,4.0
+CA-2023-10499,2023-10-31,Asia Pacific,Consumer,Office Supplies,Envelopes,61.06,2,0.2,10.85,38.41,4.0
+CA-2023-10500,2023-11-01,Europe,Consumer,Office Supplies,Paper Rolls,93.64,4,0.0,41.95,10.25,4.0
+CA-2023-10501,2023-11-02,Europe,Small Business,Technology,Smartphones,1746.85,7,0.05,500.56,59.55,5.0
+CA-2023-10502,2023-11-02,North America,Consumer,Technology,Laptops,3426.72,6,0.0,1077.43,42.34,5.0
+CA-2023-10503,2023-11-03,Latin America,Corporate,Technology,Monitors,4498.72,8,0.1,710.06,23.35,4.0
+CA-2023-10504,2023-11-03,North America,Consumer,Technology,Accessories,573.03,9,0.0,94.39,61.9,3.0
+CA-2023-10505,2023-11-04,North America,Consumer,Office Supplies,Binders,157.14,9,0.15,16.67,21.61,4.0
+CA-2023-10506,2023-11-05,Latin America,Corporate,Technology,Accessories,772.76,4,0.0,171.27,9.72,2.0
+CA-2023-10507,2023-11-05,Latin America,Consumer,Office Supplies,Fasteners,217.04,4,0.3,-13.24,38.09,4.0
+CA-2023-10508,2023-11-06,Asia Pacific,Corporate,Furniture,Lamps,1860.03,9,0.05,595.82,25.41,5.0
+CA-2023-10509,2023-11-06,Asia Pacific,Corporate,Office Supplies,Paper Rolls,144.66,3,0.05,57.38,28.83,5.0
+CA-2023-10510,2023-11-07,North America,Small Business,Technology,Smartphones,276.48,9,0.0,116.15,18.78,2.0
+CA-2023-10511,2023-11-08,Europe,Corporate,Furniture,Office Desks,227.22,3,0.0,58.22,49.34,3.0
+CA-2023-10512,2023-11-08,Latin America,Consumer,Furniture,Bookcases,604.12,11,0.0,242.05,64.15,3.0
+CA-2023-10513,2023-11-09,Latin America,Corporate,Technology,Servers,185.28,1,0.2,-1.4,17.92,4.0
+CA-2023-10514,2023-11-09,Europe,Small Business,Office Supplies,Envelopes,198.28,4,0.0,71.45,6.99,4.0
+CA-2023-10515,2023-11-10,Asia Pacific,Small Business,Office Supplies,Binders,86.16,2,0.05,23.96,62.63,4.0
+CA-2023-10516,2023-11-11,Europe,Consumer,Furniture,Office Desks,607.42,11,0.2,56.05,59.32,3.0
+CA-2023-10517,2023-11-11,Asia Pacific,Consumer,Technology,Accessories,7386.3,10,0.15,1900.93,31.42,5.0
+CA-2023-10518,2023-11-12,North America,Consumer,Office Supplies,Storage Boxes,386.28,9,0.05,107.23,6.32,5.0
+CA-2023-10519,2023-11-12,Europe,Consumer,Technology,Monitors,995.92,8,0.1,301.97,39.16,5.0
+CA-2023-10520,2023-11-13,Asia Pacific,Consumer,Furniture,Office Desks,201.18,3,0.2,5.67,33.5,4.0
+CA-2023-10521,2023-11-14,Latin America,Corporate,Furniture,Office Desks,3850.5,10,0.05,424.59,57.74,1.0
+CA-2023-10522,2023-11-14,North America,Small Business,Office Supplies,Fasteners,34.32,2,0.0,8.95,11.42,2.0
+CA-2023-10523,2023-11-15,Latin America,Corporate,Office Supplies,Storage Boxes,142.2,5,0.1,46.52,53.52,5.0
+CA-2023-10524,2023-11-16,Latin America,Corporate,Furniture,Ergonomic Chairs,989.12,8,0.05,391.19,50.79,3.0
+CA-2023-10525,2023-11-16,Latin America,Consumer,Office Supplies,Envelopes,747.9,10,0.0,126.65,56.17,4.0
+CA-2023-10526,2023-11-17,Europe,Consumer,Technology,Monitors,128.56,2,0.0,36.24,29.93,4.0
+CA-2023-10527,2023-11-17,Europe,Consumer,Technology,Servers,2045.98,2,,563.81,58.25,4.0
+CA-2023-10528,2023-11-18,Europe,Consumer,Office Supplies,Fasteners,492.56,8,0.2,94.3,12.82,1.0
+CA-2023-10529,2023-11-19,Latin America,Corporate,Technology,Smartphones,560.01,3,0.0,154.83,41.77,1.0
+CA-2023-10530,2023-11-19,Europe,Corporate,Office Supplies,Storage Boxes,574.98,7,0.0,88.85,39.93,5.0
+CA-2023-10531,2023-11-20,Europe,Small Business,Office Supplies,Fasteners,64.16,4,0.15,0.56,33.1,3.0
+CA-2023-10532,2023-11-20,North America,Corporate,Office Supplies,Binders,202.51,11,0.05,36.86,60.0,4.0
+CA-2023-10533,2023-11-21,North America,Consumer,Furniture,Lamps,903.3,2,0.05,205.06,13.0,4.0
+CA-2023-10534,2023-11-22,Europe,Consumer,Technology,Smartphones,7868.63,11,0.05,1832.41,50.86,3.0
+CA-2023-10535,2023-11-22,Latin America,Corporate,Office Supplies,Envelopes,16.77,1,0.15,4.75,27.56,4.0
+CA-2023-10536,2023-11-23,Latin America,Consumer,Technology,Accessories,6420.64,8,0.05,1203.75,59.86,4.0
+CA-2023-10537,2023-11-23,Asia Pacific,Corporate,Technology,Servers,1169.3,5,0.15,70.43,57.46,2.0
+CA-2023-10538,2023-11-24,North America,Small Business,Furniture,Bookcases,1043.7,6,0.0,343.06,13.24,4.0
+CA-2023-10539,2023-11-25,North America,Corporate,Office Supplies,Envelopes,60.79,1,0.05,13.96,61.61,4.0
+CA-2023-10540,2023-11-25,North America,Corporate,Furniture,Lamps,637.92,4,0.15,81.04,33.88,5.0
+CA-2023-10541,2023-11-26,Latin America,Consumer,Technology,Accessories,7469.37,9,0.0,2859.26,14.65,5.0
+CA-2023-10542,2023-11-26,Europe,Consumer,Office Supplies,Envelopes,175.6,8,0.0,29.84,46.69,3.0
+CA-2023-10543,2023-11-27,Asia Pacific,Corporate,Office Supplies,Envelopes,797.1,10,0.0,278.53,20.36,3.0
+CA-2023-10544,2023-11-28,Latin America,Consumer,Technology,Smartphones,1795.44,8,0.0,692.15,15.95,4.0
+CA-2023-10545,2023-11-28,Latin America,Consumer,Office Supplies,Binders,266.24,8,0.15,41.4,51.79,1.0
+CA-2023-10546,2023-11-29,Europe,Small Business,Office Supplies,Binders,117.3,5,0.0,18.84,60.42,5.0
+CA-2023-10547,2023-11-30,Europe,Small Business,Office Supplies,Fasteners,524.26,11,0.05,194.53,61.13,3.0
+CA-2023-10548,2023-11-30,Latin America,Small Business,Furniture,Lamps,681.5,10,0.0,205.64,61.94,4.0
+CA-2023-10549,2023-12-01,Latin America,Consumer,Office Supplies,Storage Boxes,228.3,5,0.0,51.93,20.55,5.0
+CA-2023-10550,2023-12-01,Europe,Corporate,Furniture,Bookcases,292.23,3,0.05,111.88,53.19,4.0
+CA-2023-10551,2023-12-02,Latin America,Corporate,Furniture,Lamps,515.18,2,0.05,66.67,7.83,4.0
+CA-2023-10552,2023-12-03,North America,Small Business,Furniture,Lamps,207.64,2,0.0,77.07,46.94,3.0
+CA-2023-10553,2023-12-03,North America,Corporate,Furniture,Ergonomic Chairs,581.28,4,0.0,168.11,54.13,3.0
+CA-2023-10554,2023-12-04,Europe,Corporate,Technology,Servers,2713.3,5,0.0,993.84,14.73,4.0
+CA-2023-10555,2023-12-04,Latin America,Consumer,Furniture,Office Desks,178.2,9,0.0,32.2,19.15,2.0
+CA-2023-10556,2023-12-05,North America,Small Business,Office Supplies,Binders,27.92,1,0.0,10.14,38.25,1.0
+CA-2023-10557,2023-12-06,Latin America,Consumer,Office Supplies,Envelopes,185.1,10,0.1,18.72,27.52,2.0
+CA-2023-10558,2023-12-06,North America,Small Business,Furniture,Office Desks,3783.45,11,0.15,687.26,43.41,5.0
+CA-2023-10559,2023-12-07,North America,Corporate,Office Supplies,Envelopes,255.15,9,0.15,32.75,11.77,3.0
+CA-2023-10560,2023-12-07,Latin America,Consumer,Furniture,Lamps,2086.62,6,0.0,868.81,64.95,5.0
+CA-2023-10561,2023-12-08,Europe,Consumer,Technology,Monitors,236.04,4,0.0,93.96,11.64,2.0
+CA-2023-10562,2023-12-09,Europe,Consumer,Furniture,Ergonomic Chairs,724.32,6,0.0,155.78,50.26,4.0
+CA-2023-10563,2023-12-09,North America,Small Business,Furniture,Ergonomic Chairs,275.09,1,0.1,55.93,33.96,1.0
+CA-2023-10564,2023-12-10,Latin America,Consumer,Office Supplies,Fasteners,768.33,9,0.05,207.82,40.69,4.0
+CA-2023-10565,2023-12-10,Asia Pacific,Consumer,Technology,Accessories,72.57,1,0.05,18.54,30.52,2.0
+CA-2023-10566,2023-12-11,Asia Pacific,Consumer,Technology,Laptops,386.43,3,0.0,138.48,31.49,5.0
+CA-2023-10567,2023-12-12,North America,Corporate,Furniture,Ergonomic Chairs,381.01,7,0.1,79.56,41.55,3.0
+CA-2023-10568,2023-12-12,Latin America,Consumer,Technology,Smartphones,1237.72,2,0.2,283.44,19.13,5.0
+CA-2023-10569,2023-12-13,North America,Corporate,Furniture,Lamps,3176.53,7,0.0,1293.91,59.79,5.0
+CA-2023-10570,2023-12-14,North America,Corporate,Furniture,Bookcases,2800.35,9,0.0,681.08,42.18,4.0
+CA-2023-10571,2023-12-14,Asia Pacific,Consumer,Furniture,Office Desks,1846.0,5,0.15,509.79,38.94,3.0
+CA-2023-10572,2023-12-15,Europe,Consumer,Technology,Accessories,7942.41,7,0.0,3040.0,64.9,1.0
+CA-2023-10573,2023-12-15,Asia Pacific,Consumer,Technology,Monitors,1061.64,3,0.0,310.38,30.97,3.0
+CA-2023-10574,2023-12-16,North America,Corporate,Technology,Monitors,6193.0,11,0.0,1065.89,62.62,3.0
+CA-2023-10575,2023-12-17,Europe,Consumer,Technology,Servers,4038.6,10,0.2,332.79,15.74,2.0
+CA-2023-10576,2023-12-17,North America,Consumer,Furniture,Lamps,828.8,5,0.0,356.98,14.63,5.0
+CA-2023-10577,2023-12-18,Asia Pacific,Corporate,Furniture,Ergonomic Chairs,987.6,10,0.1,143.01,42.04,4.0
+CA-2023-10578,2023-12-18,Latin America,Consumer,Office Supplies,Fasteners,358.15,5,0.3,-25.63,13.09,4.0
+CA-2023-10579,2023-12-19,Asia Pacific,Corporate,Furniture,Office Desks,414.47,7,0.0,67.16,31.85,5.0
+CA-2023-10580,2023-12-20,Latin America,Consumer,Office Supplies,Fasteners,151.38,3,0.1,22.58,62.87,1.0
+CA-2023-10581,2023-12-20,North America,Consumer,Office Supplies,Paper Rolls,610.08,6,0.0,99.9,63.16,5.0
+CA-2023-10582,2023-12-21,Asia Pacific,Corporate,Furniture,Lamps,1689.92,4,0.0,371.75,54.52,5.0
+CA-2023-10583,2023-12-21,Latin America,Consumer,Furniture,Office Desks,1050.39,9,0.1,144.93,27.84,2.0
+CA-2023-10584,2023-12-22,Latin America,Corporate,Technology,Laptops,790.78,2,0.0,264.36,28.58,4.0
+CA-2023-10585,2023-12-23,Europe,Corporate,Furniture,Ergonomic Chairs,2145.0,10,0.0,582.13,5.47,4.0
+CA-2023-10586,2023-12-23,Asia Pacific,Small Business,Technology,Laptops,868.5,9,0.1,253.9,35.91,4.0
+CA-2023-10587,2023-12-24,North America,Consumer,Furniture,Lamps,162.6,2,0.05,26.78,49.55,5.0
+CA-2023-10588,2023-12-24,Latin America,Small Business,Furniture,Bookcases,65.34,2,0.2,10.59,47.25,3.0
+CA-2023-10589,2023-12-25,North America,Consumer,Technology,Servers,242.79,3,0.1,44.1,28.17,4.0
+CA-2023-10590,2023-12-26,North America,Consumer,Office Supplies,Storage Boxes,280.35,5,0.0,56.31,60.82,4.0
+CA-2023-10591,2023-12-26,Europe,Corporate,Furniture,Lamps,1108.17,7,0.05,358.59,41.46,1.0
+CA-2023-10592,2023-12-27,North America,Small Business,Furniture,Lamps,370.09,7,0.1,91.84,7.6,3.0
+CA-2023-10593,2023-12-28,Latin America,Small Business,Technology,Servers,1335.81,1,0.15,237.33,33.72,4.0
+CA-2023-10594,2023-12-28,Asia Pacific,Small Business,Technology,Monitors,671.69,1,0.2,120.32,6.43,1.0
+CA-2023-10595,2023-12-29,Asia Pacific,Consumer,Office Supplies,Binders,379.44,9,0.05,112.13,12.08,3.0
+CA-2023-10596,2023-12-29,Asia Pacific,Consumer,Technology,Monitors,4400.16,6,0.0,1380.27,36.99,3.0
+CA-2023-10597,2023-12-30,Europe,Consumer,Office Supplies,Fasteners,244.56,6,0.1,53.58,5.76,2.0
+CA-2023-10598,2023-12-31,Europe,Corporate,Office Supplies,Storage Boxes,64.86,3,0.0,28.81,15.96,3.0
+CA-2023-10599,2023-12-31,North America,Corporate,Office Supplies,Binders,28.18,1,0.0,6.09,48.55,5.0
+CA-2024-10600,2024-01-01,Europe,Consumer,Office Supplies,Paper Rolls,121.52,8,0.05,42.43,41.13,4.0
+CA-2024-10601,2024-01-01,Latin America,Small Business,Technology,Accessories,2498.04,9,0.15,341.18,43.02,3.0
+CA-2024-10602,2024-01-02,Latin America,Corporate,Office Supplies,Storage Boxes,40.33,1,0.0,7.33,24.86,4.0
+CA-2024-10603,2024-01-03,Latin America,Corporate,Office Supplies,Envelopes,382.26,6,0.2,91.78,58.88,5.0
+CA-2024-10604,2024-01-03,North America,Corporate,Furniture,Bookcases,293.41,1,0.05,52.89,27.07,5.0
+CA-2024-10605,2024-01-04,Europe,Consumer,Technology,Servers,1508.85,7,0.1,140.03,8.23,1.0
+CA-2024-10606,2024-01-04,Latin America,Corporate,Office Supplies,Fasteners,44.4,2,0.0,18.8,44.61,4.0
+CA-2024-10607,2024-01-05,Latin America,Corporate,Furniture,Office Desks,170.67,3,0.2,-1.98,34.76,5.0
+CA-2024-10608,2024-01-06,Europe,Corporate,Office Supplies,Fasteners,190.33,7,0.05,56.63,16.82,3.0
+CA-2024-10609,2024-01-06,Europe,Consumer,Technology,Accessories,2672.23,11,0.0,790.15,31.47,5.0
+CA-2024-10610,2024-01-07,Asia Pacific,Small Business,Office Supplies,Paper Rolls,106.24,4,0.05,26.17,29.65,3.0
+CA-2024-10611,2024-01-08,Europe,Small Business,Furniture,Ergonomic Chairs,329.64,6,0.1,21.98,36.14,5.0
+CA-2024-10612,2024-01-08,North America,Small Business,Office Supplies,Storage Boxes,216.08,8,0.05,30.17,55.82,5.0
+CA-2024-10613,2024-01-09,Latin America,Corporate,Technology,Smartphones,2137.1,7,0.0,444.42,14.25,4.0
+CA-2024-10614,2024-01-09,Latin America,Small Business,Office Supplies,Storage Boxes,444.75,5,0.2,70.88,54.29,4.0
+CA-2024-10615,2024-01-10,North America,Corporate,Technology,Monitors,9170.34,6,0.0,3712.92,52.3,4.0
+CA-2024-10616,2024-01-11,North America,Corporate,Office Supplies,Storage Boxes,327.67,7,0.15,69.18,40.46,3.0
+CA-2024-10617,2024-01-11,Europe,Corporate,Technology,Smartphones,429.8,10,0.15,118.42,45.92,4.0
+CA-2024-10618,2024-01-12,Europe,Corporate,Furniture,Ergonomic Chairs,1467.45,9,0.0,645.43,16.89,2.0
+CA-2024-10619,2024-01-12,North America,Corporate,Furniture,Lamps,316.53,9,0.2,49.7,50.7,4.0
+CA-2024-10620,2024-01-13,Asia Pacific,Consumer,Office Supplies,Paper Rolls,21.59,1,0.0,5.34,35.32,4.0
+CA-2024-10621,2024-01-14,North America,Consumer,Technology,Laptops,3144.96,8,0.0,998.74,27.33,3.0
+CA-2024-10622,2024-01-14,Asia Pacific,Consumer,Furniture,Ergonomic Chairs,550.34,2,0.05,94.41,59.47,5.0
+CA-2024-10623,2024-01-15,Latin America,Consumer,Office Supplies,Envelopes,260.15,5,0.0,40.05,24.37,4.0
+CA-2024-10624,2024-01-15,Asia Pacific,Consumer,Technology,Accessories,2901.12,4,0.05,1095.69,63.72,3.0
+CA-2024-10625,2024-01-16,North America,Corporate,Technology,Servers,776.88,9,0.15,0.27,51.81,3.0
+CA-2024-10626,2024-01-17,Latin America,Corporate,Office Supplies,Binders,23.58,1,0.15,6.67,53.96,5.0
+CA-2024-10627,2024-01-17,Asia Pacific,Corporate,Office Supplies,Fasteners,95.66,2,0.1,6.19,42.56,3.0
+CA-2024-10628,2024-01-18,Asia Pacific,Corporate,Technology,Accessories,2235.55,5,0.1,384.92,37.89,4.0
+CA-2024-10629,2024-01-18,Latin America,Consumer,Furniture,Lamps,32.81,1,0.0,8.01,36.38,4.0
+CA-2024-10630,2024-01-19,North America,Consumer,Office Supplies,Storage Boxes,43.01,1,0.05,15.14,14.11,4.0
+CA-2024-10631,2024-01-20,Asia Pacific,Corporate,Furniture,Bookcases,827.7,10,0.0,233.91,24.1,5.0
+CA-2024-10632,2024-01-20,Europe,Corporate,Office Supplies,Envelopes,304.7,11,0.15,69.09,20.07,5.0
+CA-2024-10633,2024-01-21,Latin America,Consumer,Furniture,Office Desks,228.96,4,0.05,27.85,64.69,5.0
+CA-2024-10634,2024-01-22,Asia Pacific,Corporate,Office Supplies,Storage Boxes,119.32,4,0.15,19.31,11.8,4.0
+CA-2024-10635,2024-01-22,Latin America,Small Business,Office Supplies,Storage Boxes,159.57,3,0.0,24.48,39.07,5.0
+CA-2024-10636,2024-01-23,Europe,Corporate,Office Supplies,Binders,586.2,10,0.3,30.18,6.0,1.0
+CA-2024-10637,2024-01-23,North America,Corporate,Technology,Monitors,3979.26,9,0.05,1271.03,21.71,3.0
+CA-2024-10638,2024-01-24,Europe,Small Business,Technology,Accessories,1204.4,4,0.0,187.36,15.93,5.0
+CA-2024-10639,2024-01-25,Asia Pacific,Small Business,Office Supplies,Envelopes,89.68,1,0.05,29.72,7.49,5.0
+CA-2024-10640,2024-01-25,Asia Pacific,Small Business,Technology,Servers,1963.16,4,0.1,504.86,19.81,4.0
+CA-2024-10641,2024-01-26,North America,Consumer,Furniture,Bookcases,1122.24,8,0.2,261.41,63.55,4.0
+CA-2024-10642,2024-01-26,North America,Corporate,Technology,Servers,4319.12,8,0.0,1556.82,25.1,5.0
+CA-2024-10643,2024-01-27,North America,Corporate,Office Supplies,Binders,176.6,10,0.0,54.79,5.68,4.0
+CA-2024-10644,2024-01-28,Europe,Consumer,Technology,Accessories,7562.8,10,0.1,2006.33,53.39,5.0
+CA-2024-10645,2024-01-28,Europe,Corporate,Office Supplies,Paper Rolls,93.46,2,0.0,40.27,10.74,3.0
+CA-2024-10646,2024-01-29,Asia Pacific,Consumer,Office Supplies,Storage Boxes,407.99,11,0.0,101.65,61.87,2.0
+CA-2024-10647,2024-01-29,North America,Consumer,Office Supplies,Fasteners,673.95,5,0.2,33.97,37.16,4.0
+CA-2024-10648,2024-01-30,Latin America,Corporate,Furniture,Lamps,253.02,2,0.15,48.42,18.43,4.0
+CA-2024-10649,2024-01-31,Europe,Consumer,Technology,Laptops,823.76,2,,106.9,46.02,5.0
+CA-2024-10650,2024-01-31,Asia Pacific,Small Business,Technology,Laptops,638.48,8,0.1,201.52,25.08,5.0
+CA-2024-10651,2024-02-01,Latin America,Small Business,Furniture,Bookcases,243.69,3,0.05,71.45,49.4,3.0
+CA-2024-10652,2024-02-01,Europe,Consumer,Furniture,Lamps,1454.8,8,0.1,384.03,13.96,4.0
+CA-2024-10653,2024-02-02,Europe,Consumer,Furniture,Office Desks,1183.9,10,0.1,223.11,38.29,3.0
+CA-2024-10654,2024-02-03,Europe,Corporate,Furniture,Office Desks,324.0,10,0.0,95.18,56.19,5.0
+CA-2024-10655,2024-02-03,North America,Corporate,Furniture,Bookcases,531.06,6,0.1,116.98,38.23,4.0
+CA-2024-10656,2024-02-04,North America,Consumer,Office Supplies,Paper Rolls,464.1,7,0.0,125.96,60.3,3.0
+CA-2024-10657,2024-02-05,Latin America,Corporate,Technology,Servers,287.38,2,0.15,44.13,41.8,5.0
+CA-2024-10658,2024-02-05,Europe,Corporate,Technology,Servers,11748.9,10,0.0,2124.1,10.52,5.0
+CA-2024-10659,2024-02-06,North America,Small Business,Technology,Monitors,410.22,9,0.1,90.08,14.4,5.0
+CA-2024-10660,2024-02-06,Asia Pacific,Consumer,Office Supplies,Paper Rolls,510.4,10,0.2,-17.75,39.72,3.0
+CA-2024-10661,2024-02-07,Asia Pacific,Corporate,Office Supplies,Binders,70.26,3,0.0,22.75,63.88,4.0
+CA-2024-10662,2024-02-08,North America,Small Business,Furniture,Bookcases,3086.4,8,0.1,378.72,33.11,4.0
+CA-2024-10663,2024-02-08,Europe,Small Business,Office Supplies,Storage Boxes,715.88,11,0.05,184.2,64.23,3.0
+CA-2024-10664,2024-02-09,Asia Pacific,Small Business,Office Supplies,Fasteners,58.05,3,0.1,13.95,11.35,5.0
+CA-2024-10665,2024-02-09,Asia Pacific,Corporate,Furniture,Ergonomic Chairs,4114.26,6,0.0,1539.8,34.83,5.0
+CA-2024-10666,2024-02-10,Latin America,Corporate,Technology,Smartphones,4242.92,11,0.05,498.14,21.29,4.0
+CA-2024-10667,2024-02-11,Asia Pacific,Consumer,Technology,Accessories,3505.2,5,0.15,644.91,38.91,4.0
+CA-2024-10668,2024-02-11,North America,Small Business,Technology,Smartphones,859.44,6,0.0,353.02,41.98,5.0
+CA-2024-10669,2024-02-12,Latin America,Corporate,Furniture,Lamps,66.03,3,0.05,8.73,18.49,4.0
+CA-2024-10670,2024-02-12,North America,Consumer,Office Supplies,Binders,227.12,8,0.0,92.71,47.74,4.0
+CA-2024-10671,2024-02-13,Asia Pacific,Consumer,Technology,Laptops,2114.53,11,0.0,491.02,18.89,4.0
+CA-2024-10672,2024-02-14,Europe,Consumer,Office Supplies,Storage Boxes,325.04,4,0.15,24.95,61.02,3.0
+CA-2024-10673,2024-02-14,North America,Small Business,Furniture,Ergonomic Chairs,1309.86,9,0.1,208.05,45.19,5.0
+CA-2024-10674,2024-02-15,Latin America,Corporate,Office Supplies,Envelopes,660.6,9,0.05,133.49,57.17,2.0
+CA-2024-10675,2024-02-15,Asia Pacific,Small Business,Technology,Servers,2775.9,10,0.0,670.15,52.7,4.0
+CA-2024-10676,2024-02-16,Asia Pacific,Corporate,Office Supplies,Storage Boxes,51.45,3,0.0,9.77,54.85,5.0
+CA-2024-10677,2024-02-17,Asia Pacific,Consumer,Office Supplies,Paper Rolls,160.2,9,0.1,46.19,13.09,4.0
+CA-2024-10678,2024-02-17,Europe,Consumer,Office Supplies,Paper Rolls,177.36,6,0.05,31.64,25.57,4.0
+CA-2024-10679,2024-02-18,Europe,Corporate,Technology,Laptops,2423.4,5,0.0,930.24,32.54,4.0
+CA-2024-10680,2024-02-19,North America,Small Business,Technology,Smartphones,1187.48,7,0.0,285.38,8.42,4.0
+CA-2024-10681,2024-02-19,Asia Pacific,Consumer,Office Supplies,Fasteners,168.48,6,0.15,23.96,24.04,3.0
+CA-2024-10682,2024-02-20,Asia Pacific,Consumer,Furniture,Office Desks,307.89,9,0.0,76.99,52.95,4.0
+CA-2024-10683,2024-02-20,Asia Pacific,Consumer,Technology,Servers,1332.27,9,0.05,448.57,50.25,5.0
+CA-2024-10684,2024-02-21,Latin America,Corporate,Furniture,Bookcases,981.97,11,0.15,89.0,37.63,4.0
+CA-2024-10685,2024-02-22,Latin America,Small Business,Office Supplies,Envelopes,60.6,4,0.0,23.02,44.2,5.0
+CA-2024-10686,2024-02-22,Asia Pacific,Corporate,Technology,Monitors,3190.04,4,0.15,880.7,52.81,4.0
+CA-2024-10687,2024-02-23,North America,Corporate,Furniture,Lamps,19.41,1,0.0,3.23,34.97,5.0
+CA-2024-10688,2024-02-23,North America,Small Business,Furniture,Ergonomic Chairs,546.95,5,0.1,54.08,56.59,5.0
+CA-2024-10689,2024-02-24,Latin America,Small Business,Furniture,Office Desks,1318.57,11,0.1,417.0,29.6,4.0
+CA-2024-10690,2024-02-25,North America,Consumer,Office Supplies,Envelopes,633.24,6,0.0,261.6,30.53,
+CA-2024-10691,2024-02-25,North America,Corporate,Furniture,Ergonomic Chairs,2123.88,11,0.1,164.58,26.0,2.0
+CA-2024-10692,2024-02-26,Asia Pacific,Corporate,Office Supplies,Storage Boxes,75.72,1,,31.21,52.29,3.0
+CA-2024-10693,2024-02-26,North America,Corporate,Technology,Servers,589.92,4,0.0,242.83,63.87,5.0
+CA-2024-10694,2024-02-27,Latin America,Consumer,Furniture,Office Desks,280.39,11,0.15,23.29,64.46,5.0
+CA-2024-10695,2024-02-28,Europe,Corporate,Office Supplies,Paper Rolls,88.05,3,0.1,11.81,7.38,3.0
+CA-2024-10696,2024-02-28,Europe,Corporate,Furniture,Bookcases,465.66,9,0.0,134.3,19.99,5.0
+CA-2024-10697,2024-02-29,Europe,Consumer,Furniture,Office Desks,387.44,8,0.2,77.11,49.17,4.0
+CA-2024-10698,2024-02-29,Asia Pacific,Corporate,Office Supplies,Binders,148.61,7,0.2,34.54,43.44,4.0
+CA-2024-10699,2024-03-01,Asia Pacific,Consumer,Office Supplies,Fasteners,45.88,1,0.2,-1.41,36.09,5.0
+CA-2024-10700,2024-03-02,North America,Consumer,Office Supplies,Envelopes,214.1,10,0.0,35.86,48.6,4.0
+CA-2024-10701,2024-03-02,Latin America,Corporate,Technology,Accessories,5608.79,11,0.0,2237.26,49.23,4.0
+CA-2024-10702,2024-03-03,Europe,Corporate,Technology,Monitors,3460.38,7,0.0,850.18,27.69,1.0
+CA-2024-10703,2024-03-04,Latin America,Consumer,Office Supplies,Paper Rolls,199.41,3,0.0,75.44,28.55,3.0
+CA-2024-10704,2024-03-04,Latin America,Consumer,Office Supplies,Storage Boxes,1620.52,11,0.3,122.23,52.22,2.0
+CA-2024-10705,2024-03-05,Latin America,Consumer,Furniture,Ergonomic Chairs,1663.83,7,0.0,408.48,40.18,5.0
+CA-2024-10706,2024-03-05,North America,Small Business,Technology,Monitors,283.0,5,0.1,68.47,20.11,2.0
+CA-2024-10707,2024-03-06,Asia Pacific,Corporate,Furniture,Lamps,449.67,3,0.05,146.35,56.95,5.0
+CA-2024-10708,2024-03-07,Latin America,Small Business,Office Supplies,Fasteners,87.21,3,0.0,33.84,45.21,4.0
+CA-2024-10709,2024-03-07,Asia Pacific,Consumer,Furniture,Lamps,600.6,4,,172.98,50.35,4.0
+CA-2024-10710,2024-03-08,Europe,Small Business,Technology,Laptops,1742.49,9,0.0,696.31,53.63,5.0
+CA-2024-10711,2024-03-08,North America,Corporate,Technology,Monitors,359.86,1,0.05,125.92,31.71,5.0
+CA-2024-10712,2024-03-09,Europe,Corporate,Office Supplies,Paper Rolls,17.97,1,0.2,3.12,63.07,4.0
+CA-2024-10713,2024-03-10,Europe,Small Business,Technology,Servers,383.04,4,0.0,136.77,9.09,3.0
+CA-2024-10714,2024-03-10,Europe,Small Business,Office Supplies,Envelopes,189.2,8,0.1,62.56,30.7,4.0
+CA-2024-10715,2024-03-11,Latin America,Consumer,Office Supplies,Paper Rolls,196.84,4,0.0,63.53,44.08,4.0
+CA-2024-10716,2024-03-11,Europe,Consumer,Office Supplies,Paper Rolls,487.08,11,0.2,110.52,24.32,4.0
+CA-2024-10717,2024-03-12,Europe,Consumer,Furniture,Lamps,1121.8,4,0.15,171.0,52.05,3.0
+CA-2024-10718,2024-03-13,Europe,Consumer,Technology,Laptops,2639.79,9,0.0,647.17,49.64,3.0
+CA-2024-10719,2024-03-13,Latin America,Small Business,Furniture,Ergonomic Chairs,975.75,5,0.0,270.14,36.49,1.0
+CA-2024-10720,2024-03-14,Asia Pacific,Corporate,Office Supplies,Envelopes,122.92,7,0.2,7.56,34.51,4.0
+CA-2024-10721,2024-03-14,Asia Pacific,Corporate,Office Supplies,Envelopes,93.68,2,0.0,29.98,37.83,5.0
+CA-2024-10722,2024-03-15,Asia Pacific,Corporate,Furniture,Office Desks,908.46,9,0.15,189.11,25.02,5.0
+CA-2024-10723,2024-03-16,Asia Pacific,Corporate,Furniture,Ergonomic Chairs,280.3,1,0.0,109.52,26.05,5.0
+CA-2024-10724,2024-03-16,Asia Pacific,Consumer,Technology,Accessories,3554.3,5,0.0,1327.71,36.25,5.0
+CA-2024-10725,2024-03-17,Europe,Small Business,Technology,Accessories,175.36,8,0.0,77.13,61.76,5.0
+CA-2024-10726,2024-03-18,North America,Corporate,Office Supplies,Fasteners,177.0,6,0.0,47.69,5.93,3.0
+CA-2024-10727,2024-03-18,Latin America,Consumer,Furniture,Bookcases,663.63,11,0.0,123.41,57.21,4.0
+CA-2024-10728,2024-03-19,Asia Pacific,Small Business,Technology,Servers,451.99,1,0.05,173.91,36.16,5.0
+CA-2024-10729,2024-03-19,Europe,Corporate,Furniture,Lamps,1995.44,8,0.3,-58.88,59.84,5.0
+CA-2024-10730,2024-03-20,Europe,Small Business,Furniture,Ergonomic Chairs,1868.04,9,0.0,751.06,25.53,5.0
+CA-2024-10731,2024-03-21,Asia Pacific,Corporate,Furniture,Bookcases,823.9,5,0.15,62.25,42.21,2.0
+CA-2024-10732,2024-03-21,Latin America,Consumer,Office Supplies,Fasteners,678.23,7,0.0,261.43,44.66,5.0
+CA-2024-10733,2024-03-22,North America,Consumer,Technology,Servers,821.04,3,0.0,160.62,46.8,3.0
+CA-2024-10734,2024-03-22,Europe,Small Business,Furniture,Lamps,55.86,2,0.0,11.87,40.51,3.0
+CA-2024-10735,2024-03-23,Asia Pacific,Corporate,Furniture,Bookcases,1334.41,11,0.2,240.9,6.63,5.0
+CA-2024-10736,2024-03-24,Asia Pacific,Consumer,Furniture,Ergonomic Chairs,1127.28,11,0.0,191.09,57.63,5.0
+CA-2024-10737,2024-03-24,North America,Corporate,Office Supplies,Storage Boxes,197.64,9,0.0,33.54,47.25,5.0
+CA-2024-10738,2024-03-25,Europe,Small Business,Furniture,Ergonomic Chairs,263.52,6,0.05,55.08,52.93,3.0
+CA-2024-10739,2024-03-25,Asia Pacific,Corporate,Furniture,Ergonomic Chairs,2972.34,9,0.1,263.94,28.21,4.0
+CA-2024-10740,2024-03-26,North America,Corporate,Furniture,Ergonomic Chairs,2391.05,5,0.2,484.14,32.34,3.0
+CA-2024-10741,2024-03-27,Europe,Corporate,Office Supplies,Envelopes,262.56,8,0.0,62.63,25.19,5.0
+CA-2024-10742,2024-03-27,Europe,Corporate,Office Supplies,Binders,34.26,1,0.0,10.37,60.38,4.0
+CA-2024-10743,2024-03-28,Europe,Consumer,Office Supplies,Fasteners,274.45,11,0.2,22.16,10.53,2.0
+CA-2024-10744,2024-03-28,Asia Pacific,Corporate,Furniture,Lamps,3033.45,7,0.0,1173.14,38.18,5.0
+CA-2024-10745,2024-03-29,Asia Pacific,Corporate,Furniture,Ergonomic Chairs,609.96,4,0.05,148.33,40.29,5.0
+CA-2024-10746,2024-03-30,Europe,Consumer,Technology,Laptops,1747.7,10,0.3,-88.92,45.23,4.0
+CA-2024-10747,2024-03-30,North America,Corporate,Furniture,Bookcases,90.32,2,0.0,19.56,58.86,5.0
+CA-2024-10748,2024-03-31,Latin America,Corporate,Office Supplies,Fasteners,328.16,4,0.05,57.58,19.13,3.0
+CA-2024-10749,2024-04-01,Latin America,Corporate,Office Supplies,Fasteners,167.35,5,0.0,51.08,55.84,4.0
+CA-2024-10750,2024-04-01,Latin America,Consumer,Office Supplies,Storage Boxes,220.4,10,0.2,50.01,24.5,4.0
+CA-2024-10751,2024-04-02,Latin America,Corporate,Technology,Servers,9071.7,6,0.2,-190.97,15.53,3.0
+CA-2024-10752,2024-04-02,North America,Corporate,Office Supplies,Paper Rolls,50.79,3,0.1,12.48,50.76,1.0
+CA-2024-10753,2024-04-03,Asia Pacific,Consumer,Office Supplies,Envelopes,63.03,3,0.0,23.77,39.49,5.0
+CA-2024-10754,2024-04-04,North America,Small Business,Technology,Laptops,1266.08,4,0.2,194.89,41.17,1.0
+CA-2024-10755,2024-04-04,North America,Corporate,Technology,Accessories,529.55,5,0.2,-13.54,6.31,5.0
+CA-2024-10756,2024-04-05,Asia Pacific,Corporate,Technology,Servers,4083.0,10,0.2,217.86,49.9,4.0
+CA-2024-10757,2024-04-05,North America,Consumer,Office Supplies,Envelopes,1739.43,11,0.0,649.44,22.2,5.0
+CA-2024-10758,2024-04-06,North America,Small Business,Office Supplies,Binders,219.0,10,0.05,68.43,55.61,5.0
+CA-2024-10759,2024-04-07,Europe,Consumer,Technology,Accessories,1533.49,7,0.0,569.45,58.67,5.0
+CA-2024-10760,2024-04-07,Latin America,Corporate,Technology,Accessories,3811.68,4,0.05,712.38,60.65,4.0
+CA-2024-10761,2024-04-08,North America,Consumer,Office Supplies,Paper Rolls,1581.03,9,0.1,181.1,29.73,2.0
+CA-2024-10762,2024-04-08,North America,Corporate,Technology,Accessories,793.08,9,0.0,176.99,20.11,1.0
+CA-2024-10763,2024-04-09,North America,Small Business,Office Supplies,Paper Rolls,182.97,9,0.05,55.27,43.06,3.0
+CA-2024-10764,2024-04-10,North America,Corporate,Office Supplies,Fasteners,84.72,4,0.0,14.76,8.56,3.0
+CA-2024-10765,2024-04-10,Latin America,Corporate,Technology,Monitors,2210.8,10,0.3,180.33,55.73,4.0
+CA-2024-10766,2024-04-11,North America,Consumer,Furniture,Lamps,90.45,3,0.05,32.7,45.09,4.0
+CA-2024-10767,2024-04-11,Asia Pacific,Corporate,Furniture,Office Desks,2838.69,9,0.3,0.35,9.08,2.0
+CA-2024-10768,2024-04-12,Asia Pacific,Corporate,Technology,Smartphones,176.94,2,0.05,28.7,35.1,2.0
+CA-2024-10769,2024-04-13,Europe,Corporate,Technology,Smartphones,908.4,6,0.0,188.23,8.54,4.0
+CA-2024-10770,2024-04-13,Latin America,Corporate,Furniture,Lamps,647.88,6,0.1,37.65,57.37,3.0
+CA-2024-10771,2024-04-14,Latin America,Corporate,Office Supplies,Paper Rolls,98.8,5,0.0,22.96,55.28,5.0
+CA-2024-10772,2024-04-15,Europe,Corporate,Technology,Accessories,2016.24,3,0.05,264.57,19.24,4.0
+CA-2024-10773,2024-04-15,Asia Pacific,Consumer,Furniture,Bookcases,1178.21,11,0.0,503.55,15.07,3.0
+CA-2024-10774,2024-04-16,Latin America,Consumer,Office Supplies,Envelopes,184.1,7,,29.83,22.55,5.0
+CA-2024-10775,2024-04-16,Latin America,Corporate,Furniture,Bookcases,803.6,7,0.05,226.89,33.72,4.0
+CA-2024-10776,2024-04-17,Europe,Corporate,Furniture,Ergonomic Chairs,5584.04,11,0.05,1295.27,61.46,3.0
+CA-2024-10777,2024-04-18,Latin America,Corporate,Office Supplies,Binders,411.6,8,0.05,107.65,52.92,5.0
+CA-2024-10778,2024-04-18,Asia Pacific,Consumer,Office Supplies,Fasteners,283.7,5,0.0,81.73,9.8,4.0
+CA-2024-10779,2024-04-19,Europe,Small Business,Office Supplies,Envelopes,813.84,8,0.0,349.26,19.95,2.0
+CA-2024-10780,2024-04-19,Latin America,Corporate,Furniture,Ergonomic Chairs,202.72,4,0.05,63.76,42.22,3.0
+CA-2024-10781,2024-04-20,Europe,Consumer,Technology,Smartphones,1302.3,6,0.05,454.67,23.6,2.0
+CA-2024-10782,2024-04-21,North America,Consumer,Technology,Servers,4203.8,4,0.1,856.63,42.91,2.0
+CA-2024-10783,2024-04-21,Europe,Consumer,Technology,Smartphones,1449.68,8,0.1,350.84,56.48,4.0
+CA-2024-10784,2024-04-22,Latin America,Small Business,Technology,Accessories,3554.9,10,0.0,610.03,63.35,4.0
+CA-2024-10785,2024-04-22,Latin America,Consumer,Furniture,Office Desks,2693.04,8,0.0,529.0,25.85,5.0
+CA-2024-10786,2024-04-23,Asia Pacific,Corporate,Office Supplies,Envelopes,242.88,8,0.15,25.34,13.14,5.0
+CA-2024-10787,2024-04-24,Asia Pacific,Consumer,Office Supplies,Binders,810.81,11,0.0,333.16,47.56,4.0
+CA-2024-10788,2024-04-24,Latin America,Corporate,Technology,Smartphones,897.57,9,0.05,134.41,54.96,3.0
+CA-2024-10789,2024-04-25,Europe,Corporate,Furniture,Office Desks,184.64,2,0.0,60.6,47.74,4.0
+CA-2024-10790,2024-04-25,Asia Pacific,Small Business,Furniture,Ergonomic Chairs,420.25,5,0.0,97.23,54.32,4.0
+CA-2024-10791,2024-04-26,Latin America,Corporate,Office Supplies,Paper Rolls,834.9,10,0.05,87.24,41.23,5.0
+CA-2024-10792,2024-04-27,Europe,Consumer,Technology,Smartphones,3747.94,7,0.0,1420.23,63.21,1.0
+CA-2024-10793,2024-04-27,Europe,Corporate,Office Supplies,Fasteners,391.79,7,0.1,63.36,28.25,5.0
+CA-2024-10794,2024-04-28,Asia Pacific,Corporate,Technology,Laptops,1753.4,5,0.0,558.9,20.45,5.0
+CA-2024-10795,2024-04-29,Latin America,Corporate,Furniture,Bookcases,1151.73,9,0.0,407.26,33.22,4.0
+CA-2024-10796,2024-04-29,Latin America,Consumer,Office Supplies,Fasteners,131.76,8,0.0,51.69,18.62,5.0
+CA-2024-10797,2024-04-30,Latin America,Corporate,Technology,Laptops,7392.96,9,0.15,1109.44,61.07,4.0
+CA-2024-10798,2024-04-30,Asia Pacific,Consumer,Furniture,Ergonomic Chairs,356.94,6,0.0,148.43,47.68,4.0
+CA-2024-10799,2024-05-01,Asia Pacific,Consumer,Office Supplies,Storage Boxes,430.75,5,0.05,107.74,49.84,5.0
+CA-2024-10800,2024-05-02,Latin America,Corporate,Office Supplies,Storage Boxes,94.41,1,0.15,12.26,8.46,2.0
+CA-2024-10801,2024-05-02,North America,Small Business,Office Supplies,Envelopes,1118.48,11,0.2,55.75,52.89,2.0
+CA-2024-10802,2024-05-03,Latin America,Consumer,Office Supplies,Fasteners,33.9,1,0.2,3.72,22.88,5.0
+CA-2024-10803,2024-05-03,Asia Pacific,Corporate,Office Supplies,Binders,470.25,11,0.1,160.48,55.76,1.0
+CA-2024-10804,2024-05-04,Europe,Consumer,Technology,Servers,5697.3,6,0.0,2355.08,34.08,4.0
+CA-2024-10805,2024-05-05,Europe,Small Business,Office Supplies,Paper Rolls,194.52,3,0.2,-8.97,55.11,4.0
+CA-2024-10806,2024-05-05,Europe,Consumer,Office Supplies,Paper Rolls,318.6,9,0.0,72.71,50.43,4.0
+CA-2024-10807,2024-05-06,Asia Pacific,Small Business,Technology,Accessories,3096.61,11,0.0,1333.34,48.08,5.0
+CA-2024-10808,2024-05-06,North America,Consumer,Office Supplies,Fasteners,407.76,8,0.2,64.48,30.58,4.0
+CA-2024-10809,2024-05-07,Europe,Corporate,Furniture,Ergonomic Chairs,564.62,2,0.0,197.24,45.22,2.0
+CA-2024-10810,2024-05-08,Europe,Corporate,Technology,Smartphones,2595.6,8,0.05,937.49,31.08,4.0
+CA-2024-10811,2024-05-08,Europe,Consumer,Furniture,Office Desks,19.07,1,0.0,7.66,28.32,5.0
+CA-2024-10812,2024-05-09,Asia Pacific,Consumer,Technology,Accessories,1117.5,6,0.2,178.1,8.55,4.0
+CA-2024-10813,2024-05-09,Europe,Consumer,Office Supplies,Binders,49.04,1,0.0,20.29,27.11,4.0
+CA-2024-10814,2024-05-10,North America,Consumer,Furniture,Lamps,263.34,6,0.0,71.62,27.6,1.0
+CA-2024-10815,2024-05-11,Latin America,Small Business,Office Supplies,Fasteners,322.2,6,0.2,53.8,16.41,5.0
+CA-2024-10816,2024-05-11,Latin America,Consumer,Technology,Monitors,1556.88,4,0.15,56.99,14.95,5.0
+CA-2024-10817,2024-05-12,Europe,Small Business,Technology,Laptops,5962.25,5,0.0,2134.26,23.7,4.0
+CA-2024-10818,2024-05-13,Asia Pacific,Consumer,Furniture,Bookcases,555.81,3,0.0,196.77,14.31,
+CA-2024-10819,2024-05-13,Europe,Small Business,Technology,Servers,2596.08,4,0.3,-73.76,13.91,3.0
+CA-2024-10820,2024-05-14,North America,Consumer,Technology,Monitors,2322.2,5,0.0,494.36,16.41,5.0
+CA-2024-10821,2024-05-14,Latin America,Consumer,Furniture,Bookcases,664.09,7,0.1,138.45,35.39,
+CA-2024-10822,2024-05-15,Latin America,Consumer,Furniture,Bookcases,1104.5,5,0.1,193.64,25.51,3.0
+CA-2024-10823,2024-05-16,Latin America,Corporate,Furniture,Ergonomic Chairs,326.83,7,0.0,108.05,6.85,4.0
+CA-2024-10824,2024-05-16,Latin America,Consumer,Technology,Laptops,3742.64,4,0.0,971.0,27.04,5.0
+CA-2024-10825,2024-05-17,Europe,Corporate,Furniture,Bookcases,1502.84,4,0.1,226.44,30.77,2.0
+CA-2024-10826,2024-05-17,Europe,Small Business,Office Supplies,Storage Boxes,137.41,7,0.05,53.18,54.63,3.0
+CA-2024-10827,2024-05-18,Asia Pacific,Corporate,Technology,Servers,1731.73,11,0.1,568.68,29.49,3.0
+CA-2024-10828,2024-05-19,Asia Pacific,Consumer,Technology,Laptops,481.41,3,0.0,90.22,25.86,5.0
+CA-2024-10829,2024-05-19,Europe,Small Business,Technology,Servers,791.8,4,0.2,167.17,10.02,5.0
+CA-2024-10830,2024-05-20,Asia Pacific,Consumer,Furniture,Office Desks,3360.39,11,,1305.97,55.76,4.0
+CA-2024-10831,2024-05-20,North America,Consumer,Technology,Servers,345.86,1,0.1,99.17,31.36,5.0
+CA-2024-10832,2024-05-21,Asia Pacific,Consumer,Technology,Monitors,8802.9,9,0.0,2389.2,11.91,5.0
+CA-2024-10833,2024-05-22,Europe,Corporate,Office Supplies,Binders,549.68,8,0.1,88.33,37.8,4.0
+CA-2024-10834,2024-05-22,Latin America,Corporate,Technology,Laptops,185.4,5,0.15,34.21,30.28,5.0
+CA-2024-10835,2024-05-23,North America,Corporate,Office Supplies,Storage Boxes,67.76,4,0.3,4.98,35.13,3.0
+CA-2024-10836,2024-05-23,North America,Consumer,Furniture,Ergonomic Chairs,869.4,5,0.0,372.69,64.57,5.0
+CA-2024-10837,2024-05-24,Asia Pacific,Corporate,Technology,Monitors,7216.1,10,0.0,2778.03,60.65,5.0
+CA-2024-10838,2024-05-25,North America,Corporate,Technology,Smartphones,6048.48,8,0.1,1995.15,45.02,5.0
+CA-2024-10839,2024-05-25,Latin America,Consumer,Furniture,Ergonomic Chairs,714.23,11,0.05,108.72,37.03,1.0
+CA-2024-10840,2024-05-26,North America,Small Business,Furniture,Lamps,2856.3,10,0.05,1070.45,28.37,4.0
+CA-2024-10841,2024-05-27,Europe,Consumer,Furniture,Ergonomic Chairs,121.07,1,0.1,40.39,30.61,1.0
+CA-2024-10842,2024-05-27,Asia Pacific,Consumer,Furniture,Ergonomic Chairs,37.12,1,0.1,11.4,44.02,1.0
+CA-2024-10843,2024-05-28,North America,Corporate,Furniture,Office Desks,1307.04,7,0.0,405.33,26.42,4.0
+CA-2024-10844,2024-05-28,North America,Consumer,Office Supplies,Fasteners,28.21,1,0.1,4.16,22.71,4.0
+CA-2024-10845,2024-05-29,Europe,Consumer,Furniture,Lamps,1185.2,5,0.2,157.0,44.37,
+CA-2024-10846,2024-05-30,Latin America,Corporate,Office Supplies,Envelopes,108.1,5,0.0,25.07,31.61,1.0
+CA-2024-10847,2024-05-30,North America,Small Business,Office Supplies,Binders,43.5,2,0.2,1.16,47.45,5.0
+CA-2024-10848,2024-05-31,Latin America,Corporate,Furniture,Lamps,1214.22,2,0.05,164.82,31.68,4.0
+CA-2024-10849,2024-05-31,Asia Pacific,Corporate,Technology,Accessories,274.23,3,0.1,45.21,42.37,4.0
+CA-2024-10850,2024-06-01,Europe,Consumer,Furniture,Lamps,663.52,4,0.1,41.58,32.54,4.0
+CA-2024-10851,2024-06-02,Latin America,Corporate,Office Supplies,Binders,470.91,11,0.0,116.24,8.94,4.0
+CA-2024-10852,2024-06-02,Asia Pacific,Consumer,Furniture,Bookcases,432.16,4,0.2,34.18,40.71,4.0
+CA-2024-10853,2024-06-03,North America,Corporate,Technology,Accessories,2205.44,4,0.05,272.15,15.52,3.0
+CA-2024-10854,2024-06-03,Latin America,Small Business,Furniture,Ergonomic Chairs,567.81,3,0.3,32.86,22.51,4.0
+CA-2024-10855,2024-06-04,Europe,Consumer,Office Supplies,Envelopes,129.48,6,0.1,8.44,38.89,5.0
+CA-2024-10856,2024-06-05,Latin America,Corporate,Technology,Servers,2424.65,5,0.05,723.27,25.77,4.0
+CA-2024-10857,2024-06-05,Europe,Corporate,Furniture,Office Desks,176.72,8,0.05,51.62,44.51,3.0
+CA-2024-10858,2024-06-06,Asia Pacific,Corporate,Furniture,Ergonomic Chairs,1932.15,11,0.3,155.2,14.23,4.0
+CA-2024-10859,2024-06-06,North America,Consumer,Technology,Laptops,663.54,6,0.0,180.83,21.01,4.0
+CA-2024-10860,2024-06-07,Asia Pacific,Consumer,Technology,Accessories,342.46,1,0.0,149.23,40.51,4.0
+CA-2024-10861,2024-06-08,Asia Pacific,Consumer,Technology,Laptops,1472.28,2,0.2,98.6,18.88,4.0
+CA-2024-10862,2024-06-08,Asia Pacific,Corporate,Office Supplies,Paper Rolls,184.94,7,,73.09,6.01,5.0
+CA-2024-10863,2024-06-09,Asia Pacific,Small Business,Office Supplies,Binders,174.65,7,0.05,26.72,40.12,2.0
+CA-2024-10864,2024-06-10,Asia Pacific,Consumer,Furniture,Office Desks,562.83,3,0.0,94.06,19.84,4.0
+CA-2024-10865,2024-06-10,Latin America,Corporate,Furniture,Office Desks,571.84,2,0.1,150.79,15.91,2.0
+CA-2024-10866,2024-06-11,Europe,Small Business,Furniture,Ergonomic Chairs,74.46,3,0.05,24.64,48.68,1.0
+CA-2024-10867,2024-06-11,North America,Corporate,Furniture,Bookcases,3137.09,11,0.05,1225.04,53.2,3.0
+CA-2024-10868,2024-06-12,Latin America,Corporate,Office Supplies,Paper Rolls,110.58,6,0.0,23.92,15.65,3.0
+CA-2024-10869,2024-06-13,Latin America,Corporate,Office Supplies,Binders,15.43,1,0.05,4.58,5.22,4.0
+CA-2024-10870,2024-06-13,Europe,Small Business,Office Supplies,Binders,176.4,4,0.1,53.66,13.81,4.0
+CA-2024-10871,2024-06-14,Latin America,Small Business,Furniture,Lamps,241.02,3,0.05,51.59,20.33,2.0
+CA-2024-10872,2024-06-14,Europe,Consumer,Office Supplies,Binders,190.35,9,0.2,4.83,44.38,3.0
+CA-2024-10873,2024-06-15,Latin America,Consumer,Furniture,Office Desks,326.95,1,0.05,120.85,7.38,5.0
+CA-2024-10874,2024-06-16,Europe,Corporate,Furniture,Ergonomic Chairs,73.83,3,0.05,16.57,61.7,4.0
+CA-2024-10875,2024-06-16,Latin America,Corporate,Technology,Smartphones,2061.95,11,0.3,-234.24,19.97,5.0
+CA-2024-10876,2024-06-17,Latin America,Corporate,Furniture,Ergonomic Chairs,667.12,4,0.05,162.76,33.88,4.0
+CA-2024-10877,2024-06-17,North America,Consumer,Office Supplies,Storage Boxes,216.23,7,0.0,76.72,64.01,5.0
+CA-2024-10878,2024-06-18,Europe,Corporate,Technology,Monitors,1340.5,10,0.05,475.59,14.03,5.0
+CA-2024-10879,2024-06-19,Latin America,Consumer,Furniture,Lamps,805.8,4,0.1,90.52,38.51,1.0
+CA-2024-10880,2024-06-19,North America,Corporate,Office Supplies,Paper Rolls,355.3,11,0.15,9.27,60.59,3.0
+CA-2024-10881,2024-06-20,Asia Pacific,Consumer,Furniture,Ergonomic Chairs,467.5,5,0.05,169.92,23.62,5.0
+CA-2024-10882,2024-06-20,North America,Consumer,Technology,Accessories,14918.33,7,0.0,5169.13,34.89,5.0
+CA-2024-10883,2024-06-21,North America,Corporate,Office Supplies,Paper Rolls,69.33,3,0.1,7.07,24.3,4.0
+CA-2024-10884,2024-06-22,Latin America,Corporate,Furniture,Bookcases,3314.74,11,0.0,1362.08,38.29,4.0
+CA-2024-10885,2024-06-22,Europe,Corporate,Office Supplies,Binders,252.14,7,0.0,92.41,54.84,5.0
+CA-2024-10886,2024-06-23,Asia Pacific,Corporate,Technology,Monitors,602.88,3,0.0,171.88,24.62,3.0
+CA-2024-10887,2024-06-24,Europe,Consumer,Furniture,Ergonomic Chairs,348.0,5,0.05,101.04,57.04,5.0
+CA-2024-10888,2024-06-24,Latin America,Corporate,Office Supplies,Fasteners,202.2,10,0.1,59.84,27.47,3.0
+CA-2024-10889,2024-06-25,Europe,Consumer,Furniture,Bookcases,2862.75,11,0.0,1210.59,45.14,2.0
+CA-2024-10890,2024-06-25,North America,Consumer,Technology,Smartphones,9140.89,11,0.0,2432.04,6.99,4.0
+CA-2024-10891,2024-06-26,Asia Pacific,Small Business,Office Supplies,Paper Rolls,435.96,9,0.0,133.92,8.4,5.0
+CA-2024-10892,2024-06-27,Asia Pacific,Small Business,Technology,Laptops,2558.05,11,0.0,712.77,56.45,2.0
+CA-2024-10893,2024-06-27,Asia Pacific,Consumer,Technology,Monitors,1413.28,11,0.15,345.61,61.56,3.0
+CA-2024-10894,2024-06-28,Asia Pacific,Corporate,Furniture,Office Desks,2764.4,10,0.0,1066.43,24.96,3.0
+CA-2024-10895,2024-06-28,Latin America,Small Business,Technology,Accessories,175.92,3,0.0,29.6,22.79,1.0
+CA-2024-10896,2024-06-29,Asia Pacific,Consumer,Technology,Monitors,9338.28,7,0.15,1283.11,22.34,2.0
+CA-2024-10897,2024-06-30,Europe,Corporate,Furniture,Lamps,1539.78,6,0.15,214.67,21.95,4.0
+CA-2024-10898,2024-06-30,Latin America,Consumer,Technology,Servers,5090.76,9,0.0,1951.96,53.32,4.0
+CA-2024-10899,2024-07-01,Asia Pacific,Corporate,Office Supplies,Paper Rolls,254.85,5,0.2,18.97,19.59,5.0
+CA-2024-10900,2024-07-01,Europe,Small Business,Furniture,Ergonomic Chairs,207.76,4,0.0,34.4,57.7,3.0
+CA-2024-10901,2024-07-02,Asia Pacific,Small Business,Technology,Monitors,2317.28,8,0.0,759.51,55.14,3.0
+CA-2024-10902,2024-07-03,Latin America,Corporate,Technology,Smartphones,2834.65,7,0.1,894.25,64.55,4.0
+CA-2024-10903,2024-07-03,Asia Pacific,Small Business,Technology,Smartphones,1431.57,7,0.15,257.12,64.82,5.0
+CA-2024-10904,2024-07-04,Asia Pacific,Corporate,Furniture,Office Desks,577.84,8,0.1,175.78,18.59,4.0
+CA-2024-10905,2024-07-05,Latin America,Corporate,Furniture,Ergonomic Chairs,3404.79,9,0.0,1153.73,16.58,5.0
+CA-2024-10906,2024-07-05,Europe,Small Business,Technology,Smartphones,4014.18,3,0.2,-45.29,25.6,4.0
+CA-2024-10907,2024-07-06,Europe,Corporate,Furniture,Lamps,1274.5,10,0.0,256.46,58.68,3.0
+CA-2024-10908,2024-07-06,North America,Consumer,Office Supplies,Fasteners,105.63,3,0.0,23.64,15.26,5.0
+CA-2024-10909,2024-07-07,Latin America,Corporate,Technology,Servers,189.7,5,0.2,5.99,31.71,4.0
+CA-2024-10910,2024-07-08,North America,Consumer,Furniture,Lamps,564.64,2,0.05,164.67,47.16,5.0
+CA-2024-10911,2024-07-08,North America,Consumer,Furniture,Lamps,277.04,8,0.05,48.52,60.86,4.0
+CA-2024-10912,2024-07-09,North America,Corporate,Technology,Servers,2637.81,3,0.2,443.36,56.49,5.0
+CA-2024-10913,2024-07-09,North America,Consumer,Technology,Smartphones,150.24,3,0.2,34.1,50.69,4.0
+CA-2024-10914,2024-07-10,Asia Pacific,Corporate,Office Supplies,Binders,185.7,6,0.0,80.86,23.55,4.0
+CA-2024-10915,2024-07-11,Latin America,Consumer,Office Supplies,Paper Rolls,115.68,6,0.0,29.67,43.66,3.0
+CA-2024-10916,2024-07-11,Latin America,Corporate,Office Supplies,Fasteners,87.12,4,0.0,34.32,25.01,
+CA-2024-10917,2024-07-12,Europe,Small Business,Office Supplies,Storage Boxes,671.68,4,0.1,48.85,44.36,5.0
+CA-2024-10918,2024-07-12,North America,Corporate,Office Supplies,Paper Rolls,683.32,11,0.0,140.9,19.94,4.0
+CA-2024-10919,2024-07-13,Europe,Corporate,Technology,Accessories,132.96,6,0.0,42.02,60.97,3.0
+CA-2024-10920,2024-07-14,Latin America,Corporate,Furniture,Lamps,812.88,9,0.2,44.49,20.24,5.0
+CA-2024-10921,2024-07-14,Asia Pacific,Small Business,Office Supplies,Binders,274.32,9,0.05,39.89,31.35,5.0
+CA-2024-10922,2024-07-15,Europe,Corporate,Technology,Accessories,3678.71,7,0.0,607.23,34.11,4.0
+CA-2024-10923,2024-07-15,North America,Small Business,Technology,Smartphones,3902.6,5,0.0,1204.23,56.99,3.0
+CA-2024-10924,2024-07-16,Asia Pacific,Small Business,Office Supplies,Fasteners,630.55,5,0.0,213.87,47.03,5.0
+CA-2024-10925,2024-07-17,North America,Corporate,Furniture,Bookcases,521.9,2,0.0,150.31,14.67,3.0
+CA-2024-10926,2024-07-17,Europe,Consumer,Technology,Monitors,121.46,2,0.2,22.01,44.62,1.0
+CA-2024-10927,2024-07-18,Asia Pacific,Corporate,Technology,Smartphones,1242.27,9,0.15,193.35,7.38,4.0
+CA-2024-10928,2024-07-19,Asia Pacific,Consumer,Office Supplies,Envelopes,90.76,4,0.2,18.35,34.68,5.0
+CA-2024-10929,2024-07-19,North America,Consumer,Office Supplies,Binders,65.36,4,0.05,12.42,17.96,2.0
+CA-2024-10930,2024-07-20,North America,Small Business,Furniture,Lamps,1505.44,8,0.2,335.09,50.58,4.0
+CA-2024-10931,2024-07-20,Latin America,Corporate,Technology,Laptops,257.44,8,0.1,48.52,14.85,5.0
+CA-2024-10932,2024-07-21,Asia Pacific,Corporate,Office Supplies,Fasteners,571.84,8,0.0,93.44,42.66,4.0
+CA-2024-10933,2024-07-22,Latin America,Corporate,Furniture,Bookcases,162.36,9,0.0,46.49,50.27,2.0
+CA-2024-10934,2024-07-22,Latin America,Corporate,Technology,Monitors,124.44,6,0.2,5.93,47.83,5.0
+CA-2024-10935,2024-07-23,Asia Pacific,Corporate,Office Supplies,Storage Boxes,273.88,4,0.3,-7.81,40.6,5.0
+CA-2024-10936,2024-07-23,Latin America,Consumer,Technology,Monitors,2820.0,6,0.05,939.62,21.05,3.0
+CA-2024-10937,2024-07-24,North America,Corporate,Technology,Accessories,1192.22,2,0.3,155.45,21.24,4.0
+CA-2024-10938,2024-07-25,Europe,Corporate,Furniture,Office Desks,227.4,3,0.2,0.58,38.5,3.0
+CA-2024-10939,2024-07-25,North America,Small Business,Furniture,Office Desks,200.46,3,0.0,85.23,36.66,1.0
+CA-2024-10940,2024-07-26,Europe,Consumer,Technology,Accessories,2049.69,3,0.3,-223.6,63.3,5.0
+CA-2024-10941,2024-07-26,Europe,Corporate,Office Supplies,Envelopes,195.66,9,0.3,22.71,60.31,3.0
+CA-2024-10942,2024-07-27,Latin America,Consumer,Furniture,Bookcases,1176.56,7,0.2,14.82,27.14,5.0
+CA-2024-10943,2024-07-28,North America,Consumer,Furniture,Office Desks,528.48,9,0.05,72.66,60.1,5.0
+CA-2024-10944,2024-07-28,Latin America,Consumer,Office Supplies,Paper Rolls,759.36,7,0.05,249.11,30.63,3.0
+CA-2024-10945,2024-07-29,North America,Consumer,Technology,Servers,1815.06,3,0.05,316.3,34.06,3.0
+CA-2024-10946,2024-07-29,North America,Corporate,Technology,Smartphones,485.54,11,0.0,193.2,33.53,4.0
+CA-2024-10947,2024-07-30,North America,Consumer,Office Supplies,Fasteners,375.75,9,0.2,71.03,12.04,4.0
+CA-2024-10948,2024-07-31,Latin America,Consumer,Furniture,Office Desks,525.69,11,0.0,174.05,59.9,3.0
+CA-2024-10949,2024-07-31,Asia Pacific,Corporate,Furniture,Lamps,405.95,1,0.15,94.14,13.26,5.0
+CA-2024-10950,2024-08-01,North America,Consumer,Office Supplies,Paper Rolls,294.35,7,0.15,62.49,54.32,3.0
+CA-2024-10951,2024-08-02,Europe,Small Business,Office Supplies,Fasteners,169.44,6,0.15,34.17,21.98,2.0
+CA-2024-10952,2024-08-02,Europe,Corporate,Furniture,Bookcases,758.7,9,0.0,318.67,31.77,5.0
+CA-2024-10953,2024-08-03,North America,Consumer,Office Supplies,Envelopes,306.24,11,0.1,84.53,29.18,2.0
+CA-2024-10954,2024-08-03,Latin America,Corporate,Office Supplies,Binders,221.4,10,0.2,24.07,43.58,2.0
+CA-2024-10955,2024-08-04,Europe,Corporate,Office Supplies,Fasteners,223.47,9,0.0,65.88,55.78,5.0
+CA-2024-10956,2024-08-05,Latin America,Small Business,Furniture,Ergonomic Chairs,769.9,5,0.0,332.11,50.89,2.0
+CA-2024-10957,2024-08-05,Asia Pacific,Small Business,Technology,Laptops,265.54,2,0.2,10.37,54.4,5.0
+CA-2024-10958,2024-08-06,North America,Consumer,Furniture,Ergonomic Chairs,1387.35,9,0.05,409.14,23.86,2.0
+CA-2024-10959,2024-08-06,Europe,Corporate,Office Supplies,Storage Boxes,151.68,4,0.1,45.74,59.58,5.0
+CA-2024-10960,2024-08-07,Europe,Corporate,Furniture,Ergonomic Chairs,2490.11,7,0.0,462.54,23.76,5.0
+CA-2024-10961,2024-08-08,Europe,Corporate,Technology,Monitors,3000.6,9,0.1,474.04,23.57,3.0
+CA-2024-10962,2024-08-08,North America,Consumer,Office Supplies,Binders,137.1,6,0.0,32.75,29.45,3.0
+CA-2024-10963,2024-08-09,North America,Consumer,Furniture,Office Desks,612.3,6,0.0,139.21,45.1,5.0
+CA-2024-10964,2024-08-09,Asia Pacific,Consumer,Office Supplies,Envelopes,348.64,4,0.05,93.74,20.96,1.0
+CA-2024-10965,2024-08-10,Europe,Small Business,Office Supplies,Fasteners,233.31,7,0.1,59.65,23.41,3.0
+CA-2024-10966,2024-08-11,Europe,Consumer,Furniture,Bookcases,776.09,7,0.0,181.32,51.11,4.0
+CA-2024-10967,2024-08-11,Asia Pacific,Consumer,Furniture,Bookcases,313.8,10,0.05,38.79,61.81,4.0
+CA-2024-10968,2024-08-12,Europe,Corporate,Furniture,Ergonomic Chairs,2451.06,6,0.0,777.68,45.16,5.0
+CA-2024-10969,2024-08-12,Asia Pacific,Consumer,Technology,Accessories,15062.31,9,0.15,2535.65,40.58,4.0
+CA-2024-10970,2024-08-13,North America,Corporate,Office Supplies,Paper Rolls,18.7,1,0.3,1.81,57.68,2.0
+CA-2024-10971,2024-08-14,Europe,Consumer,Office Supplies,Envelopes,340.32,6,0.1,90.92,17.28,3.0
+CA-2024-10972,2024-08-14,Latin America,Corporate,Technology,Laptops,3349.05,5,0.0,1053.66,45.59,4.0
+CA-2024-10973,2024-08-15,Latin America,Corporate,Furniture,Office Desks,775.28,8,0.0,176.34,63.64,5.0
+CA-2024-10974,2024-08-16,Latin America,Consumer,Furniture,Office Desks,851.28,3,0.05,296.61,54.18,4.0
+CA-2024-10975,2024-08-16,Asia Pacific,Corporate,Technology,Servers,172.97,1,0.0,51.93,40.71,4.0
+CA-2024-10976,2024-08-17,Europe,Consumer,Technology,Smartphones,2735.3,5,0.2,-89.7,22.95,3.0
+CA-2024-10977,2024-08-17,North America,Corporate,Technology,Servers,153.63,9,0.1,20.7,13.52,4.0
+CA-2024-10978,2024-08-18,Latin America,Small Business,Furniture,Office Desks,543.09,3,0.0,153.43,30.1,4.0
+CA-2024-10979,2024-08-19,Latin America,Consumer,Furniture,Office Desks,654.36,4,0.15,20.21,45.45,4.0
+CA-2024-10980,2024-08-19,Latin America,Corporate,Furniture,Office Desks,61.1,2,0.0,10.73,61.85,2.0
+CA-2024-10981,2024-08-20,Latin America,Consumer,Office Supplies,Fasteners,630.32,8,0.0,171.75,30.56,5.0
+CA-2024-10982,2024-08-20,Europe,Consumer,Furniture,Office Desks,8926.56,9,0.05,2395.45,64.89,3.0
+CA-2024-10983,2024-08-21,Europe,Consumer,Technology,Laptops,88.0,2,0.1,17.31,14.47,3.0
+CA-2024-10984,2024-08-22,Europe,Consumer,Furniture,Lamps,1046.71,7,0.0,469.58,55.34,4.0
+CA-2024-10985,2024-08-22,Europe,Consumer,Technology,Servers,1265.24,1,0.0,507.55,43.69,3.0
+CA-2024-10986,2024-08-23,Europe,Corporate,Technology,Servers,2122.9,10,0.1,167.98,44.45,5.0
+CA-2024-10987,2024-08-23,North America,Small Business,Furniture,Office Desks,2684.44,11,0.0,1122.38,11.68,4.0
+CA-2024-10988,2024-08-24,Asia Pacific,Consumer,Furniture,Lamps,135.82,2,0.3,-3.47,56.35,3.0
+CA-2024-10989,2024-08-25,Europe,Small Business,Furniture,Ergonomic Chairs,191.84,4,0.2,25.53,31.61,3.0
+CA-2024-10990,2024-08-25,Europe,Corporate,Office Supplies,Fasteners,31.3,1,0.1,3.94,29.17,5.0
+CA-2024-10991,2024-08-26,North America,Corporate,Technology,Monitors,1650.16,8,0.0,485.43,29.19,5.0
+CA-2024-10992,2024-08-26,Asia Pacific,Consumer,Technology,Accessories,6233.68,8,,1374.46,45.61,1.0
+CA-2024-10993,2024-08-27,Europe,Corporate,Office Supplies,Fasteners,1177.7,10,0.0,220.71,29.45,5.0
+CA-2024-10994,2024-08-28,Asia Pacific,Corporate,Office Supplies,Paper Rolls,312.39,9,0.2,-10.01,15.73,2.0
+CA-2024-10995,2024-08-28,Latin America,Corporate,Furniture,Bookcases,424.8,4,0.0,119.74,25.54,1.0
+CA-2024-10996,2024-08-29,Asia Pacific,Consumer,Furniture,Office Desks,543.4,11,0.2,105.89,43.92,5.0
+CA-2024-10997,2024-08-30,North America,Consumer,Office Supplies,Storage Boxes,238.32,6,0.0,53.6,46.86,4.0
+CA-2024-10998,2024-08-30,Asia Pacific,Small Business,Technology,Laptops,4059.54,9,0.1,1289.41,60.55,4.0
+CA-2024-10999,2024-08-31,Europe,Consumer,Office Supplies,Envelopes,229.6,8,0.0,62.85,15.1,4.0
+CA-2024-11000,2024-08-31,North America,Small Business,Furniture,Ergonomic Chairs,147.76,8,0.0,31.69,59.88,4.0
+CA-2024-11001,2024-09-01,Asia Pacific,Consumer,Office Supplies,Binders,265.36,8,0.0,84.78,7.39,5.0
+CA-2024-11002,2024-09-02,Latin America,Corporate,Office Supplies,Fasteners,233.1,9,0.2,25.29,41.43,4.0
+CA-2024-11003,2024-09-02,Europe,Consumer,Office Supplies,Storage Boxes,294.75,9,0.3,11.12,31.97,3.0
+CA-2024-11004,2024-09-03,North America,Consumer,Office Supplies,Paper Rolls,220.38,6,0.15,35.12,9.32,3.0
+CA-2024-11005,2024-09-03,Asia Pacific,Consumer,Office Supplies,Fasteners,135.54,9,0.05,15.64,39.0,5.0
+CA-2024-11006,2024-09-04,North America,Consumer,Technology,Accessories,1651.05,5,0.0,428.5,7.04,4.0
+CA-2024-11007,2024-09-05,Latin America,Small Business,Technology,Servers,2533.3,5,0.2,322.15,51.46,5.0
+CA-2024-11008,2024-09-05,Asia Pacific,Corporate,Technology,Monitors,1921.08,7,0.0,637.56,52.38,1.0
+CA-2024-11009,2024-09-06,North America,Corporate,Technology,Accessories,921.87,1,0.0,406.46,24.1,2.0
+CA-2024-11010,2024-09-06,North America,Corporate,Office Supplies,Binders,15.86,1,0.15,4.22,47.28,4.0
+CA-2024-11011,2024-09-07,Latin America,Small Business,Furniture,Lamps,4012.83,9,0.15,456.96,41.35,4.0
+CA-2024-11012,2024-09-08,North America,Corporate,Office Supplies,Storage Boxes,172.56,4,0.0,33.78,42.46,4.0
+CA-2024-11013,2024-09-08,Europe,Consumer,Technology,Monitors,17972.8,5,0.05,6132.63,28.79,5.0
+CA-2024-11014,2024-09-09,Latin America,Small Business,Office Supplies,Paper Rolls,467.08,4,0.0,178.77,61.05,5.0
+CA-2024-11015,2024-09-09,Latin America,Corporate,Technology,Laptops,3100.38,6,0.3,442.35,19.01,4.0
+CA-2024-11016,2024-09-10,Europe,Consumer,Furniture,Bookcases,397.2,1,0.0,152.58,21.79,5.0
+CA-2024-11017,2024-09-11,North America,Consumer,Office Supplies,Paper Rolls,281.5,10,0.0,110.56,8.22,5.0
+CA-2024-11018,2024-09-11,North America,Corporate,Technology,Monitors,2238.93,9,0.05,364.34,55.23,4.0
+CA-2024-11019,2024-09-12,North America,Corporate,Office Supplies,Envelopes,169.47,7,0.1,30.23,10.02,5.0
+CA-2024-11020,2024-09-13,Europe,Corporate,Office Supplies,Envelopes,115.38,6,0.05,30.17,63.47,5.0
+CA-2024-11021,2024-09-13,Latin America,Corporate,Technology,Monitors,6905.01,7,0.15,1639.67,17.11,5.0
+CA-2024-11022,2024-09-14,North America,Consumer,Office Supplies,Binders,203.28,7,0.0,91.29,41.47,2.0
+CA-2024-11023,2024-09-14,Asia Pacific,Consumer,Technology,Laptops,494.01,11,0.0,119.78,62.23,5.0
+CA-2024-11024,2024-09-15,Europe,Corporate,Furniture,Lamps,158.4,2,0.0,26.3,19.88,4.0
+CA-2024-11025,2024-09-16,North America,Corporate,Office Supplies,Fasteners,101.45,5,0.1,35.16,17.09,4.0
+CA-2024-11026,2024-09-16,Europe,Corporate,Technology,Smartphones,2437.12,4,,857.73,48.41,5.0
+CA-2024-11027,2024-09-17,Europe,Small Business,Office Supplies,Paper Rolls,58.02,1,0.2,1.44,58.06,4.0
+CA-2024-11028,2024-09-17,Latin America,Small Business,Technology,Laptops,3502.59,3,0.0,1573.39,62.22,5.0
+CA-2024-11029,2024-09-18,North America,Consumer,Technology,Accessories,629.04,8,0.0,225.15,8.96,3.0
+CA-2024-11030,2024-09-19,Latin America,Corporate,Furniture,Ergonomic Chairs,1300.02,6,0.0,386.85,50.29,3.0
+CA-2024-11031,2024-09-19,Europe,Small Business,Office Supplies,Envelopes,354.83,7,0.05,114.67,36.49,5.0
+CA-2024-11032,2024-09-20,Asia Pacific,Corporate,Office Supplies,Envelopes,787.78,7,0.0,145.29,14.66,5.0
+CA-2024-11033,2024-09-20,Asia Pacific,Corporate,Furniture,Ergonomic Chairs,2318.8,5,0.0,877.09,21.15,2.0
+CA-2024-11034,2024-09-21,Europe,Corporate,Office Supplies,Binders,23.66,1,0.1,6.36,43.68,5.0
+CA-2024-11035,2024-09-22,Latin America,Corporate,Office Supplies,Storage Boxes,234.8,8,0.05,73.24,6.49,5.0
+CA-2024-11036,2024-09-22,Asia Pacific,Consumer,Furniture,Ergonomic Chairs,420.14,7,0.1,107.47,18.34,4.0
+CA-2024-11037,2024-09-23,Europe,Consumer,Technology,Servers,18087.63,11,0.1,1082.81,7.47,4.0
+CA-2024-11038,2024-09-23,North America,Corporate,Office Supplies,Envelopes,249.83,7,0.0,91.03,46.64,1.0
+CA-2024-11039,2024-09-24,Europe,Corporate,Technology,Servers,2001.0,4,0.05,352.23,15.29,
+CA-2024-11040,2024-09-25,North America,Consumer,Office Supplies,Binders,150.6,5,0.0,59.51,62.65,3.0
+CA-2024-11041,2024-09-25,North America,Consumer,Office Supplies,Envelopes,143.24,2,0.1,35.69,35.42,5.0
+CA-2024-11042,2024-09-26,Asia Pacific,Consumer,Office Supplies,Binders,29.95,1,0.0,7.23,16.17,1.0
+CA-2024-11043,2024-09-27,Asia Pacific,Corporate,Office Supplies,Paper Rolls,68.65,1,0.05,27.27,48.05,3.0
+CA-2024-11044,2024-09-27,Europe,Consumer,Technology,Servers,487.44,6,0.0,92.24,25.53,5.0
+CA-2024-11045,2024-09-28,Europe,Corporate,Technology,Smartphones,1397.88,9,0.1,210.05,38.63,4.0
+CA-2024-11046,2024-09-28,Europe,Consumer,Technology,Smartphones,8511.58,11,0.2,1217.3,16.42,4.0
+CA-2024-11047,2024-09-29,Asia Pacific,Small Business,Furniture,Bookcases,712.88,8,0.0,260.14,7.86,5.0
+CA-2024-11048,2024-09-30,Latin America,Corporate,Office Supplies,Storage Boxes,278.28,9,0.05,36.87,39.19,4.0
+CA-2024-11049,2024-09-30,North America,Corporate,Technology,Monitors,2556.12,6,0.05,481.92,31.0,5.0
+CA-2024-11050,2024-10-01,Europe,Corporate,Furniture,Office Desks,531.44,2,0.05,182.68,7.42,4.0
+CA-2024-11051,2024-10-01,Latin America,Corporate,Office Supplies,Storage Boxes,436.9,10,0.0,159.41,46.2,5.0
+CA-2024-11052,2024-10-02,Europe,Corporate,Office Supplies,Paper Rolls,163.17,3,0.15,27.2,39.67,3.0
+CA-2024-11053,2024-10-03,North America,Corporate,Office Supplies,Storage Boxes,250.65,9,0.0,88.81,45.82,5.0
+CA-2024-11054,2024-10-03,Asia Pacific,Consumer,Furniture,Office Desks,816.55,5,0.15,5.14,59.11,4.0
+CA-2024-11055,2024-10-04,Latin America,Small Business,Office Supplies,Fasteners,416.24,11,0.05,112.49,45.89,5.0
+CA-2024-11056,2024-10-04,Europe,Corporate,Technology,Laptops,598.07,11,0.0,247.81,19.51,3.0
+CA-2024-11057,2024-10-05,Europe,Consumer,Office Supplies,Envelopes,23.67,1,0.0,8.09,22.01,4.0
+CA-2024-11058,2024-10-06,Asia Pacific,Corporate,Office Supplies,Binders,340.41,7,0.0,137.71,12.82,5.0
+CA-2024-11059,2024-10-06,Europe,Small Business,Technology,Smartphones,1411.0,1,0.05,290.1,48.15,4.0
+CA-2024-11060,2024-10-07,Europe,Corporate,Office Supplies,Fasteners,384.24,6,0.2,78.23,43.21,5.0
+CA-2024-11061,2024-10-07,North America,Small Business,Office Supplies,Storage Boxes,220.05,9,0.0,43.26,48.06,5.0
+CA-2024-11062,2024-10-08,Latin America,Corporate,Technology,Laptops,22716.4,10,0.05,7258.04,51.37,5.0
+CA-2024-11063,2024-10-09,Europe,Small Business,Technology,Servers,1923.84,3,0.0,618.27,32.81,4.0
+CA-2024-11064,2024-10-09,North America,Small Business,Office Supplies,Storage Boxes,100.74,6,0.0,15.66,50.45,5.0
+CA-2024-11065,2024-10-10,Latin America,Corporate,Office Supplies,Storage Boxes,216.0,6,0.0,84.64,22.88,3.0
+CA-2024-11066,2024-10-11,Europe,Corporate,Technology,Monitors,14023.9,10,0.3,-24.99,31.86,3.0
+CA-2024-11067,2024-10-11,Europe,Consumer,Technology,Smartphones,1104.68,4,0.2,265.43,20.08,3.0
+CA-2024-11068,2024-10-12,Latin America,Corporate,Technology,Servers,532.73,11,0.05,196.12,49.92,4.0
+CA-2024-11069,2024-10-12,Asia Pacific,Consumer,Office Supplies,Envelopes,279.54,6,0.1,94.46,7.28,3.0
+CA-2024-11070,2024-10-13,Asia Pacific,Corporate,Office Supplies,Paper Rolls,34.0,2,0.0,12.1,48.98,4.0
+CA-2024-11071,2024-10-14,North America,Consumer,Furniture,Ergonomic Chairs,378.2,4,0.3,-39.9,5.47,3.0
+CA-2024-11072,2024-10-14,Asia Pacific,Small Business,Furniture,Lamps,292.27,11,0.0,111.6,64.67,2.0
+CA-2024-11073,2024-10-15,North America,Consumer,Technology,Accessories,2291.34,3,0.0,698.91,5.44,3.0
+CA-2024-11074,2024-10-15,North America,Corporate,Furniture,Office Desks,152.37,3,0.1,21.83,53.06,1.0
+CA-2024-11075,2024-10-16,Asia Pacific,Consumer,Furniture,Office Desks,269.5,2,0.0,57.71,7.46,4.0
+CA-2024-11076,2024-10-17,Asia Pacific,Corporate,Furniture,Lamps,7563.71,11,,1711.74,29.18,4.0
+CA-2024-11077,2024-10-17,North America,Small Business,Office Supplies,Storage Boxes,357.45,5,0.0,131.41,40.61,3.0
+CA-2024-11078,2024-10-18,North America,Corporate,Office Supplies,Fasteners,119.34,6,0.1,26.37,32.97,2.0
+CA-2024-11079,2024-10-18,Asia Pacific,Consumer,Office Supplies,Envelopes,85.48,1,0.0,33.86,38.95,3.0
+CA-2024-11080,2024-10-19,Asia Pacific,Corporate,Office Supplies,Storage Boxes,516.34,11,0.0,96.12,51.56,1.0
+CA-2024-11081,2024-10-20,North America,Corporate,Technology,Accessories,2624.82,6,0.0,1127.89,13.47,4.0
+CA-2024-11082,2024-10-20,Asia Pacific,Small Business,Furniture,Ergonomic Chairs,747.11,7,0.15,64.11,21.48,3.0
+CA-2024-11083,2024-10-21,Latin America,Corporate,Technology,Accessories,4773.6,9,0.05,1281.44,59.93,5.0
+CA-2024-11084,2024-10-21,North America,Corporate,Technology,Smartphones,12610.72,8,0.0,2018.78,36.56,5.0
+CA-2024-11085,2024-10-22,Asia Pacific,Small Business,Technology,Laptops,556.5,5,0.05,178.06,43.98,
+CA-2024-11086,2024-10-23,Latin America,Small Business,Office Supplies,Binders,248.1,6,0.05,28.07,33.74,5.0
+CA-2024-11087,2024-10-23,Latin America,Corporate,Furniture,Ergonomic Chairs,435.08,2,0.2,58.64,63.58,4.0
+CA-2024-11088,2024-10-24,Europe,Consumer,Furniture,Bookcases,331.83,9,0.2,26.03,19.58,5.0
+CA-2024-11089,2024-10-25,Asia Pacific,Corporate,Office Supplies,Envelopes,230.6,10,0.0,35.61,50.79,3.0
+CA-2024-11090,2024-10-25,Latin America,Consumer,Technology,Monitors,1593.72,4,0.05,299.72,21.53,5.0
+CA-2024-11091,2024-10-26,Europe,Consumer,Office Supplies,Paper Rolls,312.2,5,0.05,98.36,30.13,2.0
+CA-2024-11092,2024-10-26,Latin America,Corporate,Office Supplies,Paper Rolls,180.64,4,0.05,59.51,40.19,3.0
+CA-2024-11093,2024-10-27,North America,Corporate,Furniture,Office Desks,75.75,5,0.0,24.53,44.85,4.0
+CA-2024-11094,2024-10-28,North America,Consumer,Furniture,Lamps,2408.12,11,0.1,680.36,49.53,4.0
+CA-2024-11095,2024-10-28,Europe,Corporate,Office Supplies,Binders,550.88,11,0.1,101.82,19.43,5.0
+CA-2024-11096,2024-10-29,Europe,Consumer,Technology,Monitors,5391.05,5,0.05,1361.8,64.08,3.0
+CA-2024-11097,2024-10-29,Latin America,Consumer,Technology,Accessories,1532.7,9,0.05,331.52,31.25,5.0
+CA-2024-11098,2024-10-30,Europe,Consumer,Office Supplies,Envelopes,221.43,11,0.2,0.37,43.57,4.0
+CA-2024-11099,2024-10-31,North America,Corporate,Furniture,Office Desks,68.43,3,0.1,9.29,61.05,4.0
+CA-2024-11100,2024-10-31,Europe,Corporate,Technology,Accessories,173.91,3,0.05,69.35,11.06,3.0
+CA-2024-11101,2024-11-01,Latin America,Corporate,Furniture,Ergonomic Chairs,1267.3,5,0.3,174.28,42.44,4.0
+CA-2024-11102,2024-11-01,Latin America,Corporate,Furniture,Lamps,148.53,1,0.1,15.45,55.55,4.0
+CA-2024-11103,2024-11-02,Asia Pacific,Corporate,Office Supplies,Binders,298.76,11,0.0,53.59,32.36,4.0
+CA-2024-11104,2024-11-03,Latin America,Consumer,Furniture,Bookcases,847.86,6,0.0,129.14,26.12,3.0
+CA-2024-11105,2024-11-03,Asia Pacific,Consumer,Furniture,Ergonomic Chairs,1937.75,5,0.0,452.14,22.83,5.0
+CA-2024-11106,2024-11-04,Latin America,Small Business,Technology,Smartphones,2748.72,8,0.05,466.73,12.11,5.0
+CA-2024-11107,2024-11-04,North America,Small Business,Technology,Smartphones,8781.2,8,0.0,3178.63,38.05,4.0
+CA-2024-11108,2024-11-05,North America,Consumer,Technology,Smartphones,36.06,1,0.15,6.48,6.63,4.0
+CA-2024-11109,2024-11-06,Asia Pacific,Corporate,Office Supplies,Fasteners,594.7,5,0.1,161.24,14.12,5.0
+CA-2024-11110,2024-11-06,Latin America,Consumer,Furniture,Bookcases,768.18,6,0.05,301.68,7.06,5.0
+CA-2024-11111,2024-11-07,Latin America,Corporate,Furniture,Lamps,587.64,4,0.1,110.25,16.53,4.0
+CA-2024-11112,2024-11-08,North America,Small Business,Technology,Servers,1519.36,8,0.0,228.83,43.39,3.0
+CA-2024-11113,2024-11-08,Asia Pacific,Small Business,Technology,Smartphones,1532.15,5,0.05,452.34,25.84,4.0
+CA-2024-11114,2024-11-09,North America,Corporate,Technology,Servers,5578.29,9,0.0,1485.79,16.27,1.0
+CA-2024-11115,2024-11-09,North America,Corporate,Office Supplies,Storage Boxes,57.65,1,0.05,7.75,6.84,5.0
+CA-2024-11116,2024-11-10,Europe,Consumer,Office Supplies,Storage Boxes,402.16,8,0.0,88.22,7.25,4.0
+CA-2024-11117,2024-11-11,Latin America,Small Business,Office Supplies,Fasteners,141.48,6,0.15,24.81,36.38,5.0
+CA-2024-11118,2024-11-11,Europe,Corporate,Office Supplies,Paper Rolls,262.9,11,0.1,54.72,47.92,5.0
+CA-2024-11119,2024-11-12,Europe,Corporate,Technology,Laptops,6199.95,5,0.05,1028.54,5.86,5.0
+CA-2024-11120,2024-11-12,Latin America,Small Business,Office Supplies,Storage Boxes,379.28,11,0.1,83.26,30.85,4.0
+CA-2024-11121,2024-11-13,Europe,Small Business,Technology,Laptops,4906.77,11,0.0,956.74,8.72,4.0
+CA-2024-11122,2024-11-14,Europe,Corporate,Furniture,Ergonomic Chairs,1040.82,11,0.15,236.89,10.46,5.0
+CA-2024-11123,2024-11-14,North America,Consumer,Technology,Smartphones,3403.73,11,0.0,611.67,7.35,2.0
+CA-2024-11124,2024-11-15,Latin America,Corporate,Technology,Smartphones,2153.04,8,0.05,391.84,20.66,5.0
+CA-2024-11125,2024-11-15,Europe,Consumer,Office Supplies,Fasteners,31.06,1,0.0,10.29,23.23,2.0
+CA-2024-11126,2024-11-16,Asia Pacific,Consumer,Furniture,Office Desks,4103.82,9,0.05,868.2,50.65,5.0
+CA-2024-11127,2024-11-17,Latin America,Small Business,Office Supplies,Envelopes,115.7,5,0.05,36.66,47.1,5.0
+CA-2024-11128,2024-11-17,Latin America,Corporate,Office Supplies,Binders,105.21,7,0.0,17.45,14.74,5.0
+CA-2024-11129,2024-11-18,Latin America,Consumer,Office Supplies,Fasteners,273.6,10,0.05,87.82,53.59,5.0
+CA-2024-11130,2024-11-18,Europe,Small Business,Furniture,Office Desks,487.69,7,0.05,161.07,34.68,5.0
+CA-2024-11131,2024-11-19,Latin America,Corporate,Office Supplies,Paper Rolls,476.35,5,0.05,107.47,54.6,4.0
+CA-2024-11132,2024-11-20,Latin America,Corporate,Technology,Servers,1163.89,1,0.2,184.1,40.12,5.0
+CA-2024-11133,2024-11-20,North America,Small Business,Technology,Monitors,3663.0,3,0.0,1629.5,17.5,4.0
+CA-2024-11134,2024-11-21,Europe,Consumer,Technology,Laptops,128.21,1,0.1,30.63,11.82,4.0
+CA-2024-11135,2024-11-22,Latin America,Corporate,Furniture,Office Desks,1107.35,5,0.1,63.83,12.86,4.0
+CA-2024-11136,2024-11-22,Asia Pacific,Consumer,Technology,Servers,12213.67,7,0.0,5215.25,33.9,4.0
+CA-2024-11137,2024-11-23,Latin America,Corporate,Furniture,Lamps,2470.32,8,0.0,1082.43,42.0,2.0
+CA-2024-11138,2024-11-23,Europe,Consumer,Office Supplies,Storage Boxes,573.7,10,0.05,120.47,48.74,2.0
+CA-2024-11139,2024-11-24,Europe,Corporate,Furniture,Office Desks,703.46,2,0.15,115.46,41.77,5.0
+CA-2024-11140,2024-11-25,North America,Corporate,Office Supplies,Paper Rolls,346.02,6,0.3,-9.2,21.87,2.0
+CA-2024-11141,2024-11-25,Latin America,Consumer,Furniture,Lamps,15.29,1,0.05,5.09,41.4,3.0
+CA-2024-11142,2024-11-26,Europe,Corporate,Technology,Monitors,4589.7,6,0.0,1355.69,24.46,5.0
+CA-2024-11143,2024-11-26,North America,Small Business,Technology,Laptops,689.28,8,0.05,171.52,47.82,2.0
+CA-2024-11144,2024-11-27,Latin America,Corporate,Technology,Laptops,382.55,7,0.05,92.09,35.39,4.0
+CA-2024-11145,2024-11-28,Latin America,Corporate,Office Supplies,Binders,78.08,2,0.05,8.7,32.46,3.0
+CA-2024-11146,2024-11-28,North America,Consumer,Technology,Accessories,5057.55,9,0.05,1001.08,45.28,5.0
+CA-2024-11147,2024-11-29,Europe,Consumer,Technology,Monitors,108.06,6,0.0,28.73,62.93,4.0
+CA-2024-11148,2024-11-29,Latin America,Consumer,Technology,Accessories,934.83,9,0.0,146.95,16.41,5.0
+CA-2024-11149,2024-11-30,Latin America,Consumer,Technology,Servers,188.44,7,0.0,37.84,26.51,4.0
+CA-2024-11150,2024-12-01,Asia Pacific,Consumer,Office Supplies,Envelopes,872.74,11,0.0,158.18,15.02,5.0
+CA-2024-11151,2024-12-01,Europe,Corporate,Office Supplies,Fasteners,1677.61,11,0.0,528.56,13.17,3.0
+CA-2024-11152,2024-12-02,Europe,Small Business,Technology,Monitors,1945.56,6,0.1,170.94,41.42,5.0
+CA-2024-11153,2024-12-02,Latin America,Consumer,Technology,Laptops,11100.24,9,0.0,3174.52,44.6,4.0
+CA-2024-11154,2024-12-03,Asia Pacific,Corporate,Technology,Accessories,1414.32,8,0.0,490.74,39.78,4.0
+CA-2024-11155,2024-12-04,Latin America,Small Business,Furniture,Office Desks,365.31,3,0.1,29.41,10.98,5.0
+CA-2024-11156,2024-12-04,Latin America,Corporate,Office Supplies,Storage Boxes,282.68,4,0.1,43.62,19.64,5.0
+CA-2024-11157,2024-12-05,Asia Pacific,Consumer,Technology,Laptops,1762.2,9,0.0,725.16,37.1,4.0
+CA-2024-11158,2024-12-06,Latin America,Corporate,Office Supplies,Binders,1084.6,11,0.05,387.98,39.71,3.0
+CA-2024-11159,2024-12-06,Latin America,Consumer,Technology,Servers,1014.66,6,0.0,311.53,24.81,4.0
+CA-2024-11160,2024-12-07,Latin America,Corporate,Furniture,Office Desks,423.0,10,0.15,28.41,62.09,2.0
+CA-2024-11161,2024-12-07,Latin America,Corporate,Office Supplies,Fasteners,76.89,3,0.05,16.25,17.79,4.0
+CA-2024-11162,2024-12-08,Latin America,Corporate,Technology,Smartphones,1841.21,7,0.3,44.04,13.59,3.0
+CA-2024-11163,2024-12-09,North America,Corporate,Office Supplies,Envelopes,19.26,1,0.0,6.52,38.78,2.0
+CA-2024-11164,2024-12-09,North America,Small Business,Technology,Monitors,8934.97,11,0.0,1448.0,9.95,5.0
+CA-2024-11165,2024-12-10,Europe,Corporate,Furniture,Lamps,299.45,5,0.0,56.51,45.44,5.0
+CA-2024-11166,2024-12-10,Asia Pacific,Corporate,Technology,Smartphones,5174.96,7,0.0,2170.97,8.52,3.0
+CA-2024-11167,2024-12-11,North America,Corporate,Technology,Laptops,1280.48,4,0.0,330.8,21.47,3.0
+CA-2024-11168,2024-12-12,North America,Corporate,Furniture,Lamps,1606.43,7,0.2,-40.93,58.44,4.0
+CA-2024-11169,2024-12-12,North America,Corporate,Office Supplies,Storage Boxes,178.78,7,0.1,19.93,64.48,1.0
+CA-2024-11170,2024-12-13,Latin America,Consumer,Technology,Laptops,122.46,6,0.2,29.53,48.11,1.0
+CA-2024-11171,2024-12-13,Europe,Corporate,Technology,Servers,5296.77,9,0.0,907.74,39.13,4.0
+CA-2024-11172,2024-12-14,Asia Pacific,Consumer,Technology,Smartphones,7968.03,7,0.15,2295.18,17.21,3.0
+CA-2024-11173,2024-12-15,North America,Small Business,Technology,Monitors,3314.74,11,,736.52,17.34,2.0
+CA-2024-11174,2024-12-15,Europe,Consumer,Office Supplies,Storage Boxes,382.5,5,0.05,70.26,21.44,3.0
+CA-2024-11175,2024-12-16,Europe,Corporate,Furniture,Office Desks,425.52,8,0.0,73.11,38.29,5.0
+CA-2024-11176,2024-12-16,Asia Pacific,Corporate,Office Supplies,Binders,301.62,11,0.0,102.72,16.67,3.0
+CA-2024-11177,2024-12-17,Europe,Corporate,Technology,Smartphones,996.0,4,0.2,94.38,55.38,3.0
+CA-2024-11178,2024-12-18,Latin America,Corporate,Technology,Monitors,3601.71,9,0.2,811.19,48.17,4.0
+CA-2024-11179,2024-12-18,North America,Consumer,Technology,Monitors,1126.55,5,0.0,504.31,47.57,4.0
+CA-2024-11180,2024-12-19,North America,Corporate,Furniture,Bookcases,303.28,2,0.15,23.88,6.55,5.0
+CA-2024-11181,2024-12-20,Latin America,Corporate,Furniture,Office Desks,1586.1,10,0.05,576.23,22.84,2.0
+CA-2024-11182,2024-12-20,Europe,Small Business,Furniture,Ergonomic Chairs,221.55,1,0.0,55.17,60.4,4.0
+CA-2024-11183,2024-12-21,North America,Small Business,Technology,Accessories,8121.3,5,0.0,3384.62,19.78,3.0
+CA-2024-11184,2024-12-21,North America,Corporate,Office Supplies,Binders,623.28,7,0.1,82.87,60.61,1.0
+CA-2024-11185,2024-12-22,Latin America,Small Business,Office Supplies,Paper Rolls,130.36,4,0.15,26.57,15.7,
+CA-2024-11186,2024-12-23,Latin America,Corporate,Furniture,Bookcases,1435.6,8,0.05,391.06,27.54,5.0
+CA-2024-11187,2024-12-23,Latin America,Small Business,Technology,Servers,355.5,6,0.0,120.43,21.54,5.0
+CA-2024-11188,2024-12-24,Latin America,Small Business,Furniture,Bookcases,75.32,4,0.15,19.21,43.71,3.0
+CA-2024-11189,2024-12-24,Europe,Small Business,Technology,Laptops,91.52,4,0.0,36.39,7.28,1.0
+CA-2024-11190,2024-12-25,North America,Corporate,Office Supplies,Envelopes,719.82,6,0.3,69.33,57.8,4.0
+CA-2024-11191,2024-12-26,Europe,Corporate,Technology,Servers,501.68,2,0.0,196.3,43.47,4.0
+CA-2024-11192,2024-12-26,Latin America,Small Business,Furniture,Office Desks,110.15,5,0.3,6.69,32.8,4.0
+CA-2024-11193,2024-12-27,Europe,Corporate,Technology,Servers,3092.52,6,0.1,206.35,6.34,3.0
+CA-2024-11194,2024-12-27,North America,Small Business,Technology,Laptops,2544.0,6,0.0,434.6,20.32,5.0
+CA-2024-11195,2024-12-28,Asia Pacific,Corporate,Office Supplies,Binders,608.9,10,0.0,250.31,25.1,1.0
+CA-2024-11196,2024-12-29,North America,Small Business,Furniture,Office Desks,45.9,3,0.1,2.41,26.52,5.0
+CA-2024-11197,2024-12-29,Asia Pacific,Corporate,Technology,Accessories,489.08,1,0.2,69.35,64.88,5.0
+CA-2024-11198,2024-12-30,Europe,Corporate,Technology,Servers,615.08,2,0.1,106.55,59.52,5.0
+CA-2024-11199,2024-12-31,Asia Pacific,Corporate,Technology,Monitors,15776.88,7,0.05,5053.41,62.57,5.0

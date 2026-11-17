@@ -45,8 +45,27 @@ def load_file(uploaded_file, sheet_name=None):
                 df = pd.json_normalize(data)
             return df, None
 
+        elif filename.endswith(".xml"):
+            uploaded_file.seek(0)
+            try:
+                df = pd.read_xml(uploaded_file)
+                return df, None
+            except Exception:
+                uploaded_file.seek(0)
+                import xml.etree.ElementTree as ET
+                tree = ET.parse(uploaded_file)
+                root = tree.getroot()
+                rows = []
+                for child in root:
+                    row_dict = {elem.tag: elem.text for elem in child}
+                    if row_dict:
+                        rows.append(row_dict)
+                if rows:
+                    return pd.DataFrame(rows), None
+                return None, "Could not extract tabular records from XML."
+
         else:
-            return None, f"Unsupported file format: {uploaded_file.name}. Please upload CSV, Excel, or JSON."
+            return None, f"Unsupported file format: {uploaded_file.name}. Please upload CSV, Excel, JSON, or XML."
 
     except Exception as e:
         return None, f"Failed to load file: {str(e)}"
@@ -135,6 +154,7 @@ def get_available_real_datasets():
     data_dir = os.path.join(base_dir, "data")
     
     datasets = {
+        "💼 SME Accounting & Ledger (Tally-Style)": os.path.join(data_dir, "sme_tally_financial_ledger.csv"),
         "🎓 College Students & Admissions (1,200 applicants)": os.path.join(data_dir, "college_university_admissions.csv"),
         "🛒 Global Superstore Sales (1,200 transactions)": os.path.join(data_dir, "global_superstore_2024.csv"),
         "📡 IBM Telco Customer Churn (1,200 subscribers)": os.path.join(data_dir, "telco_customer_churn_real.csv"),

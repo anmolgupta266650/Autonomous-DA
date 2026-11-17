@@ -46,12 +46,16 @@ def generate_executive_html_report(df: pd.DataFrame, metadata: dict, insights: l
     """
     insights_html = ""
     for ins in insights:
-        badge_color = "#10b981" if ins["type"] == "success" else "#f59e0b" if ins["type"] == "warning" else "#6366f1"
+        ins_type = ins.get("type", "info")
+        badge_color = "#10b981" if ins_type == "success" else "#f59e0b" if ins_type == "warning" else "#6366f1"
+        ins_cat = ins.get("category", "EXECUTIVE INSIGHT")
+        ins_title = ins.get("title", "Insight Observation")
+        ins_desc = ins.get("description", "")
         insights_html += f"""
         <div style="background:#1e293b; border-left: 4px solid {badge_color}; border-radius: 6px; padding: 12px 16px; margin-bottom: 12px;">
-            <div style="font-size: 11px; text-transform: uppercase; color: {badge_color}; font-weight: 700;">{ins['category']}</div>
-            <div style="font-size: 15px; font-weight: 600; color: #f8fafc; margin: 4px 0;">{ins['title']}</div>
-            <div style="font-size: 13px; color: #94a3b8;">{ins['description']}</div>
+            <div style="font-size: 11px; text-transform: uppercase; color: {badge_color}; font-weight: 700;">{ins_cat}</div>
+            <div style="font-size: 15px; font-weight: 600; color: #f8fafc; margin: 4px 0;">{ins_title}</div>
+            <div style="font-size: 13px; color: #94a3b8;">{ins_desc}</div>
         </div>
         """
 

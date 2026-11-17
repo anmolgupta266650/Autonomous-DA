@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 
-def clean_missing_values(df: pd.DataFrame, column: str, strategy: str, custom_value=None):
+def clean_missing_values(df: pd.DataFrame, column: str = "All Columns", strategy: str = "mean", custom_value=None):
     """
     Cleans missing values in a specific column or all columns.
     Strategy: 'mean', 'median', 'mode', 'zero', 'custom', 'drop_rows', 'drop_col', 'ffill', 'bfill'

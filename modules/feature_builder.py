@@ -40,12 +40,21 @@ def create_math_column(df: pd.DataFrame, new_col_name: str, col1: str, operator:
         return df, f"Calculation error: {str(e)}"
 
 
-def apply_transform(df: pd.DataFrame, new_col_name: str, col: str, transform_type: str):
+def apply_transform(df: pd.DataFrame, new_col_name: str, col: str = None, transform_type: str = "log"):
     """
     Applies mathematical transform to a single numeric column.
     transform_type: 'log', 'log1p', 'sqrt', 'abs', 'square', 'round'
     """
     df = df.copy()
+    # Flexible argument parsing if called as apply_transform(df, col, transform_type)
+    if col in ["log", "log1p", "sqrt", "abs", "square", "round"]:
+        transform_type = col
+        col = new_col_name
+        new_col_name = f"{col}_{transform_type}"
+    elif col is None:
+        col = new_col_name
+        new_col_name = f"{col}_{transform_type}"
+
     new_name = new_col_name.strip() if new_col_name else f"{col}_{transform_type}"
     try:
         series = pd.to_numeric(df[col], errors="coerce")
@@ -116,11 +125,21 @@ def extract_date_features(df: pd.DataFrame, date_col: str, features_to_extract: 
         return df, f"Date extraction error: {str(e)}"
 
 
-def create_binned_column(df: pd.DataFrame, new_col_name: str, col: str, n_bins: int = 3, labels=None):
+def create_binned_column(df: pd.DataFrame, new_col_name: str, col: str = None, n_bins: int = 3, labels=None, bins: int = None):
     """
     Bins a continuous numeric column into discrete quantile or equal-width buckets.
     """
     df = df.copy()
+    if bins is not None:
+        n_bins = bins
+
+    # Flexible argument parsing if called as create_binned_column(df, col, n_bins=4)
+    if col is None or isinstance(col, int):
+        if isinstance(col, int):
+            n_bins = col
+        col = new_col_name
+        new_col_name = f"{col}_Binned"
+
     new_name = new_col_name.strip() if new_col_name else f"{col}_Binned"
     try:
         series = pd.to_numeric(df[col], errors="coerce")

@@ -26,13 +26,21 @@ def build_bi_chart(
     orientation: str = "Vertical",
     barmode: str = "group",
     theme_name: str = "Cyber Indigo (Default)",
-    title: str = ""
+    title: str = "",
+    agg_method: str = None,
+    agg_func: str = None,
+    **kwargs
 ):
     """
     Builds a Tableau / Power BI caliber interactive chart based on user configurations.
     """
     if df is None or df.empty or not x_col:
         return None
+
+    if agg_method:
+        aggregation = agg_method.capitalize()
+    elif agg_func:
+        aggregation = agg_func.capitalize()
 
     df_plot = df.copy()
     color_seq = COLOR_THEMES.get(theme_name, px.colors.qualitative.Plotly)

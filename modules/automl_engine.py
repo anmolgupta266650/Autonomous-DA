@@ -15,10 +15,18 @@ from sklearn.metrics import (
 )
 
 
-def detect_task_type(series: pd.Series):
+def detect_task_type(series_or_df, target_col: str = None):
     """
     Determines whether target variable is 'classification' or 'regression'.
+    Accepts either a pd.Series or (pd.DataFrame, target_col).
     """
+    if isinstance(series_or_df, pd.DataFrame):
+        if target_col is None:
+            raise ValueError("target_col is required when passing a DataFrame")
+        series = series_or_df[target_col]
+    else:
+        series = series_or_df
+
     if pd.api.types.is_numeric_dtype(series):
         unique_cnt = series.nunique()
         if unique_cnt <= 8 and (series.dropna() % 1 == 0).all():

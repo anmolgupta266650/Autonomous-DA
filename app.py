@@ -88,19 +88,13 @@ def render_login_screen():
 
 
 # ==============================================================
-# OFFICIAL MULTI-PAGE WEBSITE NAVIGATION & ROUTING
+# 4-HUB CONSOLIDATED ENTERPRISE NAVIGATION
 # ==============================================================
-home_page = st.Page("pages/1_Home.py", title="Home & Overview", icon="🏠", default=True)
-copilot_page = st.Page("pages/11_AI_Data_Copilot.py", title="AI Data Copilot", icon="💬")
-pbi_page = st.Page("pages/4_PowerBI_Dashboard.py", title="Power BI & Pivot Studio", icon="🖥️")
-excel_page = st.Page("pages/5_Excel_Pivot.py", title="Excel & Pivot Studio", icon="📊")
-sheet_page = st.Page("pages/6_Smart_Spreadsheet.py", title="Smart Spreadsheet", icon="📋")
-tally_page = st.Page("pages/2_Tally_Finance.py", title="Tally Accounting", icon="💼")
-research_page = st.Page("pages/3_Academic_Research.py", title="Scientific Research", icon="🔬")
-automl_page = st.Page("pages/8_Predictive_AutoML.py", title="Predictive AI & AutoML", icon="🤖")
-cleaner_page = st.Page("pages/7_Data_Cleaning.py", title="Data Cleaning & Features", icon="🧹")
-db_page = st.Page("pages/9_Database_Checkpoints.py", title="Database & Stages", icon="💾")
-export_page = st.Page("pages/10_Export_Reports.py", title="Export & Reports", icon="📥")
+home_page = st.Page("pages/1_Home.py", title="Executive Launchpad", icon="⚡", default=True)
+data_page = st.Page("pages/2_Data_Studio.py", title="Data & BI Studio", icon="📊")
+ai_page = st.Page("pages/3_AI_Hub.py", title="AI Intelligence & Copilot", icon="🤖")
+finance_page = st.Page("pages/4_Finance_Science.py", title="Finance & Science Studios", icon="💼")
+export_page = st.Page("pages/5_Executive_Export.py", title="Executive Reports & Decks", icon="📥")
 
 if not st.session_state.get("authenticated", False):
     login_page = st.Page(render_login_screen, title="Enterprise Login", icon="🔒")
@@ -109,29 +103,23 @@ else:
     role = st.session_state.user.get("role", "admin")
     if role == "admin":
         pg = st.navigation({
-            "Overview & AI Assistant": [home_page, copilot_page],
-            "Business Intelligence & Excel": [pbi_page, excel_page, sheet_page],
-            "Specialized Studios": [tally_page, research_page, automl_page],
-            "Data Engineering & Storage": [cleaner_page, db_page, export_page]
+            "Command Center": [home_page],
+            "Flagship Studios": [data_page, ai_page, finance_page, export_page]
         })
     elif role == "accountant":
         pg = st.navigation({
-            "Overview & AI Assistant": [home_page, copilot_page],
-            "Financial Accounting & Fraud Audit": [tally_page, excel_page, sheet_page],
-            "Executive Reports & Briefings": [export_page]
+            "Command Center": [home_page],
+            "Specialized Workspaces": [finance_page, data_page, export_page]
         })
     elif role == "researcher":
         pg = st.navigation({
-            "Overview & AI Assistant": [home_page, copilot_page],
-            "Scientific Research & Predictive AI": [research_page, automl_page],
-            "Data Engineering & Spreadsheet": [cleaner_page, sheet_page],
-            "Academic Manuscripts & Reports": [export_page]
+            "Command Center": [home_page],
+            "Specialized Workspaces": [finance_page, ai_page, export_page]
         })
     else:  # viewer
         pg = st.navigation({
-            "Overview & AI Assistant": [home_page, copilot_page],
-            "Executive Dashboards & Pivots": [pbi_page, excel_page],
-            "Briefings & 16:9 Slide Decks": [export_page]
+            "Command Center": [home_page],
+            "Executive Views": [data_page, export_page]
         })
 
 pg.run()

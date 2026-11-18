@@ -77,111 +77,62 @@ with home_tab1:
 
         st.markdown("---")
 
-    # Goal-Based Interactive Studio Selector
-    st.markdown("### 🎯 Dedicated Application Pages")
-    st.caption("Navigate to any specialized page from the sidebar menu, or click any studio below:")
+    # 4 Flagship Studios Command Grid
+    st.markdown("### 🏛️ The 4 Flagship Enterprise Studios")
+    st.caption("Access all analytical tools from the sidebar navigation or click any studio below:")
     st.write("")
 
-    row1_c1, row1_c2, row1_c3 = st.columns(3)
-    with row1_c1:
+    grid1, grid2 = st.columns(2)
+
+    with grid1:
+        st.markdown("""
+        <div class="hub-card">
+            <span class="hub-icon">📊</span>
+            <div class="hub-title">1. Data & BI Studio</div>
+            <div class="hub-desc">All-in-one workspace for data exploration, spreadsheet grid editing, automated data cleaning, outlier handling, executive BI dashboards, and Power BI DAX pivot matrices.</div>
+            <span class="hub-tag">Explorer • Cleaner • BI Dashboards • DAX Pivots</span>
+        </div>
+        """, unsafe_allow_html=True)
+        if st.button("Launch Data & BI Studio ➔", key="btn_open_data_studio", type="primary", use_container_width=True):
+            safe_switch_page("pages/2_Data_Studio.py", "Data & BI Studio")
+
+        st.write("")
+
         st.markdown("""
         <div class="hub-card">
             <span class="hub-icon">💼</span>
-            <div class="hub-title">Tally & Financial Accounting</div>
-            <div class="hub-desc">Analyze Tally ledgers, daybooks, P&L statements, debtor aging (0-30, 31-60, 90+ days), and corporate waterfall financial flows.</div>
-            <span class="hub-tag">Accountants & CFOs</span>
+            <div class="hub-title">3. Finance & Science Studios</div>
+            <div class="hub-desc">Corporate P&L statements, debtor aging, forensic Benford's Law audits, duplicate voucher detection, dynamic What-If sensitivity forecasting, and APA 7th Edition research papers.</div>
+            <span class="hub-tag">Tally P&L • Forensics • What-If • APA Science</span>
         </div>
         """, unsafe_allow_html=True)
-        if st.button("Go to Tally Page ➔", key="btn_tally", type="secondary", use_container_width=True):
-            safe_switch_page("pages/2_Tally_Finance.py", "Tally Financial Accounting")
+        if st.button("Launch Finance & Science Studios ➔", key="btn_open_fin_science", type="primary", use_container_width=True):
+            safe_switch_page("pages/4_Finance_Science.py", "Finance & Science Studios")
 
-    with row1_c2:
-        st.markdown("""
-        <div class="hub-card">
-            <span class="hub-icon">🔬</span>
-            <div class="hub-title">Academic & Scientific Research</div>
-            <div class="hub-desc">Auto-formulate research questions, testable hypotheses (H₀, H₁), compute Welch's t-tests, ANOVA, OLS regressions, and auto-draft APA 7th papers.</div>
-            <span class="hub-tag">Researchers & Students</span>
-        </div>
-        """, unsafe_allow_html=True)
-        if st.button("Go to Research Page ➔", key="btn_research", type="secondary", use_container_width=True):
-            safe_switch_page("pages/3_Academic_Research.py", "Academic & Scientific Research")
-
-    with row1_c3:
-        st.markdown("""
-        <div class="hub-card">
-            <span class="hub-icon">🖥️</span>
-            <div class="hub-title">Power BI & Pivot Studio</div>
-            <div class="hub-desc">Multi-visual executive dashboards, dynamic hierarchical pivot tables with totals, DAX measures, and custom visual builder.</div>
-            <span class="hub-tag">Executives & Analysts</span>
-        </div>
-        """, unsafe_allow_html=True)
-        if st.button("Go to Power BI Studio ➔", key="btn_pbi_dash", type="secondary", use_container_width=True):
-            safe_switch_page("pages/4_PowerBI_Dashboard.py", "Power BI & Pivot Studio")
-
-    st.write("")
-    row2_c1, row2_c2, row2_c3 = st.columns(3)
-    with row2_c1:
+    with grid2:
         st.markdown("""
         <div class="hub-card">
             <span class="hub-icon">🤖</span>
-            <div class="hub-title">Predictive AI & AutoML Studio</div>
-            <div class="hub-desc">Automatically benchmark Machine Learning models (Classification & Regression), inspect feature importances, and run What-If simulations.</div>
-            <span class="hub-tag">Data Science</span>
+            <div class="hub-title">2. AI Intelligence & Copilot Hub</div>
+            <div class="hub-desc">Conversational AI Copilot, sandboxed Python Code Interpreter, 1-Click Autonomous Audits, and automated Machine Learning benchmark leaderboards with feature importances.</div>
+            <span class="hub-tag">Chat Copilot • Code Sandbox • Auto-Pilot • AutoML</span>
         </div>
         """, unsafe_allow_html=True)
-        if st.button("Go to Predictive AI Page ➔", key="btn_automl", type="secondary", use_container_width=True):
-            safe_switch_page("pages/8_Predictive_AutoML.py", "Predictive AI & AutoML")
+        if st.button("Launch AI Intelligence Hub ➔", key="btn_open_ai_hub", type="primary", use_container_width=True):
+            safe_switch_page("pages/3_AI_Hub.py", "AI Intelligence & Copilot")
 
-    with row2_c2:
-        st.markdown("""
-        <div class="hub-card">
-            <span class="hub-icon">🧹</span>
-            <div class="hub-title">Data Cleaning & Feature Studio</div>
-            <div class="hub-desc">Impute missing cells, eliminate duplicate rows, cast types, clamp statistical outliers (IQR/Z-score), and construct mathematical formulas.</div>
-            <span class="hub-tag">Data Preparation</span>
-        </div>
-        """, unsafe_allow_html=True)
-        if st.button("Go to Data Cleaning Page ➔", key="btn_cleaner", type="secondary", use_container_width=True):
-            safe_switch_page("pages/7_Data_Cleaning.py", "Data Cleaning & Features")
+        st.write("")
 
-    with row2_c3:
-        st.markdown("""
-        <div class="hub-card">
-            <span class="hub-icon">💬</span>
-            <div class="hub-title">AI Data Copilot 2.0</div>
-            <div class="hub-desc">Chat with your data in plain English or execute custom scripts in the sandboxed Python Code Interpreter.</div>
-            <span class="hub-tag">Natural Language AI</span>
-        </div>
-        """, unsafe_allow_html=True)
-        if st.button("Chat with Data Copilot ➔", key="btn_copilot", type="secondary", use_container_width=True):
-            safe_switch_page("pages/11_AI_Data_Copilot.py", "AI Data Copilot")
-
-    st.write("")
-    row3_c1, row3_c2 = st.columns(2)
-    with row3_c1:
-        st.markdown("""
-        <div class="hub-card">
-            <span class="hub-icon">📋</span>
-            <div class="hub-title">Smart Spreadsheet & Grid Editor</div>
-            <div class="hub-desc">Edit spreadsheet cells directly in your browser, insert or delete records, and commit changes as persistent SQLite checkpoints.</div>
-            <span class="hub-tag">In-Browser Editing</span>
-        </div>
-        """, unsafe_allow_html=True)
-        if st.button("Go to Spreadsheet Editor ➔", key="btn_sheet_editor", type="secondary", use_container_width=True):
-            safe_switch_page("pages/6_Smart_Spreadsheet.py", "Smart Spreadsheet Editor")
-
-    with row3_c2:
         st.markdown("""
         <div class="hub-card">
             <span class="hub-icon">📥</span>
-            <div class="hub-title">PowerPoint (.pptx) & Reports</div>
-            <div class="hub-desc">1-Click 10-slide PowerPoint presentation deck (.pptx), standalone HTML/PDF briefings, and publication-ready APA papers.</div>
-            <span class="hub-tag">Executive Export</span>
+            <div class="hub-title">4. Executive Reports & Decks</div>
+            <div class="hub-desc">1-Click 10-slide Microsoft PowerPoint (.pptx) presentation decks, standalone HTML executive briefings, formatted Excel (.xlsx) workbooks, and immutable checkpoint lineage.</div>
+            <span class="hub-tag">PowerPoint .pptx • HTML Reports • Excel • Checkpoints</span>
         </div>
         """, unsafe_allow_html=True)
-        if st.button("Go to Reports & Decks ➔", key="btn_exports_home", type="secondary", use_container_width=True):
-            safe_switch_page("pages/10_Export_Reports.py", "Export & Reports")
+        if st.button("Launch Executive Reports & Decks ➔", key="btn_open_reports_hub", type="primary", use_container_width=True):
+            safe_switch_page("pages/5_Executive_Export.py", "Executive Reports & Decks")
 
 
 # ==============================================================

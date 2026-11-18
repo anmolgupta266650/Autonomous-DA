@@ -79,19 +79,20 @@ div[data-testid="stButton"] button p {
   max-width: 1400px;
 }
 
-/* Custom SaaS Navbar Banner */
+/* Custom SaaS Navbar Banner - Slimline Linear Style */
 .nexus-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 16px;
-  background: linear-gradient(135deg, rgba(17, 24, 39, 0.95) 0%, rgba(15, 23, 42, 0.95) 100%);
-  border: 1px solid rgba(99, 102, 241, 0.3);
-  border-radius: 16px;
-  padding: 20px 28px;
-  margin-bottom: 24px;
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  gap: 12px;
+  background: rgba(17, 24, 39, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
   position: relative;
   overflow: hidden;
 }
@@ -102,7 +103,7 @@ div[data-testid="stButton"] button p {
   top: 0;
   left: 0;
   right: 0;
-  height: 3px;
+  height: 2px;
   background: linear-gradient(90deg, #4f46e5 0%, #06b6d4 50%, #8b5cf6 100%);
 }
 
@@ -114,15 +115,17 @@ div[data-testid="stButton"] button p {
 }
 
 .brand-title {
-  font-size: 1.95rem;
+  font-size: 1.35rem;
   font-weight: 800;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   background: linear-gradient(135deg, #ffffff 0%, #c7d2fe 50%, #38bdf8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
   display: flex;
   align-items: center;
+  gap: 8px;
+}
   gap: 10px;
 }
 

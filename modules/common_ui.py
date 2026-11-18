@@ -350,12 +350,9 @@ def render_page_header(page_title: str, working_df: pd.DataFrame):
 
     navbar_html = (
         '<div class="nexus-navbar">'
-        '<div>'
         '<div class="brand-title-row">'
-        '<h1 class="brand-title">⚡ Autonomous DA</h1>'
+        '<span class="brand-title">⚡ Autonomous DA</span>'
         f'<span class="brand-page-badge">{page_title}</span>'
-        '</div>'
-        '<p class="brand-tagline">No-Code Analytics, Tally Financials, Power BI & Scientific Research Platform</p>'
         '</div>'
         '<div class="nav-badges">'
         f'<span class="nav-pill"><span class="dot-indicator dot-green"></span> <strong>{safe_dataset_name}</strong> &nbsp;•&nbsp; <span style="color:#06b6d4;">{rows_count} rows</span> &nbsp;•&nbsp; <span class="dot-indicator {health_dot}"></span> {health_score}/100</span>'

@@ -101,7 +101,7 @@ with pbi_t2:
             st.info(f"💡 **Equivalent Power BI DAX Formula**: `{dax_formula}`")
 
             matrix_fig = build_powerbi_matrix_chart(dax_df, dax_dim, dax_metric, dax_df.columns[-1])
-            st.plotly_chart(matrix_fig, width="stretch")
+            st.plotly_chart(matrix_fig, width="stretch", key="excel_pivot_matrix_plot")
             st.dataframe(dax_df, width="stretch")
         except Exception as e:
             st.warning(f"Could not compute DAX measure for selected columns: {e}")

@@ -56,9 +56,9 @@ with ml_col2:
         st.dataframe(m_state["results_df"], width="stretch")
 
         if m_state["feat_plot"]:
-            st.plotly_chart(m_state["feat_plot"], width="stretch")
+            st.plotly_chart(m_state["feat_plot"], width="stretch", key="automl_feat_importance_plot")
         if m_state["diag_plot"]:
-            st.plotly_chart(m_state["diag_plot"], width="stretch")
+            st.plotly_chart(m_state["diag_plot"], width="stretch", key="automl_diag_plot")
 
 if st.session_state.trained_ml:
     st.markdown("---")

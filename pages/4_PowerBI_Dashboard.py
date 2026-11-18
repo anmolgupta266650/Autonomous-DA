@@ -31,18 +31,18 @@ st.write("")
 dash_row1_col1, dash_row1_col2 = st.columns(2)
 with dash_row1_col1:
     if "cat_bar" in exec_charts:
-        st.plotly_chart(exec_charts["cat_bar"], width="stretch")
+        st.plotly_chart(exec_charts["cat_bar"], width="stretch", key="dash_cat_bar_plot")
 with dash_row1_col2:
     if "trend" in exec_charts:
-        st.plotly_chart(exec_charts["trend"], width="stretch")
+        st.plotly_chart(exec_charts["trend"], width="stretch", key="dash_trend_plot")
 
 dash_row2_col1, dash_row2_col2 = st.columns(2)
 with dash_row2_col1:
     if "donut" in exec_charts:
-        st.plotly_chart(exec_charts["donut"], width="stretch")
+        st.plotly_chart(exec_charts["donut"], width="stretch", key="dash_donut_plot")
 with dash_row2_col2:
     if "scatter" in exec_charts:
-        st.plotly_chart(exec_charts["scatter"], width="stretch")
+        st.plotly_chart(exec_charts["scatter"], width="stretch", key="dash_scatter_plot")
 
 st.markdown("---")
 
@@ -86,5 +86,5 @@ with st.expander("🎨 Custom Visual Builder (Design Any Custom Chart)", expande
         title=custom_title
     )
     if custom_fig:
-        st.plotly_chart(custom_fig, width="stretch")
+        st.plotly_chart(custom_fig, width="stretch", key="dash_custom_builder_plot")
 

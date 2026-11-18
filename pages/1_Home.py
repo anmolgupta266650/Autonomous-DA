@@ -49,12 +49,12 @@ if st.session_state.autopilot_result:
     c_r1, c_r2 = st.columns(2)
     with c_r1:
         if "cat_bar" in ap_res.get("exec_charts", {}):
-            st.plotly_chart(ap_res["exec_charts"]["cat_bar"], width="stretch")
+            st.plotly_chart(ap_res["exec_charts"]["cat_bar"], width="stretch", key="home_cat_bar_plot")
     with c_r2:
         if ap_res.get("waterfall_fig"):
-            st.plotly_chart(ap_res["waterfall_fig"], width="stretch")
+            st.plotly_chart(ap_res["waterfall_fig"], width="stretch", key="home_waterfall_plot")
         elif "trend" in ap_res.get("exec_charts", {}):
-            st.plotly_chart(ap_res["exec_charts"]["trend"], width="stretch")
+            st.plotly_chart(ap_res["exec_charts"]["trend"], width="stretch", key="home_trend_plot")
 
     st.markdown("---")
 

@@ -89,12 +89,12 @@ with tab_pl:
         t_row1, t_row2 = st.columns(2)
         with t_row1:
             waterfall_fig = build_financial_waterfall_chart(fin_metrics["total_revenue"], fin_metrics["total_expenses"])
-            st.plotly_chart(waterfall_fig, width="stretch")
+            st.plotly_chart(waterfall_fig, width="stretch", key="tally_waterfall_plot")
 
         with t_row2:
             if act_party and act_rev:
                 aging_table, aging_fig = build_debtor_aging_analysis(working_df, act_party, act_rev, act_date)
-                st.plotly_chart(aging_fig, width="stretch")
+                st.plotly_chart(aging_fig, width="stretch", key="tally_aging_plot")
             else:
                 st.info("Assign a Party / Debtor and Amount column to display Accounts Receivable Aging.")
 
@@ -140,7 +140,7 @@ with tab_forensic:
             else:
                 st.success(benford_res["verdict"])
 
-            st.plotly_chart(benford_fig, width="stretch")
+            st.plotly_chart(benford_fig, width="stretch", key="tally_benford_plot")
 
         st.markdown("---")
 

@@ -41,7 +41,7 @@ for i, sq in enumerate(suggested_queries[:4]):
 
 top_act_col, clr_col = st.columns([5, 1])
 with clr_col:
-    if st.button("🧹 Clear Chat", use_container_width=True):
+    if st.button("🧹 Clear Chat", key="copilot_clear_chat", use_container_width=True):
         st.session_state.copilot_messages = [
             {
                 "role": "assistant",
@@ -51,6 +51,15 @@ with clr_col:
             }
         ]
         st.rerun()
+
+# Display chat history
+for idx, msg in enumerate(st.session_state.copilot_messages):
+    with st.chat_message(msg["role"]):
+        st.markdown(msg["content"])
+        if msg.get("fig") is not None:
+            st.plotly_chart(msg["fig"], width="stretch", key=f"copilot_chart_{idx}")
+        if msg.get("data") is not None:
+            st.dataframe(msg["data"], width="stretch", key=f"copilot_data_{idx}")
 
 # Chat input
 user_query = st.chat_input("Ask a question (e.g. 'Who are top 5 clients by sales?', 'Show average profit by region')...")
@@ -67,13 +76,4 @@ if prompt_to_run:
         "fig": copilot_res.get("fig")
     })
     st.rerun()
-
-# Display chat history
-for msg in st.session_state.copilot_messages:
-    with st.chat_message(msg["role"]):
-        st.markdown(msg["content"])
-        if msg.get("fig") is not None:
-            st.plotly_chart(msg["fig"], width="stretch")
-        if msg.get("data") is not None:
-            st.dataframe(msg["data"], width="stretch")
 

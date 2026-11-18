@@ -236,8 +236,26 @@ def render_sidebar_data_controls():
                             st.rerun()
 
             elif conn_type == "🗄️ SQLite Database":
-                db_file = st.text_input("Database Path", value="data/projects.db")
-                sql_q = st.text_area("SQL Query", value="SELECT * FROM projects", height=70)
+                available_dbs = {
+                    "🛒 Enterprise Retail & Orders ERP (data/enterprise_retail.db)": "data/enterprise_retail.db",
+                    "💾 System Projects & Checkpoints (data/projects.db)": "data/projects.db"
+                }
+                sel_db_label = st.selectbox("Select SQLite Database", list(available_dbs.keys()))
+                db_file = available_dbs[sel_db_label]
+
+                default_query = (
+                    "SELECT c.region, p.category, count(distinct o.order_id) as total_orders, "
+                    "sum(oi.subtotal) as total_sales, sum(oi.net_profit) as total_profit "
+                    "FROM order_items oi "
+                    "JOIN orders o ON oi.order_id = o.order_id "
+                    "JOIN customers c ON o.customer_id = c.customer_id "
+                    "JOIN products p ON oi.product_id = p.product_id "
+                    "GROUP BY c.region, p.category "
+                    "ORDER BY total_sales DESC;"
+                    if "enterprise_retail" in db_file else "SELECT * FROM projects"
+                )
+
+                sql_q = st.text_area("SQL Query", value=default_query, height=85)
                 if st.button("⚡ Run SQL Query", type="primary", use_container_width=True):
                     sql_df, sql_err = query_sqlite_database(db_file, sql_q)
                     if sql_err:
@@ -245,7 +263,7 @@ def render_sidebar_data_controls():
                     elif sql_df is not None:
                         st.session_state.raw_df = sql_df.copy()
                         st.session_state.df = sql_df.copy()
-                        st.session_state.dataset_name = f"SQLite: {db_file}"
+                        st.session_state.dataset_name = f"SQL: {os.path.basename(db_file)}"
                         st.session_state.audit_log = [f"Queried SQLite: {sql_q[:30]}..."]
                         st.session_state.trained_ml = None
                         st.session_state.autopilot_result = None

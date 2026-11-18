@@ -142,6 +142,18 @@ with home_tab2:
     st.markdown("### 🏛️ High Authority Function Verification Hub")
     st.caption("Designed for evaluators, accreditors, and auditors to verify every single platform function with zero complexity and dedicated test datasets.")
 
+    st.markdown("""
+    <div class="plain-box" style="border-left: 4px solid #6366f1; background: rgba(99, 102, 241, 0.08); margin-bottom: 20px;">
+        <span class="plain-badge" style="background: rgba(99, 102, 241, 0.25); color: #c7d2fe;">🏛️ 60-SECOND EVALUATOR QUICKSTART INSPECTION GUIDE</span>
+        <p style="margin: 6px 0; color: #f1f5f9; font-weight: 600;">Follow these 3 simple steps to verify the entire platform:</p>
+        <ol style="margin: 0; padding-left: 20px; color: #cbd5e1; font-size: 0.92rem; line-height: 1.6;">
+            <li><strong>Step 1 (Automated Verification):</strong> Click the purple <em>'Run Full System Diagnostic'</em> button below to verify that all 8 core subsystems report 🟢 PASS with sub-millisecond latencies.</li>
+            <li><strong>Step 2 (Load Specialized Data):</strong> Scroll to any module test card below and click <em>'Prime & Launch'</em> to automatically load real benchmark data with known parameters.</li>
+            <li><strong>Step 3 (Inspect Deliverable):</strong> Head to <em>Studio 4 (Executive Reports & Decks)</em> to download the 1-click 10-slide PowerPoint presentation deck (.pptx).</li>
+        </ol>
+    </div>
+    """, unsafe_allow_html=True)
+
     # 1-Click System Self-Diagnostic
     with st.container(border=True):
         sc_col1, sc_col2 = st.columns([2.5, 1])

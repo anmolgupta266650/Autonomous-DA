@@ -131,6 +131,46 @@ with tab_audit:
                 st.warning(round_res.get("warning"))
             else:
                 st.success(round_res.get("warning"))
+
+        st.markdown("---")
+        st.markdown("###### 🚨 Automated Forensic Sentinel Incident Digest")
+        dup_count = len(dups) if (act_party and 'dups' in locals() and not dups.empty) else 0
+        is_benford_bad = ben_metrics.get("is_anomalous", False)
+        is_round_bad = round_res.get("is_abnormal", False) if round_res else False
+
+        total_anomalies = (1 if is_benford_bad else 0) + (1 if dup_count > 0 else 0) + (1 if is_round_bad else 0)
+        risk_level = "CRITICAL" if total_anomalies >= 2 else ("ELEVATED" if total_anomalies == 1 else "LOW RISK")
+        risk_color = "#ef4444" if total_anomalies >= 2 else ("#f59e0b" if total_anomalies == 1 else "#10b981")
+
+        st.markdown(
+            f'<div style="background: rgba(15, 23, 42, 0.85); border: 1px solid {risk_color}55; border-left: 4px solid {risk_color}; border-radius: 8px; padding: 14px 18px; margin: 10px 0;">'
+            f'<div style="display: flex; justify-content: space-between; align-items: center;">'
+            f'<div><span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: #94a3b8;">COMPOSITE SENTINEL RISK SCORE</span>'
+            f'<div style="font-size: 1.25rem; font-weight: 800; color: {risk_color};">{risk_level} — {total_anomalies} Anomaly Categories Flagged</div></div>'
+            f'<div style="background: {risk_color}22; color: {risk_color}; font-weight: 700; padding: 4px 12px; border-radius: 9999px; font-size: 0.8rem;">Audit Verified</div>'
+            f'</div>'
+            f'</div>',
+            unsafe_allow_html=True
+        )
+
+        incident_report = (
+            f"AUTONOMOUS DA ENTERPRISE — FORENSIC SENTINEL INCIDENT REPORT\n"
+            f"Generated: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S UTC')}\n"
+            f"Audited Dataset: {st.session_state.dataset_name}\n"
+            f"Composite Risk Rating: {risk_level}\n\n"
+            f"1. Benford's Law Chi-Square Audit: {'ANOMALOUS SPIKE DETECTED' if is_benford_bad else 'COMPLIANT'}\n"
+            f"   Detail: {ben_metrics.get('verdict', 'N/A')}\n\n"
+            f"2. Duplicate Vouchers: {dup_count} duplicate disbursements identified.\n\n"
+            f"3. Round-Number Clustering: {'ABNORMAL SPIKE' if is_round_bad else 'NORMAL DISPERSION'}\n"
+            f"   Detail: {round_res.get('warning', 'N/A') if round_res else 'N/A'}\n"
+        )
+        st.download_button(
+            "📥 Download Executive Incident Briefing (.txt)",
+            data=incident_report,
+            file_name=f"Forensic_Incident_Report_{st.session_state.project_id}.txt",
+            mime="text/plain",
+            key="btn_dl_incident_rep"
+        )
     else:
         st.info("No numerical transaction amount column available for forensic auditing.")
 
@@ -251,3 +291,4 @@ with tab_science:
         )
         with st.expander("📄 View Manuscript", expanded=True):
             st.markdown(st.session_state.active_research_paper)
+

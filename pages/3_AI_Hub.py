@@ -61,6 +61,10 @@ with tab_copilot:
                 clicked_prompt = sq
 
     top_act_col, clr_col = st.columns([5, 1])
+    with top_act_col:
+        with st.expander("🔑 Optional Frontier AI Model (Google Gemini / OpenAI)", expanded=False):
+            st.caption("Provide an optional API key to unlock frontier LLM zero-shot reasoning. If left empty, Copilot runs on our built-in local analytical engine with zero API costs.")
+            user_llm_key = st.text_input("API Key (Gemini API Key or OpenAI `sk-...`)", type="password", key="aihub_user_llm_key")
     with clr_col:
         if st.button("🧹 Clear Chat", key="aihub_copilot_clear", use_container_width=True):
             st.session_state.copilot_messages = [
@@ -91,7 +95,7 @@ with tab_copilot:
 
     if prompt_to_run:
         st.session_state.copilot_messages.append({"role": "user", "content": prompt_to_run})
-        copilot_res = ask_data_copilot(working_df, prompt_to_run)
+        copilot_res = ask_data_copilot(working_df, prompt_to_run, api_key=user_llm_key if 'user_llm_key' in locals() and user_llm_key else None)
         st.session_state.copilot_messages.append({
             "role": "assistant",
             "content": copilot_res["answer"],
@@ -243,3 +247,4 @@ with tab_automl:
             )
             fig_imp.update_layout(template="plotly_dark", yaxis=dict(autorange="reversed"))
             st.plotly_chart(fig_imp, width="stretch", key="aihub_feat_imp_plot")
+

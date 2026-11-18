@@ -175,3 +175,4 @@ with tab_checkpoints:
                 st.rerun()
     else:
         st.info("No checkpoints recorded yet for the current project.")
+

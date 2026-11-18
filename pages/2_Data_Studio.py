@@ -306,3 +306,4 @@ with tab_pivot:
                 st.dataframe(dax_df, width="stretch", key="ds_dax_table")
             except Exception as e:
                 st.warning(f"DAX measure calculation: {e}")
+

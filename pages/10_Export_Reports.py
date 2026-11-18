@@ -3,6 +3,7 @@ import pandas as pd
 from modules.common_ui import render_sidebar_data_controls, render_page_header
 from modules.report_exporter import export_to_csv, export_to_excel, generate_executive_html_report
 from modules.presentation_generator import generate_executive_presentation_deck
+from modules.pptx_generator import generate_executive_pptx_deck
 from modules.tally_finance import detect_financial_columns, compute_tally_financial_metrics
 from modules.business_insights import generate_executive_insights
 from modules.data_loader import get_dataset_metadata
@@ -74,12 +75,24 @@ with e4:
 
 st.markdown("---")
 
-# Executive Presentation Slide Deck (16:9)
-st.markdown("### 📑 1-Click Executive Presentation Slide Deck (16:9)")
-st.caption("Generates a standalone, presentation-ready 16:9 slide deck in HTML/CSS. Press Ctrl+P (or Cmd+P) in your browser to print directly to PDF with clean slide breaks.")
+# Executive Presentation Slide Decks (16:9 & Native PPTX)
+st.markdown("### 📑 1-Click Executive Presentation Slide Decks (16:9 & PPTX)")
+st.caption("Generate presentation-ready executive slide decks: Download as an editable Microsoft PowerPoint (.pptx) file or standalone HTML/CSS presentation.")
 
 auto_fin = detect_financial_columns(working_df)
 fin_metrics = compute_tally_financial_metrics(working_df, rev_col=auto_fin["revenue"], exp_col=auto_fin["expense"])
+
+try:
+    pptx_bytes = generate_executive_pptx_deck(
+        df=working_df,
+        dataset_name=st.session_state.dataset_name,
+        meta=meta,
+        fin_metrics=fin_metrics,
+        insights=insights_list
+    )
+except Exception as p_err:
+    pptx_bytes = None
+
 deck_html = generate_executive_presentation_deck(
     df=working_df,
     dataset_name=st.session_state.dataset_name,
@@ -88,17 +101,33 @@ deck_html = generate_executive_presentation_deck(
     insights=insights_list
 )
 
-sd1, sd2 = st.columns([2, 1])
+sd1, sd2, sd3 = st.columns([1.5, 1.5, 1.2])
 with sd1:
-    st.download_button(
-        label="⬇️ Download Executive Slide Deck (.html)",
+    if pptx_bytes:
+        if st.download_button(
+            label="📊 Download PowerPoint (.pptx)",
+            data=pptx_bytes,
+            file_name=f"{st.session_state.project_id}_Executive_Deck.pptx",
+            mime="application/vnd.openxmlformats-officedocument.presentationml.presentation",
+            type="primary",
+            key="dl_pptx_btn"
+        ):
+            st.session_state.reports_exported_count += 1
+    else:
+        st.warning("PowerPoint deck generation encountered an issue.")
+
+with sd2:
+    if st.download_button(
+        label="🌐 Download Web Slide Deck (.html)",
         data=deck_html.encode("utf-8"),
         file_name=f"{st.session_state.project_id}_SlideDeck.html",
         mime="text/html",
-        type="primary"
-    )
-with sd2:
-    st.caption("💡 Open the downloaded HTML file in Chrome/Edge and press **Ctrl+P -> Destination: Save as PDF** to generate an executive PDF presentation.")
+        key="dl_html_deck_btn"
+    ):
+        st.session_state.reports_exported_count += 1
+
+with sd3:
+    st.caption("💡 The **.pptx** file is fully editable in PowerPoint, Keynote & Google Slides. The **.html** deck can be printed to PDF via `Ctrl+P`.")
 
 with st.expander("👁️ Live Slide Deck Preview", expanded=False):
     st.components.v1.html(deck_html, height=620, scrolling=True)

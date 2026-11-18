@@ -10,7 +10,10 @@ from modules.db_manager import (
     list_checkpoints, load_checkpoint, get_latest_checkpoint
 )
 from modules.template_generator import get_sample_templates
-from modules.live_connectors import load_google_sheet_by_url, query_sqlite_database, probe_local_tally_endpoint
+from modules.live_connectors import (
+    load_google_sheet_by_url, query_sqlite_database, probe_local_tally_endpoint,
+    load_remote_rest_api
+)
 
 
 def load_custom_css():
@@ -162,7 +165,12 @@ def render_sidebar_data_controls():
                 st.session_state.last_action_msg = f"Successfully loaded {selected_real}!"
                 st.rerun()
         elif ingestion_mode == "Live Connectors":
-            conn_type = st.selectbox("Connector Type", ["🌐 Google Sheets URL", "🗄️ SQLite Database", "💼 Tally Prime (Local)"])
+            conn_type = st.selectbox("Connector Type", [
+                "🌐 Google Sheets URL",
+                "📡 Live REST API Endpoint",
+                "🗄️ SQLite Database",
+                "💼 Tally Prime (Local)"
+            ])
             if conn_type == "🌐 Google Sheets URL":
                 sheet_url = st.text_input("Google Sheet Link", placeholder="https://docs.google.com/spreadsheets/d/...")
                 st.caption("Must be shared as 'Anyone with link can view'")
@@ -181,6 +189,26 @@ def render_sidebar_data_controls():
                             st.session_state.current_stage = "Live Ingestion"
                             save_checkpoint(st.session_state.project_id, "Live Ingestion", gs_df, "Google Sheets live sync")
                             st.session_state.last_action_msg = f"Loaded {len(gs_df):,} rows from Google Sheets!"
+                            st.rerun()
+
+            elif conn_type == "📡 Live REST API Endpoint":
+                api_url = st.text_input("REST API URL (JSON)", placeholder="https://api.coindesk.com/v1/bpi/currentprice.json")
+                st.caption("Directly ingest and normalize JSON records from external public or internal microservice APIs.")
+                if st.button("⚡ Ingest REST API", type="primary", use_container_width=True):
+                    with st.spinner("Connecting to remote REST endpoint..."):
+                        api_df, api_err = load_remote_rest_api(api_url)
+                        if api_err:
+                            st.error(api_err)
+                        elif api_df is not None:
+                            st.session_state.raw_df = api_df.copy()
+                            st.session_state.df = api_df.copy()
+                            st.session_state.dataset_name = f"API: {api_url.split('/')[-1] or 'Endpoint'}"
+                            st.session_state.audit_log = [f"Ingested from REST API: {api_url[:35]}..."]
+                            st.session_state.trained_ml = None
+                            st.session_state.autopilot_result = None
+                            st.session_state.current_stage = "Live API Ingestion"
+                            save_checkpoint(st.session_state.project_id, "Live API Ingestion", api_df, f"REST sync: {api_url[:40]}")
+                            st.session_state.last_action_msg = f"Imported {len(api_df):,} live records from REST API!"
                             st.rerun()
 
             elif conn_type == "🗄️ SQLite Database":

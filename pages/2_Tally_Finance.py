@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import plotly.graph_objects as go
 from modules.common_ui import render_sidebar_data_controls, render_page_header
 from modules.tally_finance import (
     detect_financial_columns, compute_tally_financial_metrics,
@@ -19,7 +20,11 @@ st.caption("P&L statement analysis, financial waterfall breakdowns, accounts rec
 
 auto_fin = detect_financial_columns(working_df)
 
-tab_pl, tab_forensic = st.tabs(["📊 Financial Statements & P&L", "🕵️ Forensic Audit & Fraud Detection"])
+tab_pl, tab_forensic, tab_whatif = st.tabs([
+    "📊 Financial Statements & P&L",
+    "🕵️ Forensic Audit & Fraud Detection",
+    "🎯 What-If Scenario Simulation"
+])
 
 with tab_pl:
     tf_c1, tf_c2, tf_c3, tf_c4 = st.columns(4)
@@ -173,4 +178,82 @@ with tab_forensic:
                 st.warning(round_res.get("warning"))
             else:
                 st.success(round_res.get("warning"))
+
+with tab_whatif:
+    st.markdown("##### 🎯 Dynamic Executive What-If & Sensitivity Simulator")
+    st.caption("Simulate real-time business stress tests: adjust demand volume, price elasticity, cost inflation, and tax rates to project bottom-line profitability.")
+
+    # Calculate base values from fin_metrics or default
+    base_rev = float(fin_metrics['total_revenue']) if (fin_metrics and 'total_revenue' in fin_metrics and fin_metrics['total_revenue'] > 0) else 1000000.0
+    base_exp = float(fin_metrics['total_expense']) if (fin_metrics and 'total_expense' in fin_metrics and fin_metrics['total_expense'] > 0) else base_rev * 0.70
+    base_profit = base_rev - base_exp
+    base_margin = (base_profit / base_rev * 100.0) if base_rev > 0 else 0.0
+
+    sc1, sc2, sc3, sc4 = st.columns(4)
+    with sc1:
+        price_shift = st.slider("Price / Revenue Shift (%)", -30, 50, 0, step=1, key="whatif_price", help="Percentage increase or discount in unit selling price.")
+    with sc2:
+        vol_shift = st.slider("Demand Volume Shift (%)", -30, 50, 0, step=1, key="whatif_vol", help="Percentage change in customer volume or unit orders.")
+    with sc3:
+        cost_shift = st.slider("Cost / Inflation Shift (%)", -20, 50, 0, step=1, key="whatif_cost", help="Percentage change in supplier costs, materials, or direct labor.")
+    with sc4:
+        tax_rate = st.slider("Corporate Tax / Overhead (%)", 0, 40, 15, step=1, key="whatif_tax", help="Applied tax or indirect operational overhead deduction.")
+
+    # Compute scenario
+    proj_rev = base_rev * (1.0 + vol_shift / 100.0) * (1.0 + price_shift / 100.0)
+    proj_exp = base_exp * (1.0 + vol_shift / 100.0) * (1.0 + cost_shift / 100.0)
+    proj_ebitda = proj_rev - proj_exp
+    proj_tax = max(0.0, proj_ebitda * (tax_rate / 100.0))
+    proj_net = proj_ebitda - proj_tax
+    proj_margin = (proj_net / proj_rev * 100.0) if proj_rev > 0 else 0.0
+
+    delta_profit = proj_net - base_profit
+
+    st.write("")
+    wk1, wk2, wk3, wk4 = st.columns(4)
+    wk1.metric("Projected Revenue", f"₹{proj_rev:,.0f}", f"{(proj_rev - base_rev):+,.0f}")
+    wk2.metric("Projected Expenses", f"₹{proj_exp:,.0f}", f"{(proj_exp - base_exp):+,.0f}", delta_color="inverse")
+    wk3.metric("Projected Net Profit", f"₹{proj_net:,.0f}", f"{delta_profit:+,.0f}")
+    wk4.metric("Simulated Net Margin", f"{proj_margin:.1f}%", f"{(proj_margin - base_margin):+.1f}%")
+
+    # Waterfall comparison figure
+    wf_fig = go.Figure(go.Waterfall(
+        name="Sensitivity Projection",
+        orientation="v",
+        measure=["absolute", "relative", "relative", "total", "relative", "relative", "total"],
+        x=["Baseline Revenue", "Volume Effect", "Price Effect", "Projected Turnover", "Cost Impact", "Tax / Overhead", "Projected Net"],
+        textposition="outside",
+        text=[
+            f"₹{base_rev:,.0f}",
+            f"₹{(base_rev * (vol_shift / 100.0)):+,.0f}",
+            f"₹{(proj_rev - base_rev * (1.0 + vol_shift / 100.0)):+,.0f}",
+            f"₹{proj_rev:,.0f}",
+            f"-₹{proj_exp:,.0f}",
+            f"-₹{proj_tax:,.0f}",
+            f"₹{proj_net:,.0f}"
+        ],
+        y=[
+            base_rev,
+            base_rev * (vol_shift / 100.0),
+            proj_rev - (base_rev * (1.0 + vol_shift / 100.0)),
+            proj_rev,
+            -proj_exp,
+            -proj_tax,
+            proj_net
+        ],
+        connector={"line": {"color": "#6366f1"}},
+        decreasing={"marker": {"color": "#ef4444"}},
+        increasing={"marker": {"color": "#10b981"}},
+        totals={"marker": {"color": "#06b6d4"}}
+    ))
+    wf_fig.update_layout(
+        title="<b>Projected Financial Waterfall Under Simulated Conditions</b>",
+        template="plotly_dark",
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        font=dict(color="#f8fafc"),
+        height=450
+    )
+    st.plotly_chart(wf_fig, width="stretch", key="whatif_waterfall_plot")
+
 

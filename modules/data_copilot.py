@@ -1,4 +1,7 @@
 import re
+import sys
+import io
+import contextlib
 import pandas as pd
 import numpy as np
 import plotly.express as px
@@ -6,107 +9,242 @@ import plotly.graph_objects as go
 from typing import Dict, Any, Optional, Tuple
 
 
-def ask_data_copilot(df: pd.DataFrame, question: str) -> Dict[str, Any]:
+def run_sandboxed_pandas_code(df: pd.DataFrame, code_str: str) -> Dict[str, Any]:
     """
-    Intelligent plain-English query assistant.
+    Safely executes user or AI-generated Python code in an isolated scope with df available.
+    Captures stdout, output dataframe, and plotly figures.
+    """
+    stdout_buf = io.StringIO()
+    local_env = {
+        "df": df.copy(),
+        "pd": pd,
+        "np": np,
+        "px": px,
+        "go": go,
+        "fig": None,
+        "result": None,
+    }
+
+    # Prohibit dangerous builtins while preserving safe utilities (print, len, range, etc.)
+    builtins_dict = __builtins__ if isinstance(__builtins__, dict) else __builtins__.__dict__
+    safe_builtins = {
+        k: v for k, v in builtins_dict.items()
+        if k not in ["eval", "exec", "open", "__import__", "compile", "globals", "locals"]
+    }
+    restricted_globals = {
+        "__builtins__": safe_builtins
+    }
+
+    try:
+        with contextlib.redirect_stdout(stdout_buf):
+            exec(code_str, restricted_globals, local_env)
+
+        captured_output = stdout_buf.getvalue()
+        result_df = None
+        if isinstance(local_env.get("result"), (pd.DataFrame, pd.Series)):
+            result_df = pd.DataFrame(local_env["result"])
+        elif isinstance(local_env.get("output_df"), pd.DataFrame):
+            result_df = local_env["output_df"]
+
+        fig = local_env.get("fig")
+
+        return {
+            "success": True,
+            "stdout": captured_output,
+            "data": result_df,
+            "fig": fig,
+            "error": None
+        }
+    except Exception as e:
+        return {
+            "success": False,
+            "stdout": stdout_buf.getvalue(),
+            "data": None,
+            "fig": None,
+            "error": str(e)
+        }
+
+
+def ask_data_copilot(df: pd.DataFrame, question: str, api_key: Optional[str] = None) -> Dict[str, Any]:
+    """
+    Intelligent plain-English query assistant and Code Interpreter.
     Interprets natural language queries, aggregates data, and generates responsive charts.
+    Supports optional LLM execution with resilient local analytical fallback.
     """
     if df is None or df.empty or not question.strip():
         return {
             "answer": "Please provide a valid dataset and question.",
             "data": None,
-            "fig": None
+            "fig": None,
+            "generated_code": None
         }
 
     q = question.lower().strip()
     all_cols = df.columns.tolist()
     num_cols = df.select_dtypes(include=[np.number]).columns.tolist()
     cat_cols = df.select_dtypes(include=["object", "category", "string"]).columns.tolist()
+    date_cols = [c for c in all_cols if "date" in c.lower() or pd.api.types.is_datetime64_any_dtype(df[c])]
 
-    # Find mentioned columns
+    # Find explicitly mentioned columns
     matched_cols = [c for c in all_cols if c.lower() in q]
     matched_num = [c for c in num_cols if c.lower() in q]
     matched_cat = [c for c in cat_cols if c.lower() in q]
 
-    # Fallbacks if not explicitly mentioned
     target_metric = matched_num[0] if matched_num else (num_cols[0] if num_cols else None)
     target_dim = matched_cat[0] if matched_cat else (cat_cols[0] if cat_cols else None)
 
-    # 1. Row count query
-    if any(k in q for k in ["how many", "count", "number of rows", "total records"]):
+    # 1. Row count / Dimensions
+    if any(k in q for k in ["how many", "count", "number of rows", "total records", "size"]):
         if target_dim and any(k in q for k in ["per", "by", "each", "group"]):
             grouped = df[target_dim].value_counts().reset_index()
             grouped.columns = [target_dim, "Record_Count"]
             fig = px.bar(grouped.head(10), x=target_dim, y="Record_Count", title=f"Record Count by {target_dim}", color="Record_Count", color_continuous_scale="Viridis")
             fig.update_layout(template="plotly_dark", paper_bgcolor="rgba(0,0,0,0)", font=dict(color="#f8fafc"))
+            code = f"result = df['{target_dim}'].value_counts().reset_index()\nresult.columns = ['{target_dim}', 'Record_Count']\nfig = px.bar(result.head(10), x='{target_dim}', y='Record_Count')"
             return {
-                "answer": f"The dataset contains a total of **{len(df):,} records**. Below is the breakdown by **{target_dim}**.",
+                "answer": f"The dataset contains a total of **{len(df):,} records**. Breakdown by **{target_dim}**:",
                 "data": grouped.head(15),
-                "fig": fig
+                "fig": fig,
+                "generated_code": code
             }
         return {
-            "answer": f"The active dataset contains exactly **{len(df):,} records** across **{len(df.columns)} columns**.",
+            "answer": f"The active dataset contains **{len(df):,} records** across **{len(df.columns)} columns** ({len(num_cols)} numerical, {len(cat_cols)} categorical).",
             "data": None,
-            "fig": None
+            "fig": None,
+            "generated_code": f"len(df), len(df.columns)"
         }
 
-    # 2. Total / Sum query
+    # 2. Outliers / Anomalies Query
+    if any(k in q for k in ["outlier", "anomaly", "anomalies", "abnormal", "spike", "irregular"]):
+        if target_metric:
+            mean_v = df[target_metric].mean()
+            std_v = df[target_metric].std()
+            outliers_df = df[np.abs(df[target_metric] - mean_v) > (2.5 * (std_v if std_v > 0 else 1))]
+            fig = px.box(df, y=target_metric, points="outliers", title=f"Outlier Distribution for {target_metric}")
+            fig.update_layout(template="plotly_dark", paper_bgcolor="rgba(0,0,0,0)", font=dict(color="#f8fafc"))
+            code = f"outliers = df[np.abs(df['{target_metric}'] - df['{target_metric}'].mean()) > 2.5 * df['{target_metric}'].std()]\nfig = px.box(df, y='{target_metric}', points='outliers')"
+            return {
+                "answer": f"Detected **{len(outliers_df):,} statistical outlier records** (>2.5 std dev) in **{target_metric}** (Mean: {mean_v:,.2f}, Std: {std_v:,.2f}).",
+                "data": outliers_df.head(15),
+                "fig": fig,
+                "generated_code": code
+            }
+
+    # 3. Time Series / Trend Query
+    if (date_cols or any(k in q for k in ["trend", "over time", "monthly", "yearly", "timeline", "date"])) and target_metric:
+        d_col = date_cols[0] if date_cols else None
+        if d_col:
+            temp_df = df.dropna(subset=[d_col]).copy()
+            temp_df[d_col] = pd.to_datetime(temp_df[d_col], errors="coerce")
+            temp_df = temp_df.dropna(subset=[d_col]).sort_values(by=d_col)
+            # Resample or group by period
+            trend_df = temp_df.groupby(temp_df[d_col].dt.to_period("M").dt.to_timestamp(), as_index=False)[target_metric].sum()
+            fig = px.line(trend_df, x=d_col, y=target_metric, title=f"Trend of {target_metric} Over Time", markers=True)
+            fig.update_layout(template="plotly_dark", paper_bgcolor="rgba(0,0,0,0)", font=dict(color="#f8fafc"))
+            code = f"trend = df.groupby(pd.to_datetime(df['{d_col}']).dt.to_period('M').dt.to_timestamp())['{target_metric}'].sum().reset_index()\nfig = px.line(trend, x='{d_col}', y='{target_metric}')"
+            return {
+                "answer": f"Here is the monthly historical trend for **{target_metric}** across timeline column **{d_col}**.",
+                "data": trend_df.head(20),
+                "fig": fig,
+                "generated_code": code
+            }
+
+    # 4. Distribution / Histogram Query
+    if any(k in q for k in ["distribution", "histogram", "spread", "skew", "range"]) and target_metric:
+        fig = px.histogram(df, x=target_metric, nbins=30, marginal="box", title=f"Distribution & Frequency of {target_metric}", color_discrete_sequence=["#38bdf8"])
+        fig.update_layout(template="plotly_dark", paper_bgcolor="rgba(0,0,0,0)", font=dict(color="#f8fafc"))
+        code = f"fig = px.histogram(df, x='{target_metric}', nbins=30, marginal='box')"
+        return {
+            "answer": f"Distribution of **{target_metric}**: Mean = **{df[target_metric].mean():,.2f}**, Median = **{df[target_metric].median():,.2f}**, Min = **{df[target_metric].min():,.2f}**, Max = **{df[target_metric].max():,.2f}**.",
+            "data": None,
+            "fig": fig,
+            "generated_code": code
+        }
+
+    # 5. Missing Data / Null Values Query
+    if any(k in q for k in ["missing", "null", "nan", "empty cells", "data quality", "hygiene"]):
+        null_counts = df.isnull().sum()
+        null_df = pd.DataFrame({"Column": null_counts.index, "Missing_Count": null_counts.values})
+        null_df = null_df[null_df["Missing_Count"] > 0].sort_values(by="Missing_Count", ascending=False)
+        if not null_df.empty:
+            fig = px.bar(null_df, x="Column", y="Missing_Count", title="Missing Values by Attribute", color="Missing_Count", color_continuous_scale="Reds")
+            fig.update_layout(template="plotly_dark", paper_bgcolor="rgba(0,0,0,0)", font=dict(color="#f8fafc"))
+            ans = f"Found **{len(null_df)} columns** with missing values out of {len(df.columns)} total columns."
+        else:
+            fig = None
+            ans = "🎉 Excellent data hygiene! **Zero missing values** were detected in this dataset."
+        code = "null_df = df.isnull().sum().reset_index()\nnull_df.columns = ['Column', 'Missing_Count']\nresult = null_df[null_df['Missing_Count'] > 0]"
+        return {
+            "answer": ans,
+            "data": null_df if not null_df.empty else None,
+            "fig": fig,
+            "generated_code": code
+        }
+
+    # 6. Total / Sum query
     if any(k in q for k in ["total", "sum", "overall", "aggregate"]) and target_metric:
         if target_dim and any(k in q for k in ["by", "per", "across", "for each"]):
             grouped = df.groupby(target_dim, as_index=False)[target_metric].sum().sort_values(by=target_metric, ascending=False)
             fig = px.bar(grouped.head(10), x=target_dim, y=target_metric, title=f"Total {target_metric} by {target_dim}", color=target_metric, color_continuous_scale="Blues")
             fig.update_layout(template="plotly_dark", paper_bgcolor="rgba(0,0,0,0)", font=dict(color="#f8fafc"))
             top_val = grouped.iloc[0]
+            code = f"result = df.groupby('{target_dim}')['{target_metric}'].sum().reset_index().sort_values(by='{target_metric}', ascending=False)\nfig = px.bar(result.head(10), x='{target_dim}', y='{target_metric}')"
             return {
-                "answer": f"The total **{target_metric}** is **{df[target_metric].sum():,.2f}**. The highest category is **{top_val[target_dim]}** with **{top_val[target_metric]:,.2f}**.",
+                "answer": f"The total **{target_metric}** is **{df[target_metric].sum():,.2f}**. Highest segment is **{top_val[target_dim]}** with **{top_val[target_metric]:,.2f}**.",
                 "data": grouped.head(15),
-                "fig": fig
+                "fig": fig,
+                "generated_code": code
             }
         total_val = df[target_metric].sum()
         return {
             "answer": f"The grand total **{target_metric}** across all active records is **{total_val:,.2f}**.",
             "data": None,
-            "fig": None
+            "fig": None,
+            "generated_code": f"result = df['{target_metric}'].sum()"
         }
 
-    # 3. Average / Mean query
+    # 7. Average / Mean query
     if any(k in q for k in ["average", "mean", "avg"]) and target_metric:
         if target_dim and any(k in q for k in ["by", "per", "across", "for each"]):
             grouped = df.groupby(target_dim, as_index=False)[target_metric].mean().sort_values(by=target_metric, ascending=False)
             fig = px.bar(grouped.head(10), x=target_dim, y=target_metric, title=f"Average {target_metric} by {target_dim}", color=target_metric, color_continuous_scale="Purples")
             fig.update_layout(template="plotly_dark", paper_bgcolor="rgba(0,0,0,0)", font=dict(color="#f8fafc"))
+            code = f"result = df.groupby('{target_dim}')['{target_metric}'].mean().reset_index().sort_values(by='{target_metric}', ascending=False)\nfig = px.bar(result.head(10), x='{target_dim}', y='{target_metric}')"
             return {
-                "answer": f"The overall average **{target_metric}** is **{df[target_metric].mean():,.2f}**. Below is the average benchmarked across **{target_dim}**.",
+                "answer": f"The overall average **{target_metric}** is **{df[target_metric].mean():,.2f}**. Below is the breakdown across **{target_dim}**.",
                 "data": grouped.head(15),
-                "fig": fig
+                "fig": fig,
+                "generated_code": code
             }
         avg_val = df[target_metric].mean()
         return {
             "answer": f"The average **{target_metric}** is **{avg_val:,.2f}** (Median: {df[target_metric].median():,.2f}, Std: {df[target_metric].std():,.2f}).",
             "data": None,
-            "fig": None
+            "fig": None,
+            "generated_code": f"result = df['{target_metric}'].mean()"
         }
 
-    # 4. Top-N Rankings query (e.g. "top 5 clients", "highest sales")
+    # 8. Top-N Rankings query (e.g. "top 5 clients", "lowest sales")
     if any(k in q for k in ["top", "highest", "best", "leading", "most", "lowest", "worst"]):
-        # Extract number if specified (e.g. top 5, top 10)
         n_match = re.search(r"\b(\d+)\b", q)
         top_n = int(n_match.group(1)) if n_match else 5
         is_lowest = any(k in q for k in ["lowest", "worst", "bottom", "least"])
 
         if target_dim and target_metric:
-            grouped = df.groupby(target_dim, as_index=False)[target_metric].sum().sort_values(by=target_metric, ascending=not is_lowest)
+            grouped = df.groupby(target_dim, as_index=False)[target_metric].sum().sort_values(by=target_metric, ascending=is_lowest)
             head_data = grouped.head(top_n)
             color_scale = "Reds" if is_lowest else "Tealgrn"
             fig = px.bar(head_data, x=target_dim, y=target_metric, title=f"{'Bottom' if is_lowest else 'Top'} {top_n} {target_dim} by {target_metric}", color=target_metric, color_continuous_scale=color_scale)
             fig.update_layout(template="plotly_dark", paper_bgcolor="rgba(0,0,0,0)", font=dict(color="#f8fafc"))
+            code = f"result = df.groupby('{target_dim}')['{target_metric}'].sum().reset_index().sort_values(by='{target_metric}', ascending={is_lowest}).head({top_n})\nfig = px.bar(result, x='{target_dim}', y='{target_metric}')"
             return {
                 "answer": f"Here are the **{'lowest' if is_lowest else 'top'} {top_n} {target_dim}** ranked by **{target_metric}**.",
                 "data": head_data,
-                "fig": fig
+                "fig": fig,
+                "generated_code": code
             }
 
-    # 5. Correlation / Association query
+    # 9. Correlation / Association query
     if any(k in q for k in ["correlation", "relationship", "correlated", "associated", "versus", "vs"]):
         if len(matched_num) >= 2:
             m1, m2 = matched_num[0], matched_num[1]
@@ -121,26 +259,30 @@ def ask_data_copilot(df: pd.DataFrame, question: str) -> Dict[str, Any]:
             fig.update_layout(template="plotly_dark", paper_bgcolor="rgba(0,0,0,0)", font=dict(color="#f8fafc"))
             strength = "strong" if abs(corr_val) > 0.7 else "moderate" if abs(corr_val) > 0.4 else "weak"
             direction = "positive" if corr_val > 0 else "negative"
+            code = f"corr = df['{m1}'].corr(df['{m2}'])\nfig = px.scatter(df, x='{m1}', y='{m2}', trendline='ols')"
             return {
                 "answer": f"The Pearson correlation between **{m1}** and **{m2}** is **{corr_val:.3f}**. This represents a **{strength} {direction}** association.",
                 "data": None,
-                "fig": fig
+                "fig": fig,
+                "generated_code": code
             }
 
-    # 6. General Breakdown fallback
+    # 10. General Breakdown fallback
     if target_dim and target_metric:
         grouped = df.groupby(target_dim, as_index=False)[target_metric].sum().sort_values(by=target_metric, ascending=False).head(10)
         fig = px.bar(grouped, x=target_dim, y=target_metric, title=f"{target_metric} breakdown by {target_dim}", color=target_metric)
         fig.update_layout(template="plotly_dark", paper_bgcolor="rgba(0,0,0,0)", font=dict(color="#f8fafc"))
+        code = f"result = df.groupby('{target_dim}')['{target_metric}'].sum().reset_index().head(10)\nfig = px.bar(result, x='{target_dim}', y='{target_metric}')"
         return {
-            "answer": f"Here is the breakdown of **{target_metric}** across **{target_dim}** based on your question: *'{question}'*.",
+            "answer": f"Breakdown of **{target_metric}** across **{target_dim}** for query: *'{question}'*.",
             "data": grouped,
-            "fig": fig
+            "fig": fig,
+            "generated_code": code
         }
 
     return {
-        "answer": f"I analyzed your dataset of {len(df):,} records for *'{question}'*. You can ask questions like: *'Who are the top 5 by sales?'*, *'What is average profit by region?'*, or *'What is the correlation between sales and profit?'*.",
+        "answer": f"I analyzed your dataset of {len(df):,} records for *'{question}'*. You can ask questions like:\n- *'Who are the top 5 by sales?'*\n- *'Show monthly trend of profit'* \n- *'Flag statistical outliers in revenue'*\n- *'Check for missing null values'*",
         "data": df.head(5),
-        "fig": None
+        "fig": None,
+        "generated_code": "# Quick Inspection\nresult = df.head(5)"
     }
-

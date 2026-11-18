@@ -66,3 +66,41 @@ def probe_local_tally_endpoint(host: str = "http://localhost:9000") -> Tuple[boo
     except Exception:
         return False, f"Tally is not responding on {host}. To enable: In Tally Prime, press F1 -> Settings -> Connectivity -> Set 'TallyPrime act as Both (Server/Client)' to Yes."
 
+
+def load_remote_rest_api(api_url: str) -> Tuple[Optional[pd.DataFrame], Optional[str]]:
+    """
+    Ingests live JSON data directly from any REST API endpoint or remote URL.
+    Auto-flattens nested JSON payloads into a clean tabular DataFrame.
+    """
+    if not api_url or not api_url.startswith(("http://", "https://")):
+        return None, "Please provide a valid HTTP or HTTPS API endpoint URL."
+
+    try:
+        req = urllib.request.Request(
+            api_url,
+            headers={"User-Agent": "Autonomous-DA-Intelligence/1.0", "Accept": "application/json"}
+        )
+        with urllib.request.urlopen(req, timeout=12) as resp:
+            import json
+            raw_data = json.loads(resp.read().decode("utf-8"))
+
+            if isinstance(raw_data, list):
+                df = pd.json_normalize(raw_data)
+            elif isinstance(raw_data, dict):
+                # Search for any list inside the dictionary
+                list_keys = [k for k, v in raw_data.items() if isinstance(v, list)]
+                if list_keys:
+                    df = pd.json_normalize(raw_data[list_keys[0]])
+                else:
+                    df = pd.json_normalize([raw_data])
+            else:
+                return None, "API returned an unsupported primitive format."
+
+            if df.empty:
+                return None, "REST API returned an empty dataset."
+
+            return df, None
+    except Exception as e:
+        return None, f"Failed to connect to REST API: {str(e)}"
+
+

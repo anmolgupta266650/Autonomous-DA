@@ -14,6 +14,7 @@ from modules.live_connectors import (
     load_google_sheet_by_url, query_sqlite_database, probe_local_tally_endpoint,
     load_remote_rest_api
 )
+from modules.module_test_registry import MODULE_TEST_PRESETS, load_test_preset_data
 
 
 def load_custom_css():
@@ -140,12 +141,34 @@ def render_sidebar_data_controls():
         st.markdown("#### 📁 Active Data Source")
         ingestion_mode = st.radio(
             "Source Mode",
-            ["Benchmark Datasets", "Upload File", "Live Connectors"],
+            ["Benchmark Datasets", "🧪 Module Test Presets", "Upload File", "Live Connectors"],
             index=0,
-            help="Load ready benchmark data, upload files, or link live data sources (Google Sheets, SQLite, Tally)."
+            help="Load ready benchmark data, authority test presets, upload files, or link live data sources."
         )
 
-        if ingestion_mode == "Benchmark Datasets":
+        if ingestion_mode == "🧪 Module Test Presets":
+            preset_options = list(MODULE_TEST_PRESETS.keys())
+            chosen_key = st.selectbox(
+                "Select Function / Module Test",
+                preset_options,
+                format_func=lambda k: MODULE_TEST_PRESETS[k]["title"]
+            )
+            p_info = MODULE_TEST_PRESETS[chosen_key]
+            st.caption(f"ℹ️ **Target:** {p_info['page_name']}\n\n{p_info['summary']}")
+            if st.button("⚡ Prime Dataset for This Module", type="primary", use_container_width=True, key="btn_prime_preset"):
+                df_test, ds_name, p_page = load_test_preset_data(chosen_key)
+                st.session_state.raw_df = df_test.copy()
+                st.session_state.df = df_test.copy()
+                st.session_state.dataset_name = ds_name
+                st.session_state.audit_log = [f"Primed module test preset: {p_info['title']}"]
+                st.session_state.trained_ml = None
+                st.session_state.autopilot_result = None
+                st.session_state.current_stage = f"Test Preset: {p_info['page_name']}"
+                save_checkpoint(st.session_state.project_id, "Module Test Preset", df_test, f"Primed test for {p_info['page_name']}")
+                st.session_state.last_action_msg = f"Ready to test {p_info['page_name']}! Navigate to {p_info['page_name']} in the menu."
+                st.rerun()
+
+        elif ingestion_mode == "Benchmark Datasets":
             real_datasets = get_available_real_datasets()
             selected_real = st.selectbox(
                 "Select Benchmark",

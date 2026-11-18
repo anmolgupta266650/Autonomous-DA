@@ -495,3 +495,4 @@ def generate_executive_pptx_deck(
     prs.save(buffer)
     buffer.seek(0)
     return buffer.getvalue()
+

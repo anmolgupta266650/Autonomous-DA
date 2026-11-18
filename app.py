@@ -51,6 +51,17 @@ def render_login_screen():
                 else:
                     st.error("Invalid credentials. Please verify your username and password.")
 
+            with st.expander("🔑 View All Login Credentials & Role Permissions", expanded=False):
+                st.markdown("""
+| Role | Username | Password | Scope |
+| :--- | :--- | :--- | :--- |
+| **👑 Admin** | `admin` | `admin123` | All 4 Studios & Diagnostics |
+| **💼 CFO** | `cfo_accountant` | `tally123` | Tally P&L, Benford Audit |
+| **🔬 Researcher** | `researcher` | `science123` | Science, APA 7th, AutoML |
+| **📊 Viewer** | `executive` | `exec123` | BI Dashboards, PPTX Decks |
+                """)
+                st.caption("🌐 Live Cloud App: [anmol-autonomous-da.streamlit.app](https://anmol-autonomous-da.streamlit.app)")
+
             st.write("")
             st.markdown("##### ⚡ Quick 1-Click Role Switcher")
             st.caption("Select a pre-seeded enterprise role to preview authorized access permissions:")

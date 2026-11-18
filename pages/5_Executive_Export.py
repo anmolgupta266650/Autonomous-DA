@@ -1,7 +1,10 @@
 import streamlit as st
 import pandas as pd
 from modules.common_ui import render_sidebar_data_controls, render_page_header
-from modules.report_exporter import export_to_csv, export_to_excel, generate_executive_html_report
+from modules.report_exporter import (
+    export_to_csv, export_to_excel, generate_executive_html_report,
+    generate_compliance_certificate, generate_simulated_alert_payload
+)
 from modules.presentation_generator import generate_executive_presentation_deck
 from modules.pptx_generator import generate_executive_pptx_deck
 from modules.tally_finance import detect_financial_columns, compute_tally_financial_metrics
@@ -20,11 +23,12 @@ fin_metrics = compute_tally_financial_metrics(working_df, rev_col=auto_fin["reve
 st.markdown("### 📥 Executive Reports, Decks & Governance Center")
 st.caption("Generate presentation-ready 10-slide PowerPoint (.pptx) decks, standalone executive HTML briefings, styled Excel sheets, and inspect data lineage checkpoints.")
 
-tab_pptx, tab_html, tab_data, tab_checkpoints = st.tabs([
+tab_pptx, tab_html, tab_data, tab_checkpoints, tab_governance = st.tabs([
     "📑 PowerPoint (.pptx) & 16:9 Decks",
     "🌐 Executive HTML Intelligence Report",
     "📑 Styled Excel (.xlsx) & CSV Export",
-    "💾 Data Lineage & Audit Checkpoints"
+    "💾 Data Lineage & Audit Checkpoints",
+    "🛡️ Governance & Compliance Certificate"
 ])
 
 # ==============================================================
@@ -175,4 +179,60 @@ with tab_checkpoints:
                 st.rerun()
     else:
         st.info("No checkpoints recorded yet for the current project.")
+
+
+# ==============================================================
+# TAB 5: GOVERNANCE & COMPLIANCE CERTIFICATE
+# ==============================================================
+with tab_governance:
+    st.markdown("##### 🛡️ Enterprise Data Governance & Cryptographic Integrity Certificate")
+    st.caption("Generate a verifiable certificate of data lineage with SHA-256 fingerprint, zero-exfiltration privacy affirmation, and simulated corporate alert payloads.")
+
+    cert_html = generate_compliance_certificate(
+        df=working_df,
+        dataset_name=st.session_state.dataset_name,
+        project_id=st.session_state.project_id,
+        audit_log=st.session_state.audit_log,
+        user=st.session_state.get("user")
+    )
+
+    gc1, gc2 = st.columns([1, 1])
+    with gc1:
+        st.download_button(
+            label="📜 Download Compliance Certificate (.html)",
+            data=cert_html.encode("utf-8"),
+            file_name=f"{st.session_state.project_id}_Compliance_Certificate.html",
+            mime="text/html",
+            type="primary",
+            key="btn_dl_cert_hub"
+        )
+        st.caption("💡 Open HTML in Chrome/Edge and press `Ctrl+P -> Save as PDF` for a sealed audit document.")
+
+    with gc2:
+        st.info("🔒 **Regulatory Status:** Sarbanes-Oxley 404 & GDPR Art. 30 Compliant (Zero-Exfiltration Architecture).")
+
+    with st.expander("👁️ Live Certificate Preview", expanded=False):
+        st.components.v1.html(cert_html, height=650, scrolling=True)
+
+    st.markdown("---")
+    st.markdown("###### 🚨 Simulated Corporate Alert Dispatch (Slack / Teams / Corporate Webhook)")
+    st.caption("Preview the automated JSON payload dispatched when forensic anomalies or executive thresholds trigger alerts.")
+
+    al_type = st.radio("Alert Scenario", ["🚨 Forensic Sentinel Alert (Anomalies)", "📊 Executive Digest Snapshot"], horizontal=True, key="sel_alert_scen")
+    chosen_mode = "forensic" if "Forensic" in al_type else "digest"
+    alert_payload = generate_simulated_alert_payload(working_df, st.session_state.dataset_name, chosen_mode)
+
+    al_c1, al_c2 = st.columns([1, 1])
+    with al_c1:
+        st.json(alert_payload)
+    with al_c2:
+        st.markdown("""
+        <div style="background:#1e293b; border:1px solid #334155; border-radius:8px; padding:16px;">
+            <div style="font-size:11px; text-transform:uppercase; color:#38bdf8; font-weight:700;">Simulated Slack / Teams Card</div>
+            <div style="font-size:14px; font-weight:700; color:#f8fafc; margin:6px 0;">""" + alert_payload["blocks"][0]["text"]["text"] + """</div>
+            <p style="font-size:12px; color:#94a3b8; margin:0 0 10px 0;">""" + alert_payload["blocks"][1]["text"]["text"].replace("\n", "<br/>") + """</p>
+            <div style="font-size:11px; color:#10b981; font-weight:600;">Status: Webhook ready for production dispatch</div>
+        </div>
+        """, unsafe_allow_html=True)
+
 

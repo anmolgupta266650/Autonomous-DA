@@ -25,13 +25,14 @@ init_app_state()
 
 
 def render_login_screen():
-    st.markdown("""
-    <div style="max-width: 620px; margin: 30px auto 16px auto; text-align: center;">
-        <div style="font-size: 3.2rem; margin-bottom: 6px;">⚡</div>
-        <h1 style="color: #ffffff; font-weight: 800; font-size: 2.3rem; margin-bottom: 6px;">Autonomous DA Enterprise</h1>
-        <p style="color: #94a3b8; font-size: 1.05rem;">Role-Based Access Control (RBAC) & Secure Data Intelligence Platform</p>
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown(
+        '<div style="max-width: 620px; margin: 30px auto 16px auto; text-align: center;">'
+        '<div style="font-size: 3.2rem; margin-bottom: 6px;">⚡</div>'
+        '<h1 style="color: #ffffff; font-weight: 800; font-size: 2.3rem; margin-bottom: 6px;">Autonomous DA Enterprise</h1>'
+        '<p style="color: #94a3b8; font-size: 1.05rem;">Role-Based Access Control (RBAC) & Secure Data Intelligence Platform</p>'
+        '</div>',
+        unsafe_allow_html=True
+    )
 
     lc1, lc2, lc3 = st.columns([1, 2.2, 1])
     with lc2:

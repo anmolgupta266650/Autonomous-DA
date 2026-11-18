@@ -13,8 +13,17 @@ from modules.template_generator import get_sample_templates
 from modules.live_connectors import load_google_sheet_by_url, query_sqlite_database, probe_local_tally_endpoint
 
 
+def load_custom_css():
+    """Injects custom CSS styling globally."""
+    css_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "assets", "style.css")
+    if os.path.exists(css_path):
+        with open(css_path, "r", encoding="utf-8") as f:
+            st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+
 def init_app_state():
     """Initializes and ensures all global session states persist across pages."""
+    load_custom_css()
     init_db()
 
     if "project_id" not in st.session_state:
@@ -82,13 +91,14 @@ def render_sidebar_data_controls():
                 "viewer": "📊 Executive Viewer"
             }.get(role, role.title())
 
-            st.markdown(f"""
-            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 10px; padding: 10px 14px; margin-bottom: 8px;">
-                <div style="font-size: 0.72rem; color: #94a3b8; text-transform: uppercase; font-weight: 700;">SIGNED IN AS</div>
-                <div style="font-size: 0.95rem; font-weight: 800; color: #f8fafc; margin: 2px 0;">{u.get('full_name', 'Enterprise User')}</div>
-                <div style="display: inline-block; background: {role_color}22; color: {role_color}; border: 1px solid {role_color}55; border-radius: 9999px; padding: 2px 10px; font-size: 0.72rem; font-weight: 700; margin-top: 4px;">{role_label}</div>
-            </div>
-            """, unsafe_allow_html=True)
+            st.markdown(
+                '<div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 10px; padding: 10px 14px; margin-bottom: 8px;">'
+                '<div style="font-size: 0.72rem; color: #94a3b8; text-transform: uppercase; font-weight: 700;">SIGNED IN AS</div>'
+                f'<div style="font-size: 0.95rem; font-weight: 800; color: #f8fafc; margin: 2px 0;">{u.get("full_name", "Enterprise User")}</div>'
+                f'<div style="display: inline-block; background: {role_color}22; color: {role_color}; border: 1px solid {role_color}55; border-radius: 9999px; padding: 2px 10px; font-size: 0.72rem; font-weight: 700; margin-top: 4px;">{role_label}</div>'
+                '</div>',
+                unsafe_allow_html=True
+            )
             if st.button("🚪 Sign Out", key="sb_signout_btn", use_container_width=True):
                 st.session_state.authenticated = False
                 st.session_state.user = None
@@ -267,6 +277,7 @@ def render_sidebar_data_controls():
 
 def render_page_header(page_title: str, working_df: pd.DataFrame):
     """Renders consistent top navbar header on every page."""
+    load_custom_css()
     meta = get_dataset_metadata(working_df)
 
     user_pill = ""
@@ -278,35 +289,29 @@ def render_page_header(page_title: str, working_df: pd.DataFrame):
             "researcher": "Researcher",
             "viewer": "Viewer"
         }.get(u.get("role", "viewer"), "User")
-        user_pill = f"""
-            <span class="nav-pill">
-                <span class="dot-indicator dot-purple"></span> Role: <strong>{role_label}</strong>
-            </span>
-        """
+        user_pill = f'<span class="nav-pill"><span class="dot-indicator dot-purple"></span> Role: <strong>{role_label}</strong></span>'
 
-    st.markdown(f"""
-    <div class="nexus-navbar">
-        <div>
-            <h1 class="brand-title">⚡ Autonomous DA</h1>
-            <p class="brand-tagline">No-Code Analytics, Tally Financials, Power BI & Scientific Research Platform</p>
-        </div>
-        <div class="nav-badges">
-            {user_pill}
-            <span class="nav-pill">
-                <span class="dot-indicator dot-green"></span> Source: <strong>{st.session_state.dataset_name[:20]}</strong>
-            </span>
-            <span class="nav-pill">
-                <span class="dot-indicator dot-purple"></span> Active Page: <strong>{page_title}</strong>
-            </span>
-            <span class="nav-pill">
-                <span class="dot-indicator dot-cyan"></span> Active Records: <strong>{meta.get('rows', 0):,}</strong>
-            </span>
-            <span class="nav-pill">
-                <span class="dot-indicator dot-green"></span> Health: <strong>{meta.get('health_score', 100)}/100</strong>
-            </span>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
+    safe_dataset_name = (st.session_state.dataset_name[:20] if st.session_state.dataset_name else "Benchmark Data")
+    rows_count = f"{meta.get('rows', 0):,}"
+    health_score = meta.get('health_score', 100)
+
+    navbar_html = (
+        '<div class="nexus-navbar">'
+        '<div>'
+        '<h1 class="brand-title">⚡ Autonomous DA</h1>'
+        '<p class="brand-tagline">No-Code Analytics, Tally Financials, Power BI & Scientific Research Platform</p>'
+        '</div>'
+        '<div class="nav-badges">'
+        f'{user_pill}'
+        f'<span class="nav-pill"><span class="dot-indicator dot-green"></span> Source: <strong>{safe_dataset_name}</strong></span>'
+        f'<span class="nav-pill"><span class="dot-indicator dot-purple"></span> Active Page: <strong>{page_title}</strong></span>'
+        f'<span class="nav-pill"><span class="dot-indicator dot-cyan"></span> Active Records: <strong>{rows_count}</strong></span>'
+        f'<span class="nav-pill"><span class="dot-indicator dot-green"></span> Health: <strong>{health_score}/100</strong></span>'
+        '</div>'
+        '</div>'
+    )
+
+    st.markdown(navbar_html, unsafe_allow_html=True)
 
     if st.session_state.last_action_msg:
         st.success(f"✅ {st.session_state.last_action_msg}")

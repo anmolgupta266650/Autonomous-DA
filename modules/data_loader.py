@@ -86,7 +86,21 @@ def get_dataset_metadata(df: pd.DataFrame):
     Computes comprehensive structural and quality metadata for a DataFrame.
     """
     if df is None or df.empty:
-        return {}
+        return {
+            "rows": 0,
+            "cols": 0,
+            "missing_cells": 0,
+            "missing_pct": 0.0,
+            "duplicates": 0,
+            "duplicate_pct": 0.0,
+            "memory": "0 KB",
+            "numeric_cols": [],
+            "categorical_cols": [],
+            "date_cols": [],
+            "bool_cols": [],
+            "col_summary": pd.DataFrame(),
+            "health_score": 100.0
+        }
 
     total_rows, total_cols = df.shape
     total_cells = total_rows * total_cols

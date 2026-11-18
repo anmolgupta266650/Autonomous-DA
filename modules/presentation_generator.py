@@ -17,7 +17,9 @@ def generate_executive_presentation_deck(
     Supports printable slide breaks (@media print) for direct PDF printing.
     """
     now_str = datetime.datetime.now().strftime("%B %d, %Y")
-    total_records = len(df)
+    total_records = len(df) if df is not None else 0
+    if not isinstance(meta, dict):
+        meta = {}
     health = meta.get("health_score", 100)
 
     # Financial KPIs fallback

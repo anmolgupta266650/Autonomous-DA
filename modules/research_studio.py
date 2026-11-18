@@ -276,6 +276,8 @@ def generate_apa_research_paper(
     """
     if hypothesis_test_result is None:
         hypothesis_test_result = {}
+    elif isinstance(hypothesis_test_result, list):
+        hypothesis_test_result = hypothesis_test_result[0] if hypothesis_test_result else {}
     if regression_result is None:
         regression_result = {}
 

@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
 import plotly.express as px
-from typing import Dict, Tuple, List, Optional
+from typing import Dict, Tuple, List, Optional, Union
 
 
 def detect_financial_columns(df: pd.DataFrame) -> Dict[str, Optional[str]]:
@@ -81,7 +81,7 @@ def detect_financial_columns(df: pd.DataFrame) -> Dict[str, Optional[str]]:
 
 def compute_tally_financial_metrics(
     df: pd.DataFrame,
-    rev_col: Optional[str] = None,
+    rev_col: Optional[Union[str, Dict[str, Optional[str]]]] = None,
     exp_col: Optional[str] = None,
     date_col: Optional[str] = None,
     party_col: Optional[str] = None
@@ -93,6 +93,13 @@ def compute_tally_financial_metrics(
     """
     if df is None or df.empty:
         return {}
+
+    if isinstance(rev_col, dict):
+        fin_dict = rev_col
+        rev_col = fin_dict.get("revenue")
+        exp_col = fin_dict.get("expense")
+        date_col = fin_dict.get("date")
+        party_col = fin_dict.get("party")
 
     num_cols = df.select_dtypes(include=[np.number]).columns.tolist()
 
@@ -164,14 +171,20 @@ def compute_tally_financial_metrics(
 
 
 def build_financial_waterfall_chart(
-    total_revenue: float,
-    total_expenses: float,
+    total_revenue: Union[float, Dict],
+    total_expenses: Optional[float] = None,
     taxes: Optional[float] = None
 ) -> go.Figure:
     """
     Constructs an interactive Corporate Financial Waterfall Chart:
     Gross Revenue -> Direct COGS / Outflows -> Gross Profit -> Tax/Overheads -> Net Retained Profit.
     """
+    if isinstance(total_revenue, dict):
+        fin_m = total_revenue
+        total_revenue = float(fin_m.get("total_revenue", 0.0))
+        total_expenses = float(fin_m.get("total_expense", 0.0))
+    elif total_expenses is None:
+        total_expenses = 0.0
     direct_cost = total_expenses * 0.65
     overhead_cost = total_expenses * 0.35
     tax_cost = (total_revenue - total_expenses) * 0.15 if (total_revenue - total_expenses) > 0 else 0

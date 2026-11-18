@@ -36,10 +36,15 @@ def detect_task_type(series_or_df, target_col: str = None):
         return "classification"
 
 
-def prepare_ml_data(df: pd.DataFrame, target_col: str, feature_cols: list):
+def prepare_ml_data(df: pd.DataFrame, target_col: str, feature_cols: list = None):
     """
     Cleans, imputes, and encodes features for model training.
     """
+    if feature_cols is None:
+        feature_cols = [c for c in df.columns if c != target_col]
+    elif isinstance(feature_cols, str):
+        feature_cols = [feature_cols]
+
     df_clean = df[[target_col] + feature_cols].dropna(subset=[target_col]).copy()
     y_raw = df_clean[target_col]
     X_raw = df_clean[feature_cols].copy()

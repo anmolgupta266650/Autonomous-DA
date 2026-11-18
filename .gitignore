@@ -48,6 +48,7 @@ coverage.xml
 .vscode/
 .idea/
 *.swp
+scratch/
 *.swo
 
 # Operating System Files

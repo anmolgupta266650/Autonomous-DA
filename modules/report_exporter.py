@@ -44,13 +44,23 @@ def generate_executive_html_report(df: pd.DataFrame, metadata: dict, insights: l
     """
     Generates a standalone, beautifully styled HTML analytical report for presentation or archival.
     """
+    if metadata is None:
+        metadata = {}
+
     insights_html = ""
-    for ins in insights:
-        ins_type = ins.get("type", "info")
+    for ins in (insights or []):
+        if isinstance(ins, dict):
+            ins_type = ins.get("type", "info")
+            ins_cat = ins.get("category", "EXECUTIVE INSIGHT")
+            ins_title = ins.get("title", "Insight Observation")
+            ins_desc = ins.get("description", "")
+        else:
+            ins_type = "info"
+            ins_cat = "EXECUTIVE INSIGHT"
+            ins_title = "Insight Observation"
+            ins_desc = str(ins)
+
         badge_color = "#10b981" if ins_type == "success" else "#f59e0b" if ins_type == "warning" else "#6366f1"
-        ins_cat = ins.get("category", "EXECUTIVE INSIGHT")
-        ins_title = ins.get("title", "Insight Observation")
-        ins_desc = ins.get("description", "")
         insights_html += f"""
         <div style="background:#1e293b; border-left: 4px solid {badge_color}; border-radius: 6px; padding: 12px 16px; margin-bottom: 12px;">
             <div style="font-size: 11px; text-transform: uppercase; color: {badge_color}; font-weight: 700;">{ins_cat}</div>

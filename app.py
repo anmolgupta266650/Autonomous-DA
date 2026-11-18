@@ -92,7 +92,7 @@ def render_login_screen():
 # ==============================================================
 home_page = st.Page("pages/1_Home.py", title="Home & Overview", icon="🏠", default=True)
 copilot_page = st.Page("pages/11_AI_Data_Copilot.py", title="AI Data Copilot", icon="💬")
-pbi_page = st.Page("pages/4_PowerBI_Dashboard.py", title="Power BI Dashboard", icon="🖥️")
+pbi_page = st.Page("pages/4_PowerBI_Dashboard.py", title="Power BI & Pivot Studio", icon="🖥️")
 excel_page = st.Page("pages/5_Excel_Pivot.py", title="Excel & Pivot Studio", icon="📊")
 sheet_page = st.Page("pages/6_Smart_Spreadsheet.py", title="Smart Spreadsheet", icon="📋")
 tally_page = st.Page("pages/2_Tally_Finance.py", title="Tally Accounting", icon="💼")

@@ -289,24 +289,26 @@ def render_page_header(page_title: str, working_df: pd.DataFrame):
             "researcher": "Researcher",
             "viewer": "Viewer"
         }.get(u.get("role", "viewer"), "User")
-        user_pill = f'<span class="nav-pill"><span class="dot-indicator dot-purple"></span> Role: <strong>{role_label}</strong></span>'
+        user_pill = f'<span class="nav-pill nav-pill-role"><span class="dot-indicator dot-purple"></span> Role: <strong>{role_label}</strong></span>'
 
-    safe_dataset_name = (st.session_state.dataset_name[:20] if st.session_state.dataset_name else "Benchmark Data")
+    safe_dataset_name = (st.session_state.dataset_name[:24] if st.session_state.dataset_name else "Benchmark Data")
     rows_count = f"{meta.get('rows', 0):,}"
     health_score = meta.get('health_score', 100)
+
+    health_dot = "dot-green" if health_score >= 80 else ("dot-amber" if health_score >= 50 else "dot-red")
 
     navbar_html = (
         '<div class="nexus-navbar">'
         '<div>'
+        '<div class="brand-title-row">'
         '<h1 class="brand-title">⚡ Autonomous DA</h1>'
+        f'<span class="brand-page-badge">{page_title}</span>'
+        '</div>'
         '<p class="brand-tagline">No-Code Analytics, Tally Financials, Power BI & Scientific Research Platform</p>'
         '</div>'
         '<div class="nav-badges">'
+        f'<span class="nav-pill"><span class="dot-indicator dot-green"></span> <strong>{safe_dataset_name}</strong> &nbsp;•&nbsp; <span style="color:#06b6d4;">{rows_count} rows</span> &nbsp;•&nbsp; <span class="dot-indicator {health_dot}"></span> {health_score}/100</span>'
         f'{user_pill}'
-        f'<span class="nav-pill"><span class="dot-indicator dot-green"></span> Source: <strong>{safe_dataset_name}</strong></span>'
-        f'<span class="nav-pill"><span class="dot-indicator dot-purple"></span> Active Page: <strong>{page_title}</strong></span>'
-        f'<span class="nav-pill"><span class="dot-indicator dot-cyan"></span> Active Records: <strong>{rows_count}</strong></span>'
-        f'<span class="nav-pill"><span class="dot-indicator dot-green"></span> Health: <strong>{health_score}/100</strong></span>'
         '</div>'
         '</div>'
     )

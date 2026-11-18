@@ -184,5 +184,17 @@ Access the application at `http://localhost:8501`.
 
 ---
 
+## 🔮 Phase 2 Roadmap & Future Scope
+
+A detailed enterprise architecture roadmap is documented in [docs/PHASE_2_FUTURE_ROADMAP.md](docs/PHASE_2_FUTURE_ROADMAP.md):
+
+* **📡 Real-Time Streaming Ingestion**: Integration with Apache Kafka, RabbitMQ, and sliding-window event processors (`modules/streaming_ingestor.py`).
+* **⚡ Cloud Lakehouse Two-Way Writeback**: Direct ACID staging to Google BigQuery, Snowflake, and Databricks Delta Lake.
+* **👥 Multi-Tenant Team Workspaces**: Managed PostgreSQL backend with Row-Level Security (RLS) and in-place audit commentary.
+* **📦 Native Air-Gapped Desktop Client**: Standalone zero-dependency Electron executable bundled with local quantized LLMs (`llama.cpp`) for secure defense and banking environments.
+* **🚀 Hardware Acceleration**: GPU-accelerated tabular data wrangling using NVIDIA RAPIDS (cuDF) and ONNX Runtime model export.
+
+---
+
 ## 📄 License
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.

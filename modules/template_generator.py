@@ -51,3 +51,21 @@ def get_sample_templates() -> dict:
 
     return templates
 
+
+def get_available_templates() -> dict:
+    """Returns available starter templates."""
+    return {
+        "tally_ledger": "Tally & Financial Accounting Ledger",
+        "sales_bi": "Commercial Sales & BI Dashboard",
+        "academic_research": "Academic Survey & Scientific Research"
+    }
+
+
+def generate_template_data(template_name: str) -> pd.DataFrame:
+    """Generates DataFrame for a selected starter template."""
+    tmps = get_sample_templates()
+    if template_name in tmps:
+        return pd.read_csv(io.BytesIO(tmps[template_name]))
+    return pd.read_csv(io.BytesIO(list(tmps.values())[0]))
+
+

@@ -365,3 +365,8 @@ def ask_data_copilot(df: pd.DataFrame, question: str, api_key: Optional[str] = N
         "fig": None,
         "generated_code": "# Quick Inspection\nresult = df.head(5)"
     }
+
+
+# Convenience alias for unified copilot invocation
+generate_copilot_response = ask_data_copilot
+

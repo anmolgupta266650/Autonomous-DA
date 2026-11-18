@@ -365,10 +365,10 @@ def generate_executive_pptx_deck(
         p.font.color.rgb = rcol
         p.space_after = Pt(6)
 
-        pd = tf.add_paragraph()
-        pd.text = rdesc
-        pd.font.size = Pt(12)
-        pd.font.color.rgb = TEXT_LIGHT
+        p_desc = tf.add_paragraph()
+        p_desc.text = rdesc
+        p_desc.font.size = Pt(12)
+        p_desc.font.color.rgb = TEXT_LIGHT
 
     # ==============================================================
     # SLIDE 7: PREDICTIVE MACHINE LEARNING BENCHMARKS
@@ -429,10 +429,10 @@ def generate_executive_pptx_deck(
         p.font.bold = True
         p.font.color.rgb = ACCENT_BLUE
 
-        pd = tf.add_paragraph()
-        pd.text = desc
-        pd.font.size = Pt(12)
-        pd.font.color.rgb = TEXT_LIGHT
+        p_desc = tf.add_paragraph()
+        p_desc.text = desc
+        p_desc.font.size = Pt(12)
+        p_desc.font.color.rgb = TEXT_LIGHT
 
     # ==============================================================
     # SLIDE 9: GOVERNANCE & AUDIT TRAIL

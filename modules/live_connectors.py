@@ -104,3 +104,14 @@ def load_remote_rest_api(api_url: str) -> Tuple[Optional[pd.DataFrame], Optional
         return None, f"Failed to connect to REST API: {str(e)}"
 
 
+def build_cloud_sql_connection_string(db_type: str, host: str, port: int, db_name: str, user: str, password: str) -> str:
+    """
+    Builds a secure SQLAlchemy / DB-API connection URI for Google Cloud SQL, AWS RDS, or PostgreSQL/MySQL.
+    """
+    prefix = "postgresql" if "postgres" in db_type.lower() else "mysql+pymysql" if "mysql" in db_type.lower() else "sqlite"
+    if prefix == "sqlite":
+        return f"sqlite:///{db_name}"
+    return f"{prefix}://{user}:{password}@{host}:{port}/{db_name}"
+
+
+

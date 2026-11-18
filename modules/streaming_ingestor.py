@@ -19,8 +19,10 @@ def simulate_iot_financial_stream(n_events: int = 60, seed: int = 42) -> pd.Data
     base_values = np.random.normal(loc=250.0, scale=40.0, size=n_events)
     
     # Inject intentional sudden anomaly spikes
-    base_values[15] = 890.0  # Spike 1
-    base_values[42] = 1250.0 # Spike 2 (Fraud candidate)
+    if n_events > 5:
+        base_values[min(15, n_events // 3)] = 890.0  # Spike 1
+    if n_events > 10:
+        base_values[min(42, int(n_events * 0.7))] = 1250.0 # Spike 2 (Fraud candidate)
     
     latencies = np.random.exponential(scale=18.0, size=n_events) + 5.0
     services = np.random.choice(["checkout_api", "payment_gateway", "auth_service", "inventory_db"], size=n_events)

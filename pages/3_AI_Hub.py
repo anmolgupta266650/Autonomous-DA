@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -62,9 +63,20 @@ with tab_copilot:
 
     top_act_col, clr_col = st.columns([5, 1])
     with top_act_col:
-        with st.expander("🔑 Optional Frontier AI Model (Google Gemini / OpenAI)", expanded=False):
-            st.caption("Provide an optional API key to unlock frontier LLM zero-shot reasoning. If left empty, Copilot runs on our built-in local analytical engine with zero API costs.")
-            user_llm_key = st.text_input("API Key (Gemini API Key or OpenAI `sk-...`)", type="password", key="aihub_user_llm_key")
+        env_key = os.getenv("GEMINI_API_KEY", "")
+        if not env_key:
+            try:
+                env_key = st.secrets.get("GEMINI_API_KEY", "")
+            except Exception:
+                env_key = ""
+        
+        status_badge = "🟢 Google Gemini AI Connected" if env_key else "⚪ Built-in Engine (Free)"
+        with st.expander(f"🔑 Frontier AI Model: {status_badge}", expanded=False):
+            if env_key:
+                st.success("✨ **Google Gemini API is permanently connected and active.** Queries will use Google Gemini zero-shot reasoning with automated fallback.")
+            else:
+                st.caption("Provide an optional API key to unlock frontier LLM zero-shot reasoning. If left empty, Copilot runs on our built-in local analytical engine with zero API costs.")
+            user_llm_key = st.text_input("API Key (Pre-configured from environment, or enter custom key)", value=env_key, type="password", key="aihub_user_llm_key")
     with clr_col:
         if st.button("🧹 Clear Chat", key="aihub_copilot_clear", use_container_width=True):
             st.session_state.copilot_messages = [

@@ -59,3 +59,9 @@ desktop.ini
 # Output exports created during runtime
 *.csv.tmp
 *.xlsx.tmp
+
+# Secrets and environment variables
+.env
+.env.*
+.streamlit/secrets.toml
+
